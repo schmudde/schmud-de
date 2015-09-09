@@ -5,7 +5,8 @@
             [schmud-de.controllers.projects :as projects-controller]))
 
 (defroutes app-routes
-  (GET "/" [] (projects-controller/index))
+  (GET "/" [] "Hello World")
+;(projects-controller/index))
   (route/resources "/")
   (route/not-found "Not Found"))
 

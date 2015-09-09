@@ -1,0 +1,5 @@
+{
+  "name": "schmud.de's webpage and idea incubator",
+  "description": "Clojure site and incubator",
+  "image": "heroku/clojure"
+}
