@@ -4,7 +4,8 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.4.0"]
-                 [ring/ring-defaults "0.1.5"]]
+                 [ring/ring-defaults "0.1.5"]
+                 [de.ubercode.clostache/clostache "1.4.0"]]
   :plugins [[lein-ring "0.9.6"]]
   :ring {:handler schmud-de.handler/app}
   :profiles

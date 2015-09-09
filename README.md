@@ -1,6 +1,6 @@
 # schmud-de
 
-FIXME
+Personal Website
 
 ## Prerequisites
 
@@ -16,4 +16,4 @@ To start a web server for the application, run:
 
 ## License
 
-Copyright © 2015 FIXME
+None
