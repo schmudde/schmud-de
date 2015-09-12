@@ -10,7 +10,7 @@
   :plugins [[lein-ring "0.9.6"]
             [environ/environ.lein "0.3.1"]]
   :hooks [environ.leiningen.hooks]
-  :ring {:handler schmud-de.handler/app}
+;  :ring {:handler schmud-de.handler/app}
   :uberjar-name "schmud-de-standalone.jar"
   :profiles {{:production {:env {:production true}}}
              {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
