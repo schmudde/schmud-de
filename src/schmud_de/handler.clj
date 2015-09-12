@@ -40,9 +40,10 @@
 ;        :body (kebab/->kebab-case input)})
   (GET "/" []
        (splash))
+  (GET "/projects" []
+       (projects-controller/index))
   (route/resources "/")
   (route/not-found "Not Found")
-  (projects-controller/index)
   (ANY "*" []
        (route/not-found (slurp (io/resource "404.html")))))
 
