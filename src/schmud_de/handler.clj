@@ -4,30 +4,21 @@
             [compojure.route :as route]
             [clojure.java.io :as io]
             [ring.adapter.jetty :as jetty]
-            [environ.core :refer [env]]))
+            [environ.core :refer [env]]
+            [schmud-de.controllers.projects :as projects-controller]))
 
-;  (:require [compojure.core :refer :all]
-;            [compojure.route :as route]
-;            [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
-;            [schmud-de.controllers.projects :as projects-controller]))
+;  (:require [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
 
 ;(defroutes app-routes
 ;  (GET "/" [] "Hello World")
 ;TODO: Add this back in once the "Hello World" is working on Heroku. Needs to be called web.clj?
 ;(projects-controller/index))
-;  (route/resources "/")
-;  (route/not-found "Not Found"))
+;
+;
 
 ;(def app
 ;  (wrap-defaults app-routes site-defaults))
 
-;(defn splash []
-;  {:status 200
-;   :headers {"Content-Type" "text/plain"}
-;   :body (pr-str ["Hello" :from 'Heroku])})
-
-;(defn -main []
-;  ())
 
 (defn splash []
   {:status 200
@@ -49,6 +40,9 @@
 ;        :body (kebab/->kebab-case input)})
   (GET "/" []
        (splash))
+  (route/resources "/")
+  (route/not-found "Not Found")
+  (projects-controller/index)
   (ANY "*" []
        (route/not-found (slurp (io/resource "404.html")))))
 
