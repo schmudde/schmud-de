@@ -2,8 +2,14 @@
 
 <h1>PROJECTS: {{page-title}} - FORMATTING #2</h1>
 
-<p>Infos: {{name}} Page Tester.</p>
+{{#projects}}
+<ul>
+    <li>{{title}}</li>
+    <li>{{synopsis}}</li>
+    <li>{{status}}</li>
+    <li>{{media}}</li>
+</ul>
+{{/projects}}
 
-<p>Numbers: {{number}}.</p>
 
 {{> footer}}

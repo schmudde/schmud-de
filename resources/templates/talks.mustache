@@ -2,8 +2,14 @@
 
 <h1>TALKS: {{page-title}} - FORMATTING #3</h1>
 
-<p>Infos: {{name}} Page Tester.</p>
-
-<p>Numbers: {{number}}.</p>
+{{#talks}}
+<ul>
+    <li>{{location}}</li>
+    <li>{{date}}</li>
+    <li>{{title}}</li>
+    <li>{{synopsis}}</li>
+    <li>{{media}}</li>
+</ul>
+{{/talks}}
 
 {{> footer}}

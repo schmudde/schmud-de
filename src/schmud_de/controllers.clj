@@ -1,22 +1,34 @@
 (ns schmud-de.controllers
   (:require
    [clostache.parser :as clostache]))
-;; Will there ever be parameters needed to change how a controller behaves?
-;; Such an idea is very *imperative* and should not be used.
 ;; Controller should call the "model" and inform the view.
 
-;; 1) Function that returns a map of key/paramater pairs (model) that will be applied to the template (view).
 ;; 2) Function that returns a template (view) which is an appropriate match to the map. Is there a way to combine smaller functions - each one that returns the view for the data being supplied?
 
 
-(def projects-db '({}))
+(def projects-db
+  {:projects
+   [{:title "Jack and the Machine"
+     :synopsis "Bad stuff leads to good things."
+     :status "In Production"
+     :media "Vimeo Video"}
+    {:title "Borderless"
+     :synopsis "Pool party."
+     :status "In Exhibition"
+     :media "Online Link"}]})
 
 (def talks-db
-  '({:name template-type :number 2}
-   {:location "Berlin, Germany"
-    :date "April 2015"}
-   {:location "Berlin, Germany"
-    :date "March 2015"}))
+  {:talks
+   [{:location "Berlin, Germany"
+     :date "April 2015"
+     :title "Machines and stuff"
+     :synopsis "Comptuers, good or bad?"
+     :media "Vimeo Link"}
+    {:location "Berlin, Germany"
+     :date "March 2015"
+     :title "Comptuers & Intimacy"
+     :synopsis "Good stuff for fun."
+     :media "Vimeo Link"}]})
 
 (def database
   {:talks talks-db
@@ -35,8 +47,7 @@
 (defn data-model
   "This function returns a map of data to pass along to the view."
   [template-type]
-  ;; TODO: Setup database for all types.
-  (first (database (keyword template-type)))
+  (database (keyword template-type))
 )
 
 (defn index-builder [template-type]
@@ -52,5 +63,3 @@
   "Right now this expects 'main', 'projects', or 'talks'"
   [template-type]
   (index-builder template-type))
-
-;  (render-template "main" {:name "Schmoodes"}))
