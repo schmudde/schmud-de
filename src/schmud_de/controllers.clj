@@ -9,10 +9,22 @@
 ;; 2) Function that returns a template (view) which is an appropriate match to the map. Is there a way to combine smaller functions - each one that returns the view for the data being supplied?
 
 
+(def projects-db '({}))
+
+(def talks-db
+  '({:name template-type :number 2}
+   {:location "Berlin, Germany"
+    :date "April 2015"}
+   {:location "Berlin, Germany"
+    :date "March 2015"}))
+
+(def database
+  {:talks talks-db
+   :projects projects-db})
+
 (defn read-template [template-name]
-;; Deprecated
   (slurp (clojure.java.io/resource
-          (str "templates/" template-name ".mustache"))))
+          (str "templates/" (name template-name) ".mustache"))))
 
 (defn render-template
 ;; Deprecated
@@ -22,25 +34,23 @@
 
 (defn data-model
   "This function returns a map of data to pass along to the view."
-  [data-type]
-  {:name data-type :number 2}
+  [template-type]
+  ;; TODO: Setup database for all types.
+  (first (database (keyword template-type)))
 )
 
-(defn index-builder [data-type]
+(defn index-builder [template-type]
   (clostache/render-resource
-   (str "templates/" data-type ".mustache")
-   (data-model data-type)
+   (str "templates/" template-type ".mustache")
+   (data-model template-type)
    (reduce (fn [accum pt] ;; "pt" is the name (as a keyword) of the partial
-             (assoc accum pt (slurp (clojure.java.io/resource
-                                     (str "templates/"
-                                          (name pt)
-                                          ".mustache")))))
+             (assoc accum pt (read-template pt)))
              {}
              [:header :footer])))
 
 (defn index
   "Right now this expects 'main', 'projects', or 'talks'"
-  [main]
-  (index-builder main))
+  [template-type]
+  (index-builder template-type))
 
 ;  (render-template "main" {:name "Schmoodes"}))
