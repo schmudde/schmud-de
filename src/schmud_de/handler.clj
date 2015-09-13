@@ -5,18 +5,21 @@
             [clojure.java.io :as io]
             [ring.adapter.jetty :as jetty]
             [environ.core :refer [env]]
-            [schmud-de.controllers.projects :as projects-controller]))
+            [schmud-de.controllers :as controller]))
 
 (defn splash []
+;; DEPRECATED
   {:status 200
    :headers {"Content-Type" "text/plain"}
    :body (pr-str ["Hello" :from 'Heroku])})
 
 (defroutes app
   (GET "/" []
-       (splash))
+       (controller/index "main"))
   (GET "/projects" []
-       (projects-controller/index))
+       (controller/index "projects"))
+  (GET "/talks" []
+       (controller/index "talks"))
   (route/resources "/")
   (route/not-found "Not Found")
   (ANY "*" []
