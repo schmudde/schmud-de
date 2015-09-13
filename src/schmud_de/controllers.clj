@@ -15,7 +15,8 @@
     {:title "Borderless"
      :synopsis "Pool party."
      :status "In Exhibition"
-     :media "Online Link"}]})
+     :media "Online Link"}]
+   :page-title "Projects"})
 
 (def talks-db
   {:talks
@@ -28,7 +29,8 @@
      :date "March 2015"
      :title "Comptuers & Intimacy"
      :synopsis "Good stuff for fun."
-     :media "Vimeo Link"}]})
+     :media "Vimeo Link"}]
+   :page-title "Talks"})
 
 (def database
   {:talks talks-db
