@@ -1,15 +1,19 @@
 {{> header}}
 
-<h1>PROJECTS: {{page-title}} - FORMATTING #2</h1>
-
-{{#projects}}
-<ul>
-    <li>{{title}}</li>
-    <li>{{synopsis}}</li>
-    <li>{{status}}</li>
-    <li>{{media}}</li>
-</ul>
-{{/projects}}
-
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>PROJECTS: {{page-title}} - FORMATTING #2</h1>
+            {{#projects}}
+                <ul>
+                    <li>{{title}}</li>
+                    <li>{{synopsis}}</li>
+                    <li>{{status}}</li>
+                    <li>{{media}}</li>
+                </ul>
+            {{/projects}}
+        </div> <!-- /column -->
+    </div> <!-- row -->
+</div>
 
 {{> footer}}

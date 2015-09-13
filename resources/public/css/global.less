@@ -1,0 +1,150 @@
+h1, h2 {
+    .fontHeavyMixin;
+}
+
+h3, h4, blockquote {
+    .fontLightMixin;
+    color: @gray;
+}
+
+blockquote {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+h1 {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+header h1 {
+    display: inline;
+}
+
+h2 {
+	padding-top: 0px;
+	margin-top: 0px;
+	font-weight:400;
+}
+
+
+p {
+    .fontLightMixin;
+    line-height: 1.5em;
+}
+
+article {
+    border-top: 1px dotted green;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    margin-top: 25px;
+
+    img {
+        padding-top: 25px;
+	padding-bottom: 25px;
+        .center-block();
+    }
+}
+
+header {
+    .navbar;
+    .navbar-default;
+    .navbar-fixed-top;
+}
+
+footer#frontPageFooter {
+    .navbar;
+    .navbar-default;
+
+    @media (min-width: @screen-sm-min) {
+        .navbar-fixed-bottom;
+    }
+
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    color: @greenFG;
+    background-color: @greenBG;
+
+    #signup, #thankyou, #error {
+        .make-xs-column(12);
+        .make-md-column(9);
+	.make-md-column-offset(2);
+    }
+
+    #thankyou, #error {
+	display: none;
+    }
+}
+
+#header {
+    text-align: right;
+    width: 100%;
+    padding: 10px 20px 10px 10px;
+}
+
+#titleContainer {
+
+//    .briefMessage;
+
+    h1 {
+        display: inline;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #headerContainer {
+        @media (min-width: @screen-sm-min) {
+            float:left;
+        }
+        @media (max-width: @screen-sm-min) {
+            .text-center;
+        }
+    }
+
+    #logoContainer {
+        @media (min-width: @screen-sm-min) {
+            float:right;
+        }
+        @media (max-width: @screen-sm-min) {
+            .text-center;
+	    padding-bottom: 12px;
+        }
+    }
+}
+
+.socialIcons {
+    a:link {
+        color: @brand-primary;
+    }
+
+    a:hover {
+        color: darken(@brand-primary, 15%);
+    }
+}
+
+/* unvisited link */
+a:link {
+    color: @brand-primary;
+}
+
+/* visited link */
+a:visited {
+    color: lighten(@brand-primary, 23%);
+}
+
+/* mouse over link */
+a:hover {
+    color: darken(@brand-primary, 15%);
+}
+
+/* selected link */
+a:active, a:active, a:focus {
+    color: ff6666;
+    text-decoration: none;
+}

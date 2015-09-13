@@ -1,0 +1,26 @@
+@videoWidth: 595px;
+
+@brand-primary: #5CB85C;
+@blueFG: darken(@brand-info, 15%);
+@blueBG: lighten(@brand-info, 35%);
+@greenBG: @state-success-bg;
+@greenFG: @state-success-text;
+@redFG: @brand-danger;
+@redBG: lighten(@redFG, 35%);
+
+.responsiveImgMixin {
+    .img-responsive;
+    .center-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.fontHeavyMixin {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.fontLightMixin {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}

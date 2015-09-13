@@ -7,12 +7,6 @@
             [environ.core :refer [env]]
             [schmud-de.controllers :as controller]))
 
-(defn splash []
-;; DEPRECATED
-  {:status 200
-   :headers {"Content-Type" "text/plain"}
-   :body (pr-str ["Hello" :from 'Heroku])})
-
 (defroutes app
   (GET "/" []
        (controller/index "main"))

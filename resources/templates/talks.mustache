@@ -1,15 +1,21 @@
 {{> header}}
 
-<h1>TALKS: {{page-title}} - FORMATTING #3</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>TALKS: {{page-title}} - FORMATTING #3</h1>
+            {{#talks}}
+            <ul>
+                <li>{{location}}</li>
+                <li>{{date}}</li>
+                <li>{{title}}</li>
+                <li>{{synopsis}}</li>
+                <li>{{media}}</li>
+            </ul>
+            {{/talks}}
+        </div> <!-- /column -->
+    </div> <!-- row -->
+</div>
 
-{{#talks}}
-<ul>
-    <li>{{location}}</li>
-    <li>{{date}}</li>
-    <li>{{title}}</li>
-    <li>{{synopsis}}</li>
-    <li>{{media}}</li>
-</ul>
-{{/talks}}
 
 {{> footer}}
