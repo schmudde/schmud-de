@@ -1,40 +1,8 @@
 (ns schmud-de.controllers
-  (:require
-   [clostache.parser :as clostache]))
-;; Controller should call the "model" and inform the view.
-
+  (:require [clostache.parser :as clostache]
+            [schmud-de.models :as models]
+            [schmud-de.visualizer :as visual]))
 ;; 2) Function that returns a template (view) which is an appropriate match to the map. Is there a way to combine smaller functions - each one that returns the view for the data being supplied?
-
-
-(def projects-db
-  {:projects
-   [{:title "Jack and the Machine"
-     :synopsis "Bad stuff leads to good things."
-     :status "In Production"
-     :media "Vimeo Video"}
-    {:title "Borderless"
-     :synopsis "Pool party."
-     :status "In Exhibition"
-     :media "Online Link"}]
-   :page-title "Projects"})
-
-(def talks-db
-  {:talks
-   [{:location "Berlin, Germany"
-     :date "April 2015"
-     :title "Machines and stuff"
-     :synopsis "Comptuers, good or bad?"
-     :media "Vimeo Link"}
-    {:location "Berlin, Germany"
-     :date "March 2015"
-     :title "Comptuers & Intimacy"
-     :synopsis "Good stuff for fun."
-     :media "Vimeo Link"}]
-   :page-title "Talks"})
-
-(def database
-  {:talks talks-db
-   :projects projects-db})
 
 (defn read-template [template-name]
   (slurp (clojure.java.io/resource
@@ -49,7 +17,7 @@
 (defn data-model
   "This function returns a map of data to pass along to the view."
   [template-type]
-  (database (keyword template-type))
+  (models/database (keyword template-type))
 )
 
 (defn index-builder [template-type]
