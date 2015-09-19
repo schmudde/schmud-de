@@ -19,10 +19,6 @@ h1 {
 	margin-bottom: 0px;
 }
 
-header h1 {
-    display: inline;
-}
-
 h2 {
 	padding-top: 0px;
 	margin-top: 0px;
@@ -33,6 +29,40 @@ h2 {
 p {
     .fontLightMixin;
     line-height: 1.5em;
+}
+
+nav {
+    text-align: center;
+
+    h1, h1 > small {
+       .fontVeryVeryLightMixin;
+       a, a:hover, a:focus, a:link, a:visited {
+           color: black;
+       }
+    }
+
+    ul {
+        display: inline-block;
+        .fontVeryLightMixin;
+    }
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+     background-color: transparent;
+}
+
+.navbar {
+    background-color: @blueBG;
+    border-bottom: @blueFG;
+}
+
+.navbar-inverse > div {
+
+}
+
+.navbar-inverse {
+    border: none;
 }
 
 article {
@@ -46,12 +76,6 @@ article {
 	padding-bottom: 25px;
         .center-block();
     }
-}
-
-header {
-    .navbar;
-    .navbar-default;
-    .navbar-fixed-top;
 }
 
 footer#frontPageFooter {
@@ -79,15 +103,7 @@ footer#frontPageFooter {
     }
 }
 
-#header {
-    text-align: right;
-    width: 100%;
-    padding: 10px 20px 10px 10px;
-}
-
 #titleContainer {
-
-//    .briefMessage;
 
     h1 {
         display: inline;
@@ -95,7 +111,6 @@ footer#frontPageFooter {
 
     a {
         text-decoration: none;
-        color: black;
     }
 
     #headerContainer {
@@ -113,7 +128,7 @@ footer#frontPageFooter {
         }
         @media (max-width: @screen-sm-min) {
             .text-center;
-	    padding-bottom: 12px;
+            padding-bottom: 12px;
         }
     }
 }

@@ -1,13 +1,29 @@
 {{> header}}
 
+<script>
+function init() {
+    var canvas=document.getElementById("mainBox");
+    var context=canvas.getContext("2d");
+
+    var x=10;
+    var y=canvas.height/2;
+    context.font = 'italic 80px Calibri';
+    context.textBaseline = 'middle';
+    context.fillText("Digital Experiences", x, y);
+}
+
+</script>
+
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <h1>DIGITAL EXPERIENCES</h1>
-            <p>type on and blinking. then erased and replaced</p>
-            <p>should include sound</p>
+            <canvas id="mainBox" width="800" height="200"></canvas>
         </div> <!-- /column -->
     </div> <!-- /row -->
 </div>
+
+<script>
+init();
+</script>
 
 {{> footer}}
