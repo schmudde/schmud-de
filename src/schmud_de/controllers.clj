@@ -1,7 +1,6 @@
 (ns schmud-de.controllers
   (:require [clostache.parser :as clostache]
-            [schmud-de.models :as models]
-            [schmud-de.visualizer :as visual]))
+            [schmud-de.models :as models]))
 ;; 2) Function that returns a template (view) which is an appropriate match to the map. Is there a way to combine smaller functions - each one that returns the view for the data being supplied?
 
 (defn read-template [template-name]

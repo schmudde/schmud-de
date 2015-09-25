@@ -1,5 +1,6 @@
 (ns schmud-de.visualizer
-  (:require [quil.core :as q :include-macros true]))
+  (:require [quil.core :as q :include-macros true]
+            [quil.middleware :as m]))
 
 (defn setup []
   (q/smooth)               ;; Turn on anti-aliasing
@@ -13,10 +14,11 @@
 
 ;; (def image-width (.-clientWidth (.querySelector js/document "#mainBox")))
 (q/defsketch mainBox
-  :setup setup
   :host "mainBox"         ;; the id of the <canvas> element
-  ;; :draw draw ;; needed?
-  :size [323 200])
+  :size [323 200]
+  :setup setup
+  :draw draw
+  :middleware [m/fun-mode])
 
 (defn render []
   (q/with-sketch (q/get-sketch-by-id "mainBox")
