@@ -1,5 +1,10 @@
 (ns schmud-de.drawing)
 
+(defn last-x-point [line]
+  "Takes a line with at least one x and y pair and returns the last x coordinate. Assumes an even number of parameters in the vector."
+  ;; TODO: Write logic to test even number vector input.
+  (last (drop-last line)))
+
 (defn line-join-points
   "Takes either a seq of x y (and z) point coords tuples or two
   separate lists of x and y (and z) coords independently and creates a

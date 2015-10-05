@@ -29,3 +29,8 @@
          (cons [(first xs) (first ys) (first zs) (second xs) (second ys) (second zs)]
                (line-join-points (next xs) (next ys) (next zs)))
          []))))
+
+(defn last-x-point [line]
+  "Takes a line with at least one x and y pair and returns the last x coordinate. Assumes an even number of parameters in the vector."
+  ;; TODO: Write logic to test even number vector input.
+  (last (drop-last line)))
