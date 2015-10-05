@@ -16,20 +16,25 @@ return (amplitude * p1__6091_SHARP_);
 ,ys);
 return schmud_de.drawing.line_join_points.call(null,xs,scaled_ys);
 });
+schmud_de.visualizer.frequency = (function schmud_de$visualizer$frequency(){
+return 0.09;
+});
 schmud_de.visualizer.duration = (function schmud_de$visualizer$duration(){
-return (1700);
+return (quil.core.width.call(null) * (25));
 });
 schmud_de.visualizer.setup = (function schmud_de$visualizer$setup(){
 quil.core.smooth.call(null);
 
 quil.core.frame_rate.call(null,(60));
 
+quil.core.stroke_weight.call(null,0.25);
+
 quil.core.color_mode.call(null,new cljs.core.Keyword(null,"hsb","hsb",-753472031),(10),(1),(1));
 
 quil.core.background.call(null,(200));
 
-var amplitude = (100);
-var frequency = 0.5;
+var amplitude = (10);
+var frequency = schmud_de.visualizer.frequency.call(null);
 var duration = schmud_de.visualizer.duration.call(null);
 var sine_coordinates = schmud_de.visualizer.sine.call(null,amplitude,frequency,duration);
 return quil.core.set_state_BANG_.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668),sine_coordinates);
@@ -51,20 +56,21 @@ return null;
 schmud_de.visualizer.draw = (function schmud_de$visualizer$draw(){
 quil.core.background.call(null,(200));
 
-var tr__6015__auto__ = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(quil.core.width.call(null) / (2)),(quil.core.height.call(null) / (2))], null);
+var tr__6015__auto__ = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(0),(quil.core.height.call(null) / (2))], null);
 quil.core.push_matrix.call(null);
 
 try{quil.core.translate.call(null,tr__6015__auto__);
 
 var frame = quil.core.frame_count.call(null);
 var duration = schmud_de.visualizer.duration.call(null);
-quil.core.stroke.call(null,cljs.core.mod.call(null,frame,(10)),(1),(1));
+var frequency = schmud_de.visualizer.frequency.call(null);
+quil.core.stroke.call(null,(100),(1),(100));
 
-return schmud_de.visualizer.draw_wavetable.call(null,quil.core.state.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668)),frame);
+return schmud_de.visualizer.draw_wavetable.call(null,quil.core.state.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668)),(frame * frequency));
 }finally {quil.core.pop_matrix.call(null);
 }});
 schmud_de.visualizer.mainBox = (function schmud_de$visualizer$mainBox(){
-return quil.sketch.sketch.call(null,new cljs.core.Keyword(null,"host","host",-1558485167),"mainBox",new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(323),(200)], null),new cljs.core.Keyword(null,"setup","setup",1987730512),((cljs.core.fn_QMARK_.call(null,schmud_de.visualizer.setup))?(function() { 
+return quil.sketch.sketch.call(null,new cljs.core.Keyword(null,"host","host",-1558485167),"mainBox",new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(100),(25)], null),new cljs.core.Keyword(null,"setup","setup",1987730512),((cljs.core.fn_QMARK_.call(null,schmud_de.visualizer.setup))?(function() { 
 var G__6092__delegate = function (args){
 return cljs.core.apply.call(null,schmud_de.visualizer.setup,args);
 };
