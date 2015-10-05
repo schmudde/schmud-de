@@ -6,28 +6,33 @@
 (enable-console-print!)
 
 (defn sine [amplitude frequency duration]
-  (let [xs (range 1 duration frequency)      ; Hold the series of x points in a sequence
-        rads (map q/radians (range))         ; Hold a lazy sequence of radians ... infinity
-        ys (take duration (map q/sin rads))  ; Take only as many as we need from the sine function
-        scaled-ys (map #(* amplitude %) ys)] ; Multiply each element by the amplitude
-    (liner/line-join-points xs scaled-ys)))  ; Create a sequency of connected lines
+  (let [xs (range 1 (+ duration 1) frequency) ; Hold the series of x points in a sequence
+        rads (map q/radians (range))          ; Hold a lazy sequence of radians ... infinity
+        ys (take duration (map q/sin rads))   ; Take only as many as we need from the sine function
+        scaled-ys (map #(* amplitude %) ys)]  ; Multiply each element by the amplitude
+    (liner/line-join-points xs scaled-ys)))   ; Create a sequency of connected lines
 
 (defn frequency []
   0.09)
 
-(defn duration []
+(defn duration [frequency]
   ;; TODO: remove the hack scale value
-  (* (q/width) 25))
+  ;; TODO: Flex "mainBox" window size?
+  (let [sine-box-width (.-offsetWidth (js/document.getElementById "mainBox"))
+        arbitrary-width 100]
+    (if (> sine-box-width 0)             ; If JS call succeeds, use width, else default to 100px
+      (* (/ sine-box-width frequency) 2) ; Draw the waveform the length of the box and then * 2
+      (* (/ arbitrary-width frequency) 2))))
 
 (defn setup []
   (q/smooth)
   (q/frame-rate 60)
   (q/stroke-weight 0.25)
-  (q/color-mode :hsb 10 1 1)
-  (q/background 200)
+  (q/color-mode :hsb)
+  (q/background 138 12.75 250)
   (let [amplitude 10          ; multipled by the y axis
         frequency (frequency) ; If frequency is set to 1, then it is equivalent to q/frame-rate.
-        duration  (duration)  ; length of the sine wave (in pixels)
+        duration  (duration frequency)  ; length of the sine wave (in pixels)
         sine-coordinates (sine amplitude frequency duration)]
     (q/set-state! :coordinates sine-coordinates))
 )
@@ -46,14 +51,21 @@
     (draw-wavetable (rest wavetable) dec-amount)))
 
 (defn draw []
-  (q/background 200)
+  (q/background 138 12.75 250)
   (q/with-translation [0 (/ (q/height) 2)]
     (let [frame (q/frame-count)
-          duration (duration)
-          frequency (frequency)]
-      (q/stroke 100 1 100)
+          frequency (frequency)
+          wavetable (q/state :coordinates)
+          wavetable-length (count (q/state :coordinates))]
+      (q/stroke 137 148 217)
       ;;(q/stroke (mod frame 10) 1 1)
-      (draw-wavetable (q/state :coordinates) (* frame frequency))
+      (draw-wavetable wavetable (* frame frequency))
+      ;(println wavetable-length)
+      ;(println frame)
+      (if (= (mod frame 100) 0)
+        (println frame))
+      (if (> frame (/ wavetable-length 2))
+          (println "half way there!"))
 )))
 
 (q/defsketch mainBox
