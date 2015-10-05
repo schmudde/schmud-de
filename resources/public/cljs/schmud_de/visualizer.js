@@ -4,6 +4,7 @@ goog.require('cljs.core');
 goog.require('quil.core');
 goog.require('schmud_de.drawing');
 goog.require('quil.middleware');
+cljs.core.enable_console_print_BANG_.call(null);
 schmud_de.visualizer.sine = (function schmud_de$visualizer$sine(amplitude,frequency,duration){
 var xs = cljs.core.range.call(null,(1),duration,frequency);
 var rads = cljs.core.map.call(null,quil.core.radians,cljs.core.range.call(null));
@@ -16,7 +17,7 @@ return (amplitude * p1__6091_SHARP_);
 return schmud_de.drawing.line_join_points.call(null,xs,scaled_ys);
 });
 schmud_de.visualizer.duration = (function schmud_de$visualizer$duration(){
-return (400);
+return (1700);
 });
 schmud_de.visualizer.setup = (function schmud_de$visualizer$setup(){
 quil.core.smooth.call(null);
@@ -27,13 +28,29 @@ quil.core.color_mode.call(null,new cljs.core.Keyword(null,"hsb","hsb",-753472031
 
 quil.core.background.call(null,(200));
 
-var amplitude = (50);
+var amplitude = (100);
 var frequency = 0.5;
 var duration = schmud_de.visualizer.duration.call(null);
 var sine_coordinates = schmud_de.visualizer.sine.call(null,amplitude,frequency,duration);
 return quil.core.set_state_BANG_.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668),sine_coordinates);
 });
+schmud_de.visualizer.move_wavetable = (function schmud_de$visualizer$move_wavetable(line,dec_amount){
+
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [(cljs.core.first.call(null,line) - dec_amount),cljs.core.second.call(null,line),(cljs.core.nth.call(null,line,(2)) - dec_amount),cljs.core.nth.call(null,line,(3))], null);
+});
+schmud_de.visualizer.draw_wavetable = (function schmud_de$visualizer$draw_wavetable(wavetable,dec_amount){
+
+cljs.core.apply.call(null,quil.core.line,schmud_de.visualizer.move_wavetable.call(null,cljs.core.first.call(null,wavetable),dec_amount));
+
+if(cljs.core.seq.call(null,cljs.core.rest.call(null,wavetable))){
+return schmud_de$visualizer$draw_wavetable.call(null,cljs.core.rest.call(null,wavetable),dec_amount);
+} else {
+return null;
+}
+});
 schmud_de.visualizer.draw = (function schmud_de$visualizer$draw(){
+quil.core.background.call(null,(200));
+
 var tr__6015__auto__ = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(quil.core.width.call(null) / (2)),(quil.core.height.call(null) / (2))], null);
 quil.core.push_matrix.call(null);
 
@@ -43,11 +60,7 @@ var frame = quil.core.frame_count.call(null);
 var duration = schmud_de.visualizer.duration.call(null);
 quil.core.stroke.call(null,cljs.core.mod.call(null,frame,(10)),(1),(1));
 
-if((frame < duration)){
-return cljs.core.apply.call(null,quil.core.line,cljs.core.nth.call(null,quil.core.state.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668)),frame));
-} else {
-return null;
-}
+return schmud_de.visualizer.draw_wavetable.call(null,quil.core.state.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668)),frame);
 }finally {quil.core.pop_matrix.call(null);
 }});
 schmud_de.visualizer.mainBox = (function schmud_de$visualizer$mainBox(){
