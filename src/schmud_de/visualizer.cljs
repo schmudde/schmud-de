@@ -9,8 +9,10 @@
   (let [xs (range 1 (+ duration 1) frequency) ; Hold the series of x points in a sequence
         rads (map q/radians (range))          ; Hold a lazy sequence of radians ... infinity
         ys (take duration (map q/sin rads))   ; Take only as many as we need from the sine function
-        scaled-ys (map #(* amplitude %) ys)]  ; Multiply each element by the amplitude
-    (liner/line-join-points xs scaled-ys)))   ; Create a sequency of connected lines
+        scaled-ys (map #(* amplitude %) ys)   ; Multiply each element by the amplitude
+        resolution 30]                         ; Must be positive integer. 1 = all sine coordinates.
+    ; Create a sequence of connected lines
+    (liner/line-join-points (take-nth resolution xs) (take-nth resolution scaled-ys))))
 
 (defn frequency []
   0.09)
@@ -27,7 +29,7 @@
 (defn setup []
   (q/smooth)
   (q/frame-rate 60)
-  (q/stroke-weight 0.25)
+  (q/stroke-weight 1)
   (q/color-mode :hsb)
   (q/background 138 12.75 250)
   (let [amplitude 10          ; multipled by the y axis

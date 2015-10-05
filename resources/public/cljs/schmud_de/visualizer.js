@@ -14,7 +14,8 @@ return (function (p1__6091_SHARP_){
 return (amplitude * p1__6091_SHARP_);
 });})(xs,rads,ys))
 ,ys);
-return schmud_de.drawing.line_join_points.call(null,xs,scaled_ys);
+var resolution = (30);
+return schmud_de.drawing.line_join_points.call(null,cljs.core.take_nth.call(null,resolution,xs),cljs.core.take_nth.call(null,resolution,scaled_ys));
 });
 schmud_de.visualizer.frequency = (function schmud_de$visualizer$frequency(){
 return 0.09;
@@ -33,7 +34,7 @@ quil.core.smooth.call(null);
 
 quil.core.frame_rate.call(null,(60));
 
-quil.core.stroke_weight.call(null,0.25);
+quil.core.stroke_weight.call(null,(1));
 
 quil.core.color_mode.call(null,new cljs.core.Keyword(null,"hsb","hsb",-753472031));
 
