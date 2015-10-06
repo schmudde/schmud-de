@@ -11,6 +11,7 @@
         ys (take duration (map q/sin rads))   ; Take only as many as we need from the sine function
         scaled-ys (map #(* amplitude %) ys)   ; Multiply each element by the amplitude
         resolution 30]                        ; Must be positive integer. 1 = all sine coordinates.
+                                              ; Also, Duration must be > Resolution
     ; Create a sequence of connected lines
     (liner/line-join-points (take-nth resolution xs) (take-nth resolution scaled-ys))))
 
@@ -35,9 +36,17 @@
   (let [amplitude 10          ; multipled by the y axis
         frequency (frequency) ; If frequency is set to 1, then it is equivalent to q/frame-rate.
         duration  (duration frequency)  ; length of the sine wave (pixels = freq * duration)
-        sine-coordinates (sine amplitude frequency duration)]
+        sine-coordinates (sine amplitude frequency duration)
+        ; Grab the coordinates from the halfway point. From the inner expression out:
+        ; COUNT the number of coordinates and divide by two.
+        ; SUBTRACT 1 from the count because the element count starts at 0, not 1.
+        ; TAKE that amount (1/2 the list) & grab the LAST set of coordinates.
+        halfway-coordinates (last (take
+                                   (- (int (/ (count sine-coordinates) 2)) 1) sine-coordinates))
+        ; Grab the two x-axis coordinates and average their amount to get the 1/2 way point.
+        halfway-point (/ (+ (first halfway-coordinates) (nth halfway-coordinates 2)) 2)]
     (q/set-state! :coordinates sine-coordinates
-                  :counter     0))
+                  :halfway     halfway-point))
 )
 
 (defn move-wavetable [line dec-amount scaler]
@@ -67,9 +76,11 @@ At the point the waveform has traveled 1/2 the distance of its length, SCALE the
           wavetable (q/state :coordinates)
           ; The largest x-axis number in the wavetable
           wavetable-x-axis-length (liner/last-x-point (last wavetable))
-          halfway-point (/ wavetable-x-axis-length 2)
+          halfway-point (q/state :halfway)
           ; This keeps track of the number of times we have gone 1/2 way through the wavetable
-          iteration-number (int (/ (* frame frequency) halfway-point))
+          ; + frame 2 gets me on the right number the first time around
+          ; Should reset at frame #
+          iteration-number (int (/ (* (+ frame 1) frequency) halfway-point))
           ; EX: Wavetable is 200px long; we have traversed it < 100 times; therefore scaler = 0
           iteration-x-axis-scaler (* iteration-number halfway-point)]
       (q/stroke 137 148 217)

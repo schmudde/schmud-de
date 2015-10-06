@@ -44,7 +44,9 @@ var amplitude = (10);
 var frequency = schmud_de.visualizer.frequency.call(null);
 var duration = schmud_de.visualizer.duration.call(null,frequency);
 var sine_coordinates = schmud_de.visualizer.sine.call(null,amplitude,frequency,duration);
-return quil.core.set_state_BANG_.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668),sine_coordinates,new cljs.core.Keyword(null,"counter","counter",804008177),(0));
+var halfway_coordinates = cljs.core.last.call(null,cljs.core.take.call(null,(((cljs.core.count.call(null,sine_coordinates) / (2)) | (0)) - (1)),sine_coordinates));
+var halfway_point = ((cljs.core.first.call(null,halfway_coordinates) + cljs.core.nth.call(null,halfway_coordinates,(2))) / (2));
+return quil.core.set_state_BANG_.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668),sine_coordinates,new cljs.core.Keyword(null,"halfway","halfway",1378068885),halfway_point);
 });
 schmud_de.visualizer.move_wavetable = (function schmud_de$visualizer$move_wavetable(line,dec_amount,scaler){
 
@@ -74,8 +76,8 @@ var frequency = schmud_de.visualizer.frequency.call(null);
 var dec_amount = (frame * frequency);
 var wavetable = quil.core.state.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668));
 var wavetable_x_axis_length = schmud_de.drawing.last_x_point.call(null,cljs.core.last.call(null,wavetable));
-var halfway_point = (wavetable_x_axis_length / (2));
-var iteration_number = (((frame * frequency) / halfway_point) | (0));
+var halfway_point = quil.core.state.call(null,new cljs.core.Keyword(null,"halfway","halfway",1378068885));
+var iteration_number = ((((frame + (1)) * frequency) / halfway_point) | (0));
 var iteration_x_axis_scaler = (iteration_number * halfway_point);
 quil.core.stroke.call(null,(137),(148),(217));
 
