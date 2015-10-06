@@ -34,7 +34,7 @@
   (q/background 138 12.75 250)
   (let [amplitude 10          ; multipled by the y axis
         frequency (frequency) ; If frequency is set to 1, then it is equivalent to q/frame-rate.
-        duration  (duration frequency)  ; length of the sine wave (in pixels)
+        duration  (duration frequency)  ; length of the sine wave (pixels = freq * duration)
         sine-coordinates (sine amplitude frequency duration)]
     (q/set-state! :coordinates sine-coordinates
                   :counter     0))
@@ -55,34 +55,28 @@
     (draw-wavetable (rest wavetable) dec-amount scaler)
     nil))
 
-(defn x-axis-scaler [frame duration]
-  "The mathematical model of this drawing is simple: create a waveform 2x longer than the canvas it is going to exist in. Animate this waveform at a distance of 1/2 it's length, starting at 0:
-     EXAMPLE: |-=-=|-=-= ANIMATES TO: -=-=|-=-=|.
- At the point the waveform has traveled 1/2 the distance of its length, SCALE the x-axis back to 0. Since the entire animation is dictated by the frame number, this is done by subtracting (* (mod (/ waveform-length 2) frame-number) (/ waveform-length 2)) from the waveform-length.
-     EXAMPLE: waveform-length = 527px. frame-number = 248.
-              (* (int (mod 263.5 248)) (248)) = 248.
-              527 - 248 = 279"
-)
-
 (defn draw []
+"The mathematical model of this drawing is simple: create a waveform 2x longer than the canvas it is going to exist in. Animate this waveform at a distance of 1/2 it's length, starting at 0:
+     EXAMPLE: |-=-=|-=-= ANIMATES TO: -=-=|-=-=|.
+At the point the waveform has traveled 1/2 the distance of its length, SCALE the x-axis back to 0."
   (q/background 138 12.75 250)
   (q/with-translation [0 (/ (q/height) 2)]
     (let [frame (q/frame-count)
           frequency (frequency)
+          dec-amount (* frame frequency)
           wavetable (q/state :coordinates)
-          wavetable-vector-length (count (q/state :coordinates))
+          ; The largest x-axis number in the wavetable
           wavetable-x-axis-length (liner/last-x-point (last wavetable))
-          ; This keeps track of the number of times we have gone 1/2 way through the waveform
-          iteration-number (int (/ frame (/ wavetable-vector-length 2)))
-          iteration-x-axis-scaler (* iteration-number (/ wavetable-x-axis-length 2))
-          ]
+          halfway-point (/ wavetable-x-axis-length 2)
+          ; This keeps track of the number of times we have gone 1/2 way through the wavetable
+          iteration-number (int (/ (* frame frequency) halfway-point))
+          ; EX: Wavetable is 200px long; we have traversed it < 100 times; therefore scaler = 0
+          iteration-x-axis-scaler (* iteration-number halfway-point)]
       (q/stroke 137 148 217)
-      (println iteration-number)
       ;;(q/stroke (mod frame 10) 1 1)
-      (draw-wavetable wavetable (* frame frequency) iteration-x-axis-scaler)
-      (if (= (mod frame (/ wavetable-vector-length 2)) 0)
-        (println (* iteration-number (/ wavetable-x-axis-length 2)))
-         )
+      (draw-wavetable wavetable dec-amount iteration-x-axis-scaler)
+      ;; TODO: Remove frame/scaling counter
+      (println iteration-x-axis-scaler)
 )))
 
 (q/defsketch mainBox

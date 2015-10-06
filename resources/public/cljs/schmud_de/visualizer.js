@@ -60,10 +60,8 @@ return schmud_de$visualizer$draw_wavetable.call(null,cljs.core.rest.call(null,wa
 return null;
 }
 });
-schmud_de.visualizer.x_axis_scaler = (function schmud_de$visualizer$x_axis_scaler(frame,duration){
-return "The mathematical model of this drawing is simple: create a waveform 2x longer than the canvas it is going to exist in. Animate this waveform at a distance of 1/2 it's length, starting at 0:\n     EXAMPLE: |-=-=|-=-= ANIMATES TO: -=-=|-=-=|.\n At the point the waveform has traveled 1/2 the distance of its length, SCALE the x-axis back to 0. Since the entire animation is dictated by the frame number, this is done by subtracting (* (mod (/ waveform-length 2) frame-number) (/ waveform-length 2)) from the waveform-length.\n     EXAMPLE: waveform-length = 527px. frame-number = 248.\n              (* (int (mod 263.5 248)) (248)) = 248.\n              527 - 248 = 279";
-});
 schmud_de.visualizer.draw = (function schmud_de$visualizer$draw(){
+
 quil.core.background.call(null,(138),12.75,(250));
 
 var tr__6015__auto__ = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(0),(quil.core.height.call(null) / (2))], null);
@@ -73,22 +71,17 @@ try{quil.core.translate.call(null,tr__6015__auto__);
 
 var frame = quil.core.frame_count.call(null);
 var frequency = schmud_de.visualizer.frequency.call(null);
+var dec_amount = (frame * frequency);
 var wavetable = quil.core.state.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668));
-var wavetable_vector_length = cljs.core.count.call(null,quil.core.state.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668)));
 var wavetable_x_axis_length = schmud_de.drawing.last_x_point.call(null,cljs.core.last.call(null,wavetable));
-var iteration_number = ((frame / (wavetable_vector_length / (2))) | (0));
-var iteration_x_axis_scaler = (iteration_number * (wavetable_x_axis_length / (2)));
+var halfway_point = (wavetable_x_axis_length / (2));
+var iteration_number = (((frame * frequency) / halfway_point) | (0));
+var iteration_x_axis_scaler = (iteration_number * halfway_point);
 quil.core.stroke.call(null,(137),(148),(217));
 
-cljs.core.println.call(null,iteration_number);
+schmud_de.visualizer.draw_wavetable.call(null,wavetable,dec_amount,iteration_x_axis_scaler);
 
-schmud_de.visualizer.draw_wavetable.call(null,wavetable,(frame * frequency),iteration_x_axis_scaler);
-
-if(cljs.core._EQ_.call(null,cljs.core.mod.call(null,frame,(wavetable_vector_length / (2))),(0))){
-return cljs.core.println.call(null,(iteration_number * (wavetable_x_axis_length / (2))));
-} else {
-return null;
-}
+return cljs.core.println.call(null,iteration_x_axis_scaler);
 }finally {quil.core.pop_matrix.call(null);
 }});
 schmud_de.visualizer.mainBox = (function schmud_de$visualizer$mainBox(){
