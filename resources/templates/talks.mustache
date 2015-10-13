@@ -1,21 +1,51 @@
 {{> header}}
 
+<style>
+
+h2 {
+    font-size: 1.1em;
+}
+
+.panel {
+    margin-top: 10px;
+}
+
+.panel-content {
+    padding: 10px;
+}
+
+</style>
+
 <div class="container" id="mainContent">
     <h1>{{page-title}}</h1>
 
-    <div class="row">
     {{#talks}}
+    {{{row-start}}}
         <div class="twoColumns">
-            <ul>
-                <li>{{location}}</li>
-                <li>{{date}}</li>
-                <li>{{title}}</li>
-                <li>{{synopsis}}</li>
-                <li>{{media}}</li>
-            </ul>
+            {{#video}}
+            <div class="embed-responsive embed-responsive-16by9"><iframe src="{{media}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            {{/video}}
+            {{#image}}
+            <img src="img/{{media}}" class="img-responsive" />
+            {{/image}}
+            <div class="panel panel-info">
+                <div class="panel-heading"><h2>{{title}}</h2></div>
+                <div class="panel-content">
+                    <dl class="dl-horizontal">
+                        <dt>Location</dt>
+                        <dd>{{location}}</dd>
+                        <dt>Date</dt>
+                        <dd>{{date}}</dd>
+                        <dt>Synopsis</dt>
+                        <dd>{{synopsis}}</dd>
+                        <dt>Link</dt>
+                        <dd><a href="{{link}}">Talk</a></dd>
+                    </dl>
+                </div>
+            </div> <!-- /panel -->
         </div> <!-- /column -->
+    {{{row-end}}}
     {{/talks}}
-    </div> <!-- row -->
 
 
 </div>
