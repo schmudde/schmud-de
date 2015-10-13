@@ -22,7 +22,7 @@ blockquote {
 
 h1 {
 	padding-top: 0px;
-	padding-bottom: 0px;
+    padding-bottom: 25px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
@@ -81,7 +81,7 @@ article {
 
     img {
         padding-top: 25px;
-	padding-bottom: 25px;
+        padding-bottom: 25px;
         .center-block();
     }
 }
@@ -127,6 +127,10 @@ article {
 }
 
 /**
+ *  LAYOUT
+ */
+
+/**
  * For tablets, laptops, and PCs, add padding to the content. Because the footer is pinned,
  * it can sit on top of the content and make it unreadable if the proper amount of padding
  * is not added.
@@ -145,6 +149,11 @@ article {
     }
 }
 
+.twoColumns {
+    .make-sm-column(6);
+    .make-xs-column(12);
+}
+
 footer {
     .navbar;
     .navbar-default;
@@ -156,6 +165,10 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+/**
+ *  LINKS
+ */
 
 /* unvisited link */
 a:link {

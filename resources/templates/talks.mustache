@@ -1,10 +1,11 @@
 {{> header}}
 
 <div class="container" id="mainContent">
+    <h1>{{page-title}}</h1>
+
     <div class="row">
-        <div class="col-sm-12">
-            <h1>TALKS: {{page-title}} - FORMATTING #3</h1>
-            {{#talks}}
+    {{#talks}}
+        <div class="twoColumns">
             <ul>
                 <li>{{location}}</li>
                 <li>{{date}}</li>
@@ -12,10 +13,11 @@
                 <li>{{synopsis}}</li>
                 <li>{{media}}</li>
             </ul>
-            {{/talks}}
         </div> <!-- /column -->
+    {{/talks}}
     </div> <!-- row -->
-</div>
 
+
+</div>
 
 {{> footer}}
