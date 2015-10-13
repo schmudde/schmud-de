@@ -5,12 +5,43 @@
    [{:title "Jack and the Machine"
      :synopsis "Bad stuff leads to good things."
      :status "In Production"
-     :media "Vimeo Video"}
+     :link "http://www.jackandthemachine.com"
+     :tags [{:tag "documentary"} {:tag "interactive"}]
+     :media "https://player.vimeo.com/video/132857801"
+     :video true
+     :image false
+     :position "oneColumn"
+     :row-start "<div class='row'>"
+     :row-end "</div> <!-- /row -->"}
     {:title "Borderless"
      :synopsis "Pool party."
      :status "In Exhibition"
-     :media "Online Link"}]
-   :page-title "Projects"})
+     :link ""
+     :tags [{:tag "installation"}]
+     :media "intimacy.jpg"
+     :video false
+     :image true
+     :position "twoColumns"
+     :row-start "<div class='row'>"
+     :row-end ""}
+    {:title "The Assassination of Chicago's Mayor"
+     :synopsis "Shoots"
+     :status "Complete 2012. In distribution"
+     :link ""
+     :tags [{:tag "narrative"}]
+     :media ""
+     :video true
+     :image false
+     :position "twoColumns"
+     :row-start ""
+     :row-end "</div> <!-- /row -->"}]
+   :page-title "Projects"
+   :tags [{:tag "documentary"}
+          {:tag "narrative"}
+          {:tag "installation"}
+          {:tag "interactive"}
+          {:tag "sound"}]
+   })
 
 (def talks-db
   {:talks
@@ -90,17 +121,6 @@
      :video false
      :image false
      :row-start "<div class='row'>"
-     :row-end ""
-    }
-    {:location ""
-     :date ""
-     :title ""
-     :synopsis ""
-     :link ""
-     :media ""
-     :video false
-     :image false
-     :row-start ""
      :row-end "</div> <!-- /row -->"
     }]
    :page-title "Talks"})
