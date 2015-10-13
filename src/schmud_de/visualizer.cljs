@@ -11,11 +11,12 @@
         ys (take duration (map q/sin rads))   ; Take only as many as we need from the sine function
         scaled-ys (map #(* amplitude %) ys)   ; Multiply each element by the amplitude
         resolution 30]                        ; Must be positive integer. 1 = all sine coordinates.
-                                              ; Also, Duration must be > Resolution
+                                              ; Also, DURATION must be > RESOLUTION
     ; Create a sequence of connected lines
     (liner/line-join-points (take-nth resolution xs) (take-nth resolution scaled-ys))))
 
 (defn frequency []
+  ;; TODO: Why does changing frequency screw everything up so bad?
   0.09)
 
 (defn duration [frequency]
@@ -29,7 +30,7 @@
 
 (defn setup []
   (q/smooth)
-  (q/frame-rate 60)
+  (q/frame-rate 90)
   (q/stroke-weight 1)
   (q/color-mode :hsb)
   (q/background 138 12.75 250)
@@ -52,7 +53,6 @@
 (defn move-wavetable [line dec-amount scaler]
   "Give me a line [x1 y1 x2 y2] and I'll decrement it by the dec-amount to move it
    along the x-axis."
-  ; TODO - dec-amount as a fraction of the frame?
   [(+ (- (first line) dec-amount) scaler) (second line)
    (+ (- (nth line 2) dec-amount) scaler) (nth line 3)]
 )
@@ -64,6 +64,16 @@
     (draw-wavetable (rest wavetable) dec-amount scaler)
     nil))
 
+(defn iteration-x-axis-scaler [dec-amount halfway-point]
+  "Hi. I scale the x-axis decrement values by whole number multiples of the waveform's halfway point. EX: If the waveform is 200.2 pixels wide, the halfway point is 100.1. The possible values I would then return include (0, 100.1, 200.2, 300.3, 400.4 ...)"
+  ; This keeps track of the number of times we have gone 1/2 way through the wavetable
+  ; dec-amount = the current x-axis coordinate. The mod of dec-amount/halfway provides the
+  ; current iteration number.
+  ; TODO: (+ frame 1)?
+  (let [wave-iteration (int (/ dec-amount halfway-point))]
+    ; EX: Wavetable is 200px long; we have traversed it < 100 times; therefore scaler = 0
+    (* wave-iteration halfway-point)))
+
 (defn draw []
 "The mathematical model of this drawing is simple: create a waveform 2x longer than the canvas it is going to exist in. Animate this waveform at a distance of 1/2 it's length, starting at 0:
      EXAMPLE: |-=-=|-=-= ANIMATES TO: -=-=|-=-=|.
@@ -73,21 +83,14 @@ At the point the waveform has traveled 1/2 the distance of its length, SCALE the
     (let [frame (q/frame-count)
           frequency (frequency)
           dec-amount (* frame frequency)
+          dec-amount2 (* (* frame 1.2) frequency)
           wavetable (q/state :coordinates)
-          ; The largest x-axis number in the wavetable
-          wavetable-x-axis-length (liner/last-x-point (last wavetable))
-          halfway-point (q/state :halfway)
-          ; This keeps track of the number of times we have gone 1/2 way through the wavetable
-          ; + frame 2 gets me on the right number the first time around
-          ; Should reset at frame #
-          iteration-number (int (/ (* (+ frame 1) frequency) halfway-point))
-          ; EX: Wavetable is 200px long; we have traversed it < 100 times; therefore scaler = 0
-          iteration-x-axis-scaler (* iteration-number halfway-point)]
+          halfway-point (q/state :halfway)]
       (q/stroke 137 148 217)
-      ;;(q/stroke (mod frame 10) 1 1)
-      (draw-wavetable wavetable dec-amount iteration-x-axis-scaler)
-      ;; TODO: Remove frame/scaling counter
-      (println iteration-x-axis-scaler)
+      ;(q/stroke (mod frame 10) 1 1)
+      ; parameters for draw-wavetable include the wavetable, the decrement amount, & the SCALER
+      (draw-wavetable wavetable dec-amount (iteration-x-axis-scaler dec-amount halfway-point))
+      (draw-wavetable wavetable dec-amount2 (iteration-x-axis-scaler dec-amount2 halfway-point))
 )))
 
 (q/defsketch mainBox

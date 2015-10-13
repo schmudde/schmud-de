@@ -32,7 +32,7 @@ return ((arbitrary_width / frequency) * (2));
 schmud_de.visualizer.setup = (function schmud_de$visualizer$setup(){
 quil.core.smooth.call(null);
 
-quil.core.frame_rate.call(null,(60));
+quil.core.frame_rate.call(null,(90));
 
 quil.core.stroke_weight.call(null,(1));
 
@@ -62,6 +62,11 @@ return schmud_de$visualizer$draw_wavetable.call(null,cljs.core.rest.call(null,wa
 return null;
 }
 });
+schmud_de.visualizer.iteration_x_axis_scaler = (function schmud_de$visualizer$iteration_x_axis_scaler(dec_amount,halfway_point){
+
+var wave_iteration = ((dec_amount / halfway_point) | (0));
+return (wave_iteration * halfway_point);
+});
 schmud_de.visualizer.draw = (function schmud_de$visualizer$draw(){
 
 quil.core.background.call(null,(138),12.75,(250));
@@ -74,16 +79,14 @@ try{quil.core.translate.call(null,tr__6015__auto__);
 var frame = quil.core.frame_count.call(null);
 var frequency = schmud_de.visualizer.frequency.call(null);
 var dec_amount = (frame * frequency);
+var dec_amount2 = ((frame * 1.2) * frequency);
 var wavetable = quil.core.state.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668));
-var wavetable_x_axis_length = schmud_de.drawing.last_x_point.call(null,cljs.core.last.call(null,wavetable));
 var halfway_point = quil.core.state.call(null,new cljs.core.Keyword(null,"halfway","halfway",1378068885));
-var iteration_number = ((((frame + (1)) * frequency) / halfway_point) | (0));
-var iteration_x_axis_scaler = (iteration_number * halfway_point);
 quil.core.stroke.call(null,(137),(148),(217));
 
-schmud_de.visualizer.draw_wavetable.call(null,wavetable,dec_amount,iteration_x_axis_scaler);
+schmud_de.visualizer.draw_wavetable.call(null,wavetable,dec_amount,schmud_de.visualizer.iteration_x_axis_scaler.call(null,dec_amount,halfway_point));
 
-return cljs.core.println.call(null,iteration_x_axis_scaler);
+return schmud_de.visualizer.draw_wavetable.call(null,wavetable,dec_amount2,schmud_de.visualizer.iteration_x_axis_scaler.call(null,dec_amount2,halfway_point));
 }finally {quil.core.pop_matrix.call(null);
 }});
 schmud_de.visualizer.mainBox = (function schmud_de$visualizer$mainBox(){

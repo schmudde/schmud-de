@@ -86,31 +86,6 @@ article {
     }
 }
 
-footer#frontPageFooter {
-    .navbar;
-    .navbar-default;
-
-    @media (min-width: @screen-sm-min) {
-        .navbar-fixed-bottom;
-    }
-
-    padding-top: 15px;
-    padding-bottom: 10px;
-
-    color: @greenFG;
-    background-color: @greenBG;
-
-    #signup, #thankyou, #error {
-        .make-xs-column(12);
-        .make-md-column(9);
-	.make-md-column-offset(2);
-    }
-
-    #thankyou, #error {
-	display: none;
-    }
-}
-
 #titleContainer {
 
     h1 {
@@ -149,6 +124,37 @@ footer#frontPageFooter {
     a:hover {
         color: darken(@brand-primary, 15%);
     }
+}
+
+/**
+ * For tablets, laptops, and PCs, add padding to the content. Because the footer is pinned,
+ * it can sit on top of the content and make it unreadable if the proper amount of padding
+ * is not added.
+ */
+
+#mainContent {
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+@media (min-width: @screen-sm-min) {
+
+    #mainContent {
+       // Footer Compensation. On the website, this is changed dynamically via jQuery.
+       padding-bottom: 135px;
+    }
+}
+
+footer {
+    .navbar;
+    .navbar-default;
+
+    @media (min-width: @screen-sm-min) {
+        .navbar-fixed-bottom;
+    }
+
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* unvisited link */
