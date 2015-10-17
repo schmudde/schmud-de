@@ -16,13 +16,14 @@
             [lein-cljsbuild "1.1.0"]]
   :hooks [environ.leiningen.hooks leiningen.cljsbuild]
   :uberjar-name "schmud-de-standalone.jar"
-  :cljsbuild
-      {:builds [{:source-paths ["src"]
-                 :compiler
-                     {:output-to "resources/public/js/visual.js"
-                      :output-dir "resources/public/cljs"
-                      :main "schmud-de.visualizer"
-                      :asset-path "cljs"
-                      :optimizations :none
-                      :pretty-print true}}]}
+  :cljsbuild {
+      :builds [
+               {:source-paths ["src"]
+                :compiler
+                   {:output-to "resources/public/js/visual.js"
+                    :output-dir "resources/public/cljs"
+                    :main "schmud-de.visualizer"
+                    :asset-path "cljs"
+                    :optimizations :none
+                    :pretty-print true}}]}
   :profiles {:production {:env {:production true}}})

@@ -1,6 +1,7 @@
 (ns schmud-de.visualizer
   (:require [quil.core :as q :include-macros true]
             [schmud-de.drawing :as liner]
+            [schmud-de.filter :as filter]
             [quil.middleware :as m]))
 
 (enable-console-print!)
