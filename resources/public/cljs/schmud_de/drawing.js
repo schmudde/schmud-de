@@ -15,23 +15,23 @@ goog.require('cljs.core');
  * [2 5 1 3 6 2])
  */
 schmud_de.drawing.line_join_points = (function schmud_de$drawing$line_join_points(){
-var args9206 = [];
-var len__9154__auto___9209 = arguments.length;
-var i__9155__auto___9210 = (0);
+var args5617 = [];
+var len__5565__auto___5620 = arguments.length;
+var i__5566__auto___5621 = (0);
 while(true){
-if((i__9155__auto___9210 < len__9154__auto___9209)){
-args9206.push((arguments[i__9155__auto___9210]));
+if((i__5566__auto___5621 < len__5565__auto___5620)){
+args5617.push((arguments[i__5566__auto___5621]));
 
-var G__9211 = (i__9155__auto___9210 + (1));
-i__9155__auto___9210 = G__9211;
+var G__5622 = (i__5566__auto___5621 + (1));
+i__5566__auto___5621 = G__5622;
 continue;
 } else {
 }
 break;
 }
 
-var G__9208 = args9206.length;
-switch (G__9208) {
+var G__5619 = args5617.length;
+switch (G__5619) {
 case 1:
 return schmud_de.drawing.line_join_points.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -45,7 +45,7 @@ return schmud_de.drawing.line_join_points.cljs$core$IFn$_invoke$arity$3((argumen
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9206.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args5617.length)].join('')));
 
 }
 });
@@ -85,6 +85,14 @@ schmud_de.drawing.line_join_points.cljs$lang$maxFixedArity = 3;
 schmud_de.drawing.last_x_point = (function schmud_de$drawing$last_x_point(line){
 
 return cljs.core.last.call(null,cljs.core.drop_last.call(null,line));
+});
+schmud_de.drawing.line_decomposer = (function schmud_de$drawing$line_decomposer(line_segment){
+
+var x1 = cljs.core.first.call(null,line_segment);
+var y1 = cljs.core.second.call(null,line_segment);
+var x2 = cljs.core.nth.call(null,line_segment,(2));
+var y2 = cljs.core.nth.call(null,line_segment,(3));
+return new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"x1","x1",-1863922247),x1,new cljs.core.Keyword(null,"y1","y1",589123466),y1,new cljs.core.Keyword(null,"x2","x2",-1362513475),x2,new cljs.core.Keyword(null,"y2","y2",-718691301),y2], null);
 });
 
 //# sourceMappingURL=drawing.js.map

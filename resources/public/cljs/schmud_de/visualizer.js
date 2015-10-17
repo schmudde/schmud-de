@@ -7,7 +7,7 @@ goog.require('schmud_de.filter');
 goog.require('quil.middleware');
 cljs.core.enable_console_print_BANG_.call(null);
 schmud_de.visualizer.frequency = (function schmud_de$visualizer$frequency(){
-return 0.2;
+return 0.12;
 });
 schmud_de.visualizer.cycle_point = (function schmud_de$visualizer$cycle_point(ys,position){
 
@@ -24,6 +24,16 @@ return null;
 schmud_de.visualizer.duration = (function schmud_de$visualizer$duration(ys){
 return schmud_de.visualizer.cycle_point.call(null,ys,(0));
 });
+schmud_de.visualizer.window_size = (function schmud_de$visualizer$window_size(frequency){
+
+var sine_box_width = document.getElementById("mainBox").offsetWidth;
+var arbitrary_width = (100);
+if((sine_box_width > (0))){
+return ((sine_box_width / frequency) * (2));
+} else {
+return ((arbitrary_width / frequency) * (2));
+}
+});
 schmud_de.visualizer.sine_ys = (function schmud_de$visualizer$sine_ys(amplitude){
 var rads = cljs.core.map.call(null,quil.core.radians,cljs.core.range.call(null));
 var ys = cljs.core.map.call(null,quil.core.sin,rads);
@@ -34,21 +44,11 @@ return (amplitude * p1__6175_SHARP_);
 ,ys);
 return scaled_ys;
 });
-schmud_de.visualizer.sine = (function schmud_de$visualizer$sine(amplitude,frequency){
-var ys = schmud_de.visualizer.sine_ys.call(null,amplitude);
-var duration = schmud_de.visualizer.duration.call(null,cljs.core.take.call(null,(5000),ys));
-var xs = cljs.core.range.call(null,(1),(duration + (1)),frequency);
-var scaled_ys = cljs.core.take.call(null,(5000),ys);
+schmud_de.visualizer.sine = (function schmud_de$visualizer$sine(frequency,linear_duration,ys){
+var xs = cljs.core.range.call(null,(1),(linear_duration + (1)),frequency);
+var scaled_ys = cljs.core.take.call(null,schmud_de.visualizer.window_size.call(null,frequency),ys);
 var resolution = (30);
 return schmud_de.drawing.line_join_points.call(null,cljs.core.take_nth.call(null,resolution,xs),cljs.core.take_nth.call(null,resolution,scaled_ys));
-});
-schmud_de.visualizer.line_decomposer = (function schmud_de$visualizer$line_decomposer(line_segment){
-
-var x1 = cljs.core.first.call(null,line_segment);
-var y1 = cljs.core.second.call(null,line_segment);
-var x2 = cljs.core.nth.call(null,line_segment,(2));
-var y2 = cljs.core.nth.call(null,line_segment,(3));
-return new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"x1","x1",-1863922247),x1,new cljs.core.Keyword(null,"y1","y1",589123466),y1,new cljs.core.Keyword(null,"x2","x2",-1362513475),x2,new cljs.core.Keyword(null,"y2","y2",-718691301),y2], null);
 });
 schmud_de.visualizer.setup = (function schmud_de$visualizer$setup(){
 quil.core.smooth.call(null);
@@ -61,10 +61,11 @@ quil.core.color_mode.call(null,new cljs.core.Keyword(null,"hsb","hsb",-753472031
 
 var amplitude = (10);
 var frequency = schmud_de.visualizer.frequency.call(null);
-var sine_coordinates = schmud_de.visualizer.sine.call(null,amplitude,frequency);
-cljs.core.println.call(null,sine_coordinates);
-
-return quil.core.set_state_BANG_.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668),sine_coordinates,new cljs.core.Keyword(null,"halfway","halfway",1378068885),(400));
+var ys = schmud_de.visualizer.sine_ys.call(null,amplitude);
+var linear_cycle_duration = schmud_de.visualizer.duration.call(null,ys);
+var scaled_cycle_duration = (linear_cycle_duration * frequency);
+var sine_coordinates = schmud_de.visualizer.sine.call(null,frequency,linear_cycle_duration,ys);
+return quil.core.set_state_BANG_.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668),sine_coordinates,new cljs.core.Keyword(null,"one-cycle","one-cycle",468436980),scaled_cycle_duration);
 });
 schmud_de.visualizer.move_wavetable = (function schmud_de$visualizer$move_wavetable(line,dec_amount,scaler){
 
@@ -80,10 +81,10 @@ return schmud_de$visualizer$draw_wavetable.call(null,cljs.core.rest.call(null,wa
 return null;
 }
 });
-schmud_de.visualizer.iteration_x_axis_scaler = (function schmud_de$visualizer$iteration_x_axis_scaler(dec_amount,halfway_point){
+schmud_de.visualizer.iteration_x_axis_scaler = (function schmud_de$visualizer$iteration_x_axis_scaler(dec_amount,one_cycle_length){
 
-var wave_iteration = ((dec_amount / halfway_point) | (0));
-return (wave_iteration * halfway_point);
+var wave_iteration = ((dec_amount / one_cycle_length) | (0));
+return (wave_iteration * one_cycle_length);
 });
 schmud_de.visualizer.draw = (function schmud_de$visualizer$draw(){
 
@@ -96,19 +97,15 @@ try{quil.core.translate.call(null,tr__6099__auto__);
 
 var frame = quil.core.frame_count.call(null);
 var frequency = schmud_de.visualizer.frequency.call(null);
-var dec_amount = (frame * (1));
-var dec_amount2 = ((frame * 1.2) * frequency);
+var dec_amount = frame;
+var dec_amount2 = (frame * 1.75);
 var wavetable = quil.core.state.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668));
-var halfway_point = quil.core.state.call(null,new cljs.core.Keyword(null,"halfway","halfway",1378068885));
+var one_cycle = quil.core.state.call(null,new cljs.core.Keyword(null,"one-cycle","one-cycle",468436980));
 quil.core.stroke.call(null,(137),(148),(217));
 
-schmud_de.visualizer.draw_wavetable.call(null,wavetable,dec_amount,schmud_de.visualizer.iteration_x_axis_scaler.call(null,dec_amount,halfway_point));
+schmud_de.visualizer.draw_wavetable.call(null,wavetable,dec_amount,schmud_de.visualizer.iteration_x_axis_scaler.call(null,dec_amount,one_cycle));
 
-if(cljs.core._EQ_.call(null,(0),(cljs.core.rem.call(null,dec_amount,halfway_point) | (0)))){
-return cljs.core.println.call(null,dec_amount,halfway_point);
-} else {
-return null;
-}
+return schmud_de.visualizer.draw_wavetable.call(null,wavetable,dec_amount2,schmud_de.visualizer.iteration_x_axis_scaler.call(null,dec_amount2,one_cycle));
 }finally {quil.core.pop_matrix.call(null);
 }});
 schmud_de.visualizer.mainBox = (function schmud_de$visualizer$mainBox(){

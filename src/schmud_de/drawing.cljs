@@ -34,3 +34,11 @@
   "Takes a line with at least one x and y pair and returns the last x coordinate. Assumes an even number of parameters in the vector."
   ;; TODO: Write logic to test even number vector input.
   (last (drop-last line)))
+
+(defn line-decomposer [line-segment]
+"Takes a line segment [x1 y1 x2 y2] and turns them into a mapped set for easy access"
+  (let [x1 (first line-segment)
+        y1 (second line-segment)
+        x2 (nth line-segment 2)
+        y2 (nth line-segment 3)]
+    {:x1 x1 :y1 y1 :x2 x2 :y2 y2}))
