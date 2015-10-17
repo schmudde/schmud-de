@@ -8,7 +8,7 @@
 
     {{#talks}}
     {{{row-start}}}
-        <div class="twoColumns">
+        <div class="threeColumns">
             {{#video}}
             <div class="embed-responsive embed-responsive-16by9"><iframe src="{{media}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
             {{/video}}
@@ -16,13 +16,14 @@
             <img src="img/{{media}}" class="img-responsive" />
             {{/image}}
             <div class="panel panel-info">
-                <div class="panel-heading"><h3>{{title}}</h3></div>
+                <div class="panel-heading">
+                    <h3>{{{title}}}</h3>
+                    <h4>{{{subtitle}}}<small>{{{date}}}</small></h4>
+                </div>
                 <div class="panel-content">
-                    <dl class="dl-horizontal">
+                    <dl>
                         <dt>Location</dt>
                         <dd>{{location}}</dd>
-                        <dt>Date</dt>
-                        <dd>{{date}}</dd>
                         <dt>Synopsis</dt>
                         <dd>{{synopsis}}</dd>
                         <dt>Link</dt>

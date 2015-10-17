@@ -3,38 +3,105 @@
 (def projects-db
   {:projects
    [{:title "Jack and the Machine"
-     :synopsis "Bad stuff leads to good things."
+     :synopsis "Once known as #148445 within the Third Reich, Jack Tramiel rose from the Nazi concentration camps and built the information age's great equalizer: the world's first 'computer for the masses, not the classes.'"
      :status "In Production"
      :link "http://www.jackandthemachine.com"
      :tags [{:tag "documentary"} {:tag "interactive"}]
-     :media "https://player.vimeo.com/video/132857801"
+     :media "https://player.vimeo.com/video/74458487"
      :video true
      :image false
-     :position "oneColumn"
-     :row-start "<div class='row'>"
-     :row-end "</div> <!-- /row -->"}
+     :position "oneBox"}
     {:title "Borderless"
      :synopsis "Pool party."
      :status "In Exhibition"
      :link ""
      :tags [{:tag "installation"}]
-     :media "intimacy.jpg"
-     :video false
-     :image true
-     :position "twoColumns"
-     :row-start "<div class='row'>"
-     :row-end ""}
-    {:title "The Assassination of Chicago's Mayor"
-     :synopsis "Shoots"
-     :status "Complete 2012. In distribution"
-     :link ""
-     :tags [{:tag "narrative"}]
-     :media ""
+     :media "https://player.vimeo.com/video/119274499"
      :video true
      :image false
-     :position "twoColumns"
-     :row-start ""
-     :row-end "</div> <!-- /row -->"}]
+     :position "twoBox"}
+    {:title "The Assassination of Chicago's Mayor"
+     :synopsis "A 19th-century newspaper peddler named Patrick Prendergast has delusions of greatness. Evidently slighted by the mayor, this self-anointed messenger prepares for a glorious rise from ignored lobbyist to influential icon. Prendergast sees himself as a martyr, serving God with a noble purpose. The reality is far different."
+     :status "Complete 2012. In distribution"
+     :link "https://indieflix.com/indie-films/the-assassination-of-chicagos-mayor-34358/"
+     :tags [{:tag "narrative"}]
+     :media "https://player.vimeo.com/video/30803843"
+     :video true
+     :image false
+     :position "twoBox"}
+    {:title "A Simple Reminder"
+     :synopsis "The essence of memory - a possessor, a liberator."
+     :status "Online"
+     :link ""
+     :tags [{:tag "narrative"}]
+     :media "https://player.vimeo.com/video/46622645"
+     :video true
+     :image false
+     :position "twoBox"}
+    {:title "The Invisible Majority"
+     :synopsis "Every single day, people volunteer, search for cures, and engineer leaps in efficiency. Unfortunately, media is often usurped by fearmongers and fundamentalists who spread false conceptions as facts. It is up to us, the majority of us who do good day-in and day-out, to guide the larger narrative."
+     :status "Online"
+     :link ""
+     :tags [{:tag "documentary"}]
+     :media "https://player.vimeo.com/video/52299617"
+     :video true
+     :image false
+     :position "twoBox"}
+    {:title "Refuge"
+     :synopsis "Grant is trapped with his conscious on the long, lonely drive across the American Midwest. As the endless road stretches on, he is confronted by those he has loved and those he has hurt. REFUGE is a metaphysical journey to truth, quickly turning the open road into a claustrophobic asylum of haunting self-examination."
+     :status "Online"
+     :link ""
+     :tags [{:tag "narrative"}]
+     :media "https://player.vimeo.com/video/8247688"
+     :video true
+     :image false
+     :position "twoBox"}
+    {:title "Elements: Spring to Summer to Autumn 2011"
+     :synopsis "Human-kind is essential. Without us, who would admire the flower? Who would discover new worlds and pay tribute to old ones?"
+     :status "Online"
+     :link ""
+     :tags [{:tag "documentary"}]
+     :media "https://player.vimeo.com/video/34661968"
+     :video true
+     :image false
+     :position "twoBox"}
+    {:title "Elements: Winter 2011"
+     :synopsis "The four elements in winter."
+     :status "Online"
+     :link ""
+     :tags [{:tag "documentary"}]
+     :media "https://player.vimeo.com/video/21351915"
+     :video true
+     :image false
+     :position "twoBox"}
+    {:title "Elements: Fall 2010"
+     :synopsis "The beginning of fall as told through the elements."
+     :status "Online"
+     :link ""
+     :tags [{:tag "documentary"}]
+     :media "https://player.vimeo.com/video/15209878"
+     :video true
+     :image false
+     :position "twoBox"}
+    {:title "Lucid Dream Ensemble - 3. Red (2003)"
+     :synopsis "Live at the Museum of Contemporary Art in Chicago, SEAMUS in Tempe, AZ, and the Block Museum at Northwestern University."
+     :exhibition "Performers: Virgil Moorefield: Founder, V-Drums; D. Schmüdde: Virtual Analog Synthesizers, Analogue Sequencing; Nathan Woleck: Max/MSP, Granular Synthesis; Jeff Weeter: Jitter Visuals"
+     :status "Online"
+     :link ""
+     :tags [{:tag "documentary"}]
+     :media "https://player.vimeo.com/video/84801854"
+     :video true
+     :image false
+     :position "twoBox"}
+    {:title "Reflections"
+     :synopsis ""
+     :status "Online"
+     :link ""
+     :tags [{:tag "documentary"}]
+     :media "https://www.youtube.com/watch?v=5yB2LWTfSYs"
+     :video false
+     :image true
+     :position "twoBox"}]
    :page-title "Projects"
    :tags [{:tag "documentary"}
           {:tag "narrative"}
@@ -47,7 +114,8 @@
   {:talks
    [{:location "C-Base: home of the Chaos Computer Club in Berlin, Germany"
      :date "July 2015"
-     :title "Harvesting Human Intelligence – Reframing the Surveillance Discourse"
+     :title "Harvesting Human Intelligence"
+     :subtitle "Reframing the Surveillance Discourse"
      :synopsis "Digitalegesellschaft: Netzpolitischen Abend #38: The history of surveillance machines and the restrictions of engeneering"
      :link ""
      :media "https://player.vimeo.com/video/132857801"
@@ -65,47 +133,51 @@
      :video false
      :image true
      :row-start ""
-     :row-end "</div> <!-- /row -->"
+     :row-end ""
     }
     {:location "Department of Digital Film and Video, Chicago, IL"
      :date "January 2006 - January 2012"
-     :title "Associate Professor, Illinois Institute of Art"
-     :synopsis "Survey of Film (DFV 100), Sound Design for Film (DFV 365), Digital Filmmaking Portfolio Preparation I (DFV 330), Digital Filmmaking Portfolio Preparation II (DFV 430), Fundamentals of Audio (DFV 120), Survey of the Music Industry (AUD 100), Music Theory (AUD 201)"
+     :title "Associate Professor"
+     :subtitle "Illinois Institute of Art"
+     :synopsis "Courses: Sound Design for Film (DFV 365), Survey of Film (DFV 100), Digital Filmmaking Portfolio Preparation I (DFV 330), Digital Filmmaking Portfolio Preparation II (DFV 430), Fundamentals of Audio (DFV 120), Survey of the Music Industry (AUD 100), Music Theory (AUD 201)"
      :link ""
      :media "ai.png"
-     :video false
-     :image true
-     :row-start "<div class='row'>"
-     :row-end ""
-    }
-    {:location "MFA: Music Composition for the Screen, Chicago, IL"
-     :date "October 2009"
-     :title "Guest Lecturer, Columbia College Chicago"
-     :synopsis "Master Class - Hybrid Scores and Atonality"
-     :link ""
-     :media "ccc.jpg"
      :video false
      :image true
      :row-start ""
      :row-end "</div> <!-- /row -->"
     }
-    {:location "Video and Animation Department, Chicago, IL"
-     :date "January 2005 - June 2007"
-     :title "Adjunct Faculty, International Academy of Design and Technology"
-     :synopsis "Directing and Producing, Application Design, Digital Production I, Advanced Post Production, Digital Video Editing, Audio Production, Digital Audio Editing, Senior Project for Visual Communications, Career Portfolio Development for Visual Communications, Independent Study"
+    {:location "MFA: Music Composition for the Screen, Chicago, IL"
+     :date "October 2009"
+     :title "Guest Lecturer"
+     :subtitle "Columbia College Chicago"
+     :synopsis "Master Class - Hybrid Scores and Atonality"
      :link ""
-     :media "iadt.png"
+     :media "ccc.jpg"
      :video false
      :image true
      :row-start "<div class='row'>"
      :row-end ""
     }
+    {:location "Video and Animation Department, Chicago, IL"
+     :date "January 2005 - June 2007"
+     :title "Adjunct Faculty"
+     :subtitle "International Academy of Design and Technology"
+     :synopsis "Courses: Directing and Producing, Application Design, Digital Production I, Advanced Post Production, Digital Video Editing, Audio Production, Digital Audio Editing, Senior Project for Visual Communications, Career Portfolio Development for Visual Communications, Independent Study"
+     :link ""
+     :media "iadt.png"
+     :video false
+     :image true
+     :row-start ""
+     :row-end ""
+    }
     {:location "Midwest Independent Film Festival, Chicago, IL"
      :date "September 2009"
-     :title "Moderator: Low Budget Filmmaking"
+     :title "Moderator"
+     :subtitle "&quot;Low Budget Filmmaking&quot;"
      :synopsis "Another synopsis"
      :link ""
-     :media "panel.jpg"
+     :media "miff.png"
      :video false
      :image true
      :row-start ""
@@ -114,7 +186,8 @@
 
     {:location "Chicago Actors Casting Summit, Chicago, IL"
      :date "July 2008 &amp; July 2009"
-     :title "Chicago Actors Meetup, Panelist: Casting in Student Films"
+     :title "Panelist"
+     :subtitle "&quot;Casting in Student Films&quot;"
      :synopsis "Another synopsis"
      :link ""
      :media ""

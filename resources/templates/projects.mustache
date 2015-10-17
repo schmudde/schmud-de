@@ -14,33 +14,47 @@
         </div>
     </header>
 
-    {{#projects}}
-    {{{row-start}}}
-        <div class="{{position}}">
-            {{#video}}
-            <div class="embed-responsive embed-responsive-16by9"><iframe src="{{media}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-            {{/video}}
-            {{#image}}
-            <img src="img/{{media}}" class="img-responsive" />
-            {{/image}}
-            <div class="panel panel-info">
-                <div class="panel-heading"><h3>{{title}}</h3></div>
-                <div class="panel-content">
-                    <dl class="dl-horizontal">
-                        <dt>Synopsis</dt>
-                        <dd>{{synopsis}}</dd>
-                        <dt>Status</dt>
-                        <dd>{{status}}</dd>
-                        <dt>Link</dt>
-                        <dd><a href="{{link}}">Homepage</a></dd>
-                        <dt></dt>
-                        <dd class="labels">{{#tags}}<span class="label {{tag}}">{{tag}}</span>{{/tags}}</dd>
-                    </dl>
-                </div>
-            </div> <!-- /panel -->
+<style>
+    .oneBox {
+        width: 100%;
+    }
+.twoBox {
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+</style>
+
+    <div class="row">
+        <div class="col-xs-12">
+        {{#projects}}
+            <div class="{{position}}">
+                {{#video}}
+                <div class="embed-responsive embed-responsive-16by9"><iframe src="{{media}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                {{/video}}
+                {{#image}}
+                <img src="img/{{media}}" class="img-responsive" />
+                {{/image}}
+                <div class="panel panel-info">
+                    <div class="panel-heading"><h3>{{title}}</h3></div>
+                    <div class="panel-content">
+                        <dl class="dl-horizontal">
+                            <dt>Synopsis</dt>
+                            <dd>{{synopsis}}</dd>
+                            <dt>Status</dt>
+                            <dd>{{status}}</dd>
+                            <dt>Link</dt>
+                            <dd><a href="{{link}}">Homepage</a></dd>
+                            <dt></dt>
+                            <dd class="labels">{{#tags}}<span class="label {{tag}}">{{tag}}</span>{{/tags}}</dd>
+                        </dl>
+                    </div>
+                </div> <!-- /panel -->
+            </div> <!-- /position -->
+        {{/projects}}
         </div> <!-- /column -->
-    {{{row-end}}}
-    {{/projects}}
+    </div> <!-- /row -->
+
 </div>
 
 {{> footer}}
