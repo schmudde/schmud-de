@@ -7,6 +7,7 @@ var screen_sm_min = 768;
 var screen_md_min = 992;
 var screen_lg_min = 1200;
 
+/*
 (function() {
     function contentHeightResizer() {
 	if ($(window).width() >= screen_sm_min) {
@@ -21,7 +22,7 @@ var screen_lg_min = 1200;
     $(window).on("resize", contentHeightResizer);
 
 })();
-
+*/
 
 // Social Media Shares
 /*

@@ -198,6 +198,120 @@
     }]
    :page-title "Talks"})
 
+(def exhibitions-db
+  {:exhibitions
+   [{:title "Livestream Public (Performance, New York City, 2015)"
+     :piece "Borderless"
+    }
+    {:title "Music Hall of Williamsburg (Performance, New York City, 2015)"
+     :piece "Borderless"
+    }
+    {:title "ArtStars* Bits & Beats (Berlin 2015)"
+     :piece "Jack and the Machine"
+    }
+    {:title "310 XNRD in London (2 Day Workshop & Installation, 2015)"
+     :piece "Borderless"
+    }
+    {:title "Now&After Festival 2015, Schusev State Museum of Architecture in Moscow (Installation)"
+     :piece "Borderless"
+    }
+    {:title "IndieWorks 2015 (New York City)"
+     :piece "The Assassination of Chicago's Mayor"
+    }
+    {:title "IFP Made in NY Media Center (Installation, 2014)"
+     :piece "Borderless"
+    }
+    {:title "Red Hook Film Festival 2014 (New York City)"
+     :piece "The Assassination of Chicago’s Mayor"
+    }
+    {:title "ShortsHD Channel - Dish Network, DirecTV, AT&T (Broadcast, 2014)"
+     :piece "The Assassination of Chicago’s Mayor"
+    }
+    {:title "Filmstock Film Festival 2013 (Utah)"
+     :piece "A Simple Reminder"
+    }
+    {:title "Hollyshorts 2013 (New York)"
+     :piece "The Assassination of Chicago's Mayor"
+    }
+    {:title "Filmstock Film Festival 2013 (New Mexico)"
+     :piece "Refuge"
+    }
+    {:title "IndieFlix (Internet Distribution, 2014)"
+     :piece "The Assassination of Chicago's Mayor"
+    }
+    {:title "Beneath the Earth Film Festival 2012"
+     :piece "Refuge"
+    }
+    {:title "Filmstock Film Festival 2012 (Arizona) "
+     :piece "The Assassination of Chicago's Mayor"
+    }
+    {:title "Filmstock Film Festival 2012 (Arizona) "
+     :piece "Refuge"
+    }
+    {:title "Aesthetica Film Festival 2012 (York, UK)"
+     :piece "The Assassination of Chicago's Mayor"
+    }
+    {:title "Hollyshorts 2012 (Los Angeles, CA)"
+     :piece "The Assassination of Chicago's Mayor"
+    }
+    {:title "MoFest 2012 (Chicago, IL)"
+     :piece "Elements • Spring to Summer to Autumn 2011"
+    }
+    {:title "Short Story Showcase 2012, Chicago Filmmakers"
+     :piece "Elements • Spring to Summer to Autumn 2011"
+    }
+    {:title "Moving Pictures Film Festival 2012 (Quincy, IL)"
+     :piece "Refuge"
+    }
+    {:title "ShortsHD Channel - Dish Network, DirecTV, AT&T (Broadcast, 2011)"
+     :piece "Refuge"
+    }
+    {:title "Short Story Film Showcase 2011, Chicago Filmmakers"
+     :piece "Refuge"
+    }
+    {:title "Chicago International Film Festival 2010"
+     :piece "Refuge"
+    }
+    {:title "The New Art Film Festival 2010 (Champaign-Urbana, IL)"
+     :piece "I am Concrete"
+    }
+    {:title "Chicago Filmmakers 2008"
+     :piece "Aijo"
+    }
+    {:title "Georgetown Film Fest 2006 (Washington, DC)"
+     :piece "Aijo"
+    }
+    {:title "S.N.O.B Film Festival 2006 (Boston, MA)"
+     :piece "Aijo"
+    }
+    {:title "River’s Edge International Film Festival 2005 (Paducah, Kentucky)"
+     :piece "Year of the Rooster"
+    }
+    {:title "Block Museum (Evanston, IL, 11/2003)"
+     :piece "Lucid Dream Ensemble"
+    }
+    {:title "Block Museum (Evanston, IL, 4/2003)"
+     :piece "Lucid Dream Ensemble"
+    }
+    {:title "Version 2003, Chicago Museum of Contemporary Art"
+     :piece "Lucid Dream Ensemble"
+    }
+    {:title "SEAMUS national conference (Tempe, Az, 3/2003)"
+     :piece "Lucid Dream Ensemble"
+    }
+    ]
+   :page-title "Exhibitions"})
+
+(def weblog-db
+  {:exhibitions
+   [{:location "C-Base: home of the Chaos Computer Club in Berlin, Germany"
+    }
+    {:location "Pecha Kucha, Berlin, Germany"
+    }]
+   :page-title "Weblog"})
+
 (def database
   {:talks talks-db
-   :projects projects-db})
+   :projects projects-db
+   :exhibitions exhibitions-db
+   :weblog weblog-db})

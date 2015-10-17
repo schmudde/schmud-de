@@ -1,3 +1,18 @@
+.oneBox {
+    width: 100%;
+}
+
+.twoBox {
+    display: inline-block;
+    vertical-align: top;
+
+    @media (min-width: @screen-sm-min) {
+        width: 49.5%;
+    }
+    @media (max-width: @screen-sm-min) {
+        width: 100%;
+    }
+}
 
 .button-style {
     display: inline-block;

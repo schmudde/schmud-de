@@ -14,6 +14,10 @@
        (controller/index "projects"))
   (GET "/talks" []
        (controller/index "talks"))
+  (GET "/exhibitions" []
+       (controller/index "exhibitions"))
+  (GET "/weblog" []
+       (controller/index "weblog"))
   (route/resources "/")
   (route/not-found "Not Found")
   (ANY "*" []
