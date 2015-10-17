@@ -6,34 +6,54 @@ goog.require('schmud_de.drawing');
 goog.require('schmud_de.filter');
 goog.require('quil.middleware');
 cljs.core.enable_console_print_BANG_.call(null);
-schmud_de.visualizer.sine = (function schmud_de$visualizer$sine(amplitude,frequency,duration){
-var xs = cljs.core.range.call(null,(1),(duration + (1)),frequency);
+schmud_de.visualizer.frequency = (function schmud_de$visualizer$frequency(){
+return 0.2;
+});
+schmud_de.visualizer.cycle_point = (function schmud_de$visualizer$cycle_point(ys,position){
+
+if(((cljs.core.first.call(null,ys) < (0))) && ((cljs.core.second.call(null,ys) >= (0)))){
+return (position | (0));
+} else {
+if(cljs.core.seq_QMARK_.call(null,ys)){
+return schmud_de$visualizer$cycle_point.call(null,cljs.core.rest.call(null,ys),(position + (1)));
+} else {
+return null;
+}
+}
+});
+schmud_de.visualizer.duration = (function schmud_de$visualizer$duration(ys){
+return schmud_de.visualizer.cycle_point.call(null,ys,(0));
+});
+schmud_de.visualizer.sine_ys = (function schmud_de$visualizer$sine_ys(amplitude){
 var rads = cljs.core.map.call(null,quil.core.radians,cljs.core.range.call(null));
-var ys = cljs.core.take.call(null,duration,cljs.core.map.call(null,quil.core.sin,rads));
-var scaled_ys = cljs.core.map.call(null,((function (xs,rads,ys){
+var ys = cljs.core.map.call(null,quil.core.sin,rads);
+var scaled_ys = cljs.core.map.call(null,((function (rads,ys){
 return (function (p1__6175_SHARP_){
 return (amplitude * p1__6175_SHARP_);
-});})(xs,rads,ys))
+});})(rads,ys))
 ,ys);
+return scaled_ys;
+});
+schmud_de.visualizer.sine = (function schmud_de$visualizer$sine(amplitude,frequency){
+var ys = schmud_de.visualizer.sine_ys.call(null,amplitude);
+var duration = schmud_de.visualizer.duration.call(null,cljs.core.take.call(null,(5000),ys));
+var xs = cljs.core.range.call(null,(1),(duration + (1)),frequency);
+var scaled_ys = cljs.core.take.call(null,(5000),ys);
 var resolution = (30);
 return schmud_de.drawing.line_join_points.call(null,cljs.core.take_nth.call(null,resolution,xs),cljs.core.take_nth.call(null,resolution,scaled_ys));
 });
-schmud_de.visualizer.frequency = (function schmud_de$visualizer$frequency(){
-return 0.09;
-});
-schmud_de.visualizer.duration = (function schmud_de$visualizer$duration(frequency){
-var sine_box_width = document.getElementById("mainBox").offsetWidth;
-var arbitrary_width = (100);
-if((sine_box_width > (0))){
-return ((sine_box_width / frequency) * (2));
-} else {
-return ((arbitrary_width / frequency) * (2));
-}
+schmud_de.visualizer.line_decomposer = (function schmud_de$visualizer$line_decomposer(line_segment){
+
+var x1 = cljs.core.first.call(null,line_segment);
+var y1 = cljs.core.second.call(null,line_segment);
+var x2 = cljs.core.nth.call(null,line_segment,(2));
+var y2 = cljs.core.nth.call(null,line_segment,(3));
+return new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"x1","x1",-1863922247),x1,new cljs.core.Keyword(null,"y1","y1",589123466),y1,new cljs.core.Keyword(null,"x2","x2",-1362513475),x2,new cljs.core.Keyword(null,"y2","y2",-718691301),y2], null);
 });
 schmud_de.visualizer.setup = (function schmud_de$visualizer$setup(){
 quil.core.smooth.call(null);
 
-quil.core.frame_rate.call(null,(90));
+quil.core.frame_rate.call(null,(25));
 
 quil.core.stroke_weight.call(null,(1));
 
@@ -41,11 +61,10 @@ quil.core.color_mode.call(null,new cljs.core.Keyword(null,"hsb","hsb",-753472031
 
 var amplitude = (10);
 var frequency = schmud_de.visualizer.frequency.call(null);
-var duration = schmud_de.visualizer.duration.call(null,frequency);
-var sine_coordinates = schmud_de.visualizer.sine.call(null,amplitude,frequency,duration);
-var halfway_coordinates = cljs.core.last.call(null,cljs.core.take.call(null,(((cljs.core.count.call(null,sine_coordinates) / (2)) | (0)) - (1)),sine_coordinates));
-var halfway_point = ((cljs.core.first.call(null,halfway_coordinates) + cljs.core.nth.call(null,halfway_coordinates,(2))) / (2));
-return quil.core.set_state_BANG_.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668),sine_coordinates,new cljs.core.Keyword(null,"halfway","halfway",1378068885),halfway_point);
+var sine_coordinates = schmud_de.visualizer.sine.call(null,amplitude,frequency);
+cljs.core.println.call(null,sine_coordinates);
+
+return quil.core.set_state_BANG_.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668),sine_coordinates,new cljs.core.Keyword(null,"halfway","halfway",1378068885),(400));
 });
 schmud_de.visualizer.move_wavetable = (function schmud_de$visualizer$move_wavetable(line,dec_amount,scaler){
 
@@ -68,7 +87,7 @@ return (wave_iteration * halfway_point);
 });
 schmud_de.visualizer.draw = (function schmud_de$visualizer$draw(){
 
-quil.core.background.call(null,(138),12.75,(250),(8));
+quil.core.background.call(null,(138),12.75,(250),(0));
 
 var tr__6099__auto__ = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(0),(quil.core.height.call(null) / (2))], null);
 quil.core.push_matrix.call(null);
@@ -77,7 +96,7 @@ try{quil.core.translate.call(null,tr__6099__auto__);
 
 var frame = quil.core.frame_count.call(null);
 var frequency = schmud_de.visualizer.frequency.call(null);
-var dec_amount = (frame * frequency);
+var dec_amount = (frame * (1));
 var dec_amount2 = ((frame * 1.2) * frequency);
 var wavetable = quil.core.state.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668));
 var halfway_point = quil.core.state.call(null,new cljs.core.Keyword(null,"halfway","halfway",1378068885));
