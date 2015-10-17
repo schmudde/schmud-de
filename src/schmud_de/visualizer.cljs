@@ -34,7 +34,7 @@
   (q/frame-rate 90)
   (q/stroke-weight 1)
   (q/color-mode :hsb)
-  (q/background 138 12.75 250)
+  ;(q/background 138 12.75 250)
   (let [amplitude 10          ; multipled by the y axis
         frequency (frequency) ; If frequency is set to 1, then it is equivalent to q/frame-rate.
         duration  (duration frequency)  ; length of the sine wave (pixels = freq * duration)
@@ -79,7 +79,7 @@
 "The mathematical model of this drawing is simple: create a waveform 2x longer than the canvas it is going to exist in. Animate this waveform at a distance of 1/2 it's length, starting at 0:
      EXAMPLE: |-=-=|-=-= ANIMATES TO: -=-=|-=-=|.
 At the point the waveform has traveled 1/2 the distance of its length, SCALE the x-axis back to 0."
-  (q/background 138 12.75 250)
+  (q/background 138 12.75 250 8)
   (q/with-translation [0 (/ (q/height) 2)]
     (let [frame (q/frame-count)
           frequency (frequency)
@@ -91,7 +91,9 @@ At the point the waveform has traveled 1/2 the distance of its length, SCALE the
       ;(q/stroke (mod frame 10) 1 1)
       ; parameters for draw-wavetable include the wavetable, the decrement amount, & the SCALER
       (draw-wavetable wavetable dec-amount (iteration-x-axis-scaler dec-amount halfway-point))
-      (draw-wavetable wavetable dec-amount2 (iteration-x-axis-scaler dec-amount2 halfway-point))
+      ;(draw-wavetable wavetable dec-amount2 (iteration-x-axis-scaler dec-amount2 halfway-point))
+      (if (= 0 (int (rem dec-amount halfway-point)))
+        (println dec-amount halfway-point))
 )))
 
 (q/defsketch mainBox
