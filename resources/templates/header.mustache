@@ -16,50 +16,11 @@
 </head>
 <body>
 
-<style>
-
-#mainBox, #window {
-    width: 100px;
-    height: 25px;
-    position: relative;
-    padding: 0px;
-    margin: 0px;
-    border: 1px solid red;
-}
-
-canvas {
-    padding: 0px;
-    margin: 0px;
-}
-
-#window {
-    z-index: 1;
-    left: -100px;
-    border: 1px solid blue;
-}
-
-span {
-    border: 1px solid green;
-}
-#mainBox {
-/*    z-index: 0; */
-}
-</style>
-
-
 <script src="js/visual.js" type="text/javascript"></script>
 <script>
 function init() {
     var canvas=document.getElementById("mainBox");
     var context=canvas.getContext("2d");
-
-    var window=document.getElementById("window");
-    var windowContext=window.getContext("2d");
-
-windowContext.moveTo(0,0);
-windowContext.lineTo(100,200);
-windowContext.stroke();
-
 }
 </script>
 
@@ -67,8 +28,10 @@ windowContext.stroke();
     <div class="container">
         <div class="row">
             <div class="col-sm-12" id="titleContainer">
-                <span><canvas id="mainBox"></canvas>
-                <!-- <canvas id="window"></canvas> --></span>
+                <div id="canvasContainer">
+                    <canvas id="mainBox"></canvas>
+                    <div id="canvasGradient"></div>
+                </div>
             </div> <!-- /column -->
         </div> <!-- /row -->
         <div class="row">

@@ -78,6 +78,35 @@ nav {
     border: none;
 }
 
+#canvasContainer {
+    position: relative;
+    width: @waveform-width;
+    height: @waveform-height;
+    margin: 0px auto;
+}
+
+#mainBox {
+    width: @waveform-width;
+    height: @waveform-height;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+#canvasGradient {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width: @waveform-width;
+    height: @waveform-height;
+    /*opacity: 1;*/
+    background: -webkit-linear-gradient(right, @blueBG, rgba(0,0,255,0), @blueBG);
+    background: -o-linear-gradient(right, @blueBG, rgba(0,0,255,0), @blueBG);
+    background: -moz-linear-gradient(right, @blueBG, rgba(0,0,255,0), @blueBG);
+    background: linear-gradient(right, @blueBG, rgba(0,0,255,0), @blueBG);
+}
+
 header {
    padding-bottom: 40px;
 

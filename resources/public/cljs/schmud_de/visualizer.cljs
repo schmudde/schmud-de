@@ -84,7 +84,7 @@
           wavetable (q/state :coordinates)
           one-cycle (q/state :one-cycle)]
       (q/stroke 137 148 217)
-      ; (q/stroke (mod frame 10) 1 1)
+      ;(q/stroke (mod frame 10) 1 1)
       ; parameters for draw-wavetable include the wavetable, the decrement amount, & the SCALER
       (draw-wavetable wavetable dec-amount (iteration-x-axis-scaler dec-amount one-cycle))
       (draw-wavetable wavetable dec-amount2 (iteration-x-axis-scaler dec-amount2 one-cycle))
