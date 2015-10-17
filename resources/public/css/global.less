@@ -101,10 +101,11 @@ nav {
     width: @waveform-width;
     height: @waveform-height;
     /*opacity: 1;*/
-    background: -webkit-linear-gradient(right, @blueBG, rgba(0,0,255,0), @blueBG);
-    background: -o-linear-gradient(right, @blueBG, rgba(0,0,255,0), @blueBG);
-    background: -moz-linear-gradient(right, @blueBG, rgba(0,0,255,0), @blueBG);
-    background: linear-gradient(right, @blueBG, rgba(0,0,255,0), @blueBG);
+    background: -webkit-gradient(linear, left top, right top, @blueBG-hex, rgba(0,0,255,0), @blueBG-hex);
+    background: -webkit-linear-gradient(left, @blueBG-hex, rgba(0,0,255,0), @blueBG-hex);
+    background: -o-linear-gradient(left, @blueBG-hex, rgba(0,0,255,0), @blueBG-hex);
+    background: -moz-linear-gradient(left, @blueBG-hex, rgba(0,0,255,0), @blueBG-hex);
+    background: linear-gradient(to right, @blueBG-hex, rgba(0,0,255,0), @blueBG-hex);
 }
 
 header {
