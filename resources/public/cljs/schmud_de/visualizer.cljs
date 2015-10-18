@@ -88,7 +88,7 @@
           hue 137
           color-xformer (min js/window.pageYOffset (- 255 hue))]
       (q/stroke (+ hue color-xformer) 148 217)
-      ;(q/stroke (- 255 color-xformer) 255 255)
+      (q/stroke-weight (+ 1 (/ color-xformer 50)))
       ; parameters for draw-wavetable include the wavetable, the decrement amount, & the SCALER
       (draw-wavetable wavetable dec-amount (iteration-x-axis-scaler dec-amount one-cycle))
       (draw-wavetable wavetable dec-amount2 (iteration-x-axis-scaler dec-amount2 one-cycle))

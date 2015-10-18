@@ -109,6 +109,8 @@ return ((x__4845__auto__ < y__4846__auto__) ? x__4845__auto__ : y__4846__auto__)
 })();
 quil.core.stroke.call(null,(hue + color_xformer),(148),(217));
 
+quil.core.stroke_weight.call(null,((1) + (color_xformer / (50))));
+
 schmud_de.visualizer.draw_wavetable.call(null,wavetable,dec_amount,schmud_de.visualizer.iteration_x_axis_scaler.call(null,dec_amount,one_cycle));
 
 schmud_de.visualizer.draw_wavetable.call(null,wavetable,dec_amount2,schmud_de.visualizer.iteration_x_axis_scaler.call(null,dec_amount2,one_cycle));
