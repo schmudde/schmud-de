@@ -16,6 +16,7 @@
       (if (seq? ys)   ;; Check to see if sequence. If not, it gracefully returns nil.
         (cycle-point (rest ys) (inc position))
         nil)))
+
 (defn duration [ys]
   (cycle-point ys 0))
 
@@ -82,14 +83,15 @@
           dec-amount frame
           dec-amount2 (* frame 1.75)
           wavetable (q/state :coordinates)
-          one-cycle (q/state :one-cycle)]
-      (q/stroke 137 148 217)
-      ;(q/stroke (mod frame 10) 1 1)
+          one-cycle (q/state :one-cycle)
+          color-xformer (* js/window.pageYOffset 2)]
+      ;(q/stroke 137 148 217)
+      (q/stroke (- 255 color-xformer) 255 255)
       ; parameters for draw-wavetable include the wavetable, the decrement amount, & the SCALER
       (draw-wavetable wavetable dec-amount (iteration-x-axis-scaler dec-amount one-cycle))
       (draw-wavetable wavetable dec-amount2 (iteration-x-axis-scaler dec-amount2 one-cycle))
-      ;(if (= 0 (int (rem dec-amount halfway-point)))
-      ;  (println dec-amount halfway-point))
+      ;;(if (= 0 (int (rem dec-amount one-cycle)))
+      ;;  (.log js/console js/window.pageYOffset js/document.documentElement.scrollTop))
 )))
 
 (q/defsketch mainBox
