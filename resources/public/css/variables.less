@@ -40,3 +40,14 @@
     font-family: 'Lato', sans-serif;
     font-weight: 100;
 }
+
+    
+.css-gradient(@from: @blueBG-hex, @to: rgba(0,0,255,0)) {
+    background-color: @to;
+    background-image: -webkit-gradient(linear, left top, right top, from(@from), to(@to), from(@from));
+    background-image: -webkit-linear-gradient(left, @from, @to, @from);
+    background-image: -moz-linear-gradient(left, @from, @to, @from);
+    background-image: -o-linear-gradient(left, @from, @to, @from);
+    background-image: -ms-linear-gradient(left, @from, @to, @from);
+    background-image: linear-gradient(right, @from, @to, @from);
+}
