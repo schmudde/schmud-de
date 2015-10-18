@@ -41,8 +41,7 @@
     font-weight: 100;
 }
 
-    
-.css-gradient(@from: @blueBG-hex, @to: rgba(0,0,255,0)) {
+.css-gradient(@from: @blueBG-hex, @to: rgba(255,255,255,0)) {
     background-color: @to;
     background-image: -webkit-gradient(linear, left top, right top, from(@from), to(@to), from(@from));
     background-image: -webkit-linear-gradient(left, @from, @to, @from);
@@ -50,4 +49,8 @@
     background-image: -o-linear-gradient(left, @from, @to, @from);
     background-image: -ms-linear-gradient(left, @from, @to, @from);
     background-image: linear-gradient(right, @from, @to, @from);
+}
+
+.css-gradient(darken,@amount: 10%, @from: #20416A, @to: #3D69A5){
+    .css-gradient(darken(@from,@amount),darken(@to,@amount));
 }
