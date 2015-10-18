@@ -6,7 +6,7 @@
         <h2>I work at the intersection of storytelling and technology to create compelling experiences.</h2>
         <ul class="list-inline text-center filters">
             {{#tags}}
-                <li><button class="btn {{tag}}">{{tag}}</button></li>
+                <li><button class="btn {{tag}}" id="{{tag}}">{{tag}}</button></li>
             {{/tags}}
         </ul>
         <div>
@@ -19,7 +19,7 @@
         {{#projects}}
             <div class="{{position}}">
                 {{#video}}
-                <div class="embed-responsive embed-responsive-16by9"><iframe src="{{media}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                <!--<div class="embed-responsive embed-responsive-16by9"><iframe src="{{media}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>-->
                 {{/video}}
                 {{#image}}
                 <img src="img/{{media}}" class="img-responsive" />
