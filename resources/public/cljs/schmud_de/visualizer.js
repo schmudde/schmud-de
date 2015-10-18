@@ -98,15 +98,22 @@ try{quil.core.translate.call(null,tr__6099__auto__);
 var frame = quil.core.frame_count.call(null);
 var frequency = schmud_de.visualizer.frequency.call(null);
 var dec_amount = frame;
-var dec_amount2 = (frame * 1.75);
+var dec_amount2 = (frame * 0.75);
+var dec_amount3 = (frame * 1.45);
 var wavetable = quil.core.state.call(null,new cljs.core.Keyword(null,"coordinates","coordinates",-1225332668));
 var one_cycle = quil.core.state.call(null,new cljs.core.Keyword(null,"one-cycle","one-cycle",468436980));
-var color_xformer = (window.pageYOffset * (2));
-quil.core.stroke.call(null,((255) - color_xformer),(255),(255));
+var hue = (137);
+var color_xformer = (function (){var x__4845__auto__ = window.pageYOffset;
+var y__4846__auto__ = ((255) - hue);
+return ((x__4845__auto__ < y__4846__auto__) ? x__4845__auto__ : y__4846__auto__);
+})();
+quil.core.stroke.call(null,(hue + color_xformer),(148),(217));
 
 schmud_de.visualizer.draw_wavetable.call(null,wavetable,dec_amount,schmud_de.visualizer.iteration_x_axis_scaler.call(null,dec_amount,one_cycle));
 
-return schmud_de.visualizer.draw_wavetable.call(null,wavetable,dec_amount2,schmud_de.visualizer.iteration_x_axis_scaler.call(null,dec_amount2,one_cycle));
+schmud_de.visualizer.draw_wavetable.call(null,wavetable,dec_amount2,schmud_de.visualizer.iteration_x_axis_scaler.call(null,dec_amount2,one_cycle));
+
+return schmud_de.visualizer.draw_wavetable.call(null,wavetable,dec_amount3,schmud_de.visualizer.iteration_x_axis_scaler.call(null,dec_amount3,one_cycle));
 }finally {quil.core.pop_matrix.call(null);
 }});
 schmud_de.visualizer.mainBox = (function schmud_de$visualizer$mainBox(){
