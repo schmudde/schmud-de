@@ -56,6 +56,24 @@
      :video true
      :image false
      :position "twoBox"}
+    {:title "Schm&uuml;dde: A Retrospective"
+     :synopsis "A Selection of Music Written Between 1998 and 2012."
+     :status "Online"
+     :link ""
+     :tags [{:tag "sound"}]
+     :media "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/23618316&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"
+     :video true
+     :image false
+     :position "twoBox"}
+    {:title "Schm&uuml;dde: Film Music"
+     :synopsis "Music for Films"
+     :status "Online"
+     :link ""
+     :tags [{:tag "sound"}]
+     :media "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/144853848&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"
+     :video true
+     :image false
+     :position "twoBox"}
     {:title "Elements: Spring to Summer to Autumn 2011"
      :synopsis "Human-kind is essential. Without us, who would admire the flower? Who would discover new worlds and pay tribute to old ones?"
      :status "Online"
