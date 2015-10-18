@@ -3,12 +3,15 @@
 <div class="container" id="mainContent">
     <header>
         <h1>{{page-title}}</h1>
-        <h2></h2>
+        <h2>{{page-subtitle}}</h2>
     </header>
 
     <div class="row">
         <div class="col-xs-12">
-
+            {{#posts}}
+            <p>{{#description}}{{{value}}}{{/description}}</p>
+            <hr />
+            {{/posts}}
 
         </div> <!-- /column -->
     </div> <!-- /row -->

@@ -1,6 +1,7 @@
 (ns schmud-de.controllers
   (:require [clostache.parser :as clostache]
-            [schmud-de.models :as models]))
+            [schmud-de.models :as models]
+            [schmud-de.weblog :as weblog]))
 ;; 2) Function that returns a template (view) which is an appropriate match to the map. Is there a way to combine smaller functions - each one that returns the view for the data being supplied?
 
 (defn read-template [template-name]
@@ -19,10 +20,18 @@
   (models/database (keyword template-type))
 )
 
+(defn weblog-parser []
+  (let [rss (weblog/feeder)]
+    {:posts (:entries rss)
+     :page-title "The Beyond the Frame Weblog"
+     :page-subtitle "Composition, Time Dilation, and an Opportunity for the Sublime and Serendipitous."}))
+
 (defn index-builder [template-type]
   (clostache/render-resource
    (str "templates/" template-type ".mustache")
-   (data-model template-type)
+   (if (= template-type "weblog")
+     (weblog-parser)
+     (data-model template-type))
    (reduce (fn [accum pt] ;; "pt" is the name (as a keyword) of the partial
              (assoc accum pt (read-template pt)))
              {}
