@@ -97,6 +97,7 @@
           one-cycle (q/state :one-cycle)
           hue 137 ;; Blue
           ;; Height of the document - height of the document visible in the window
+          ;; js/document.documentElement.clientHeight is also an option
           window-height-max (- js/document.documentElement.offsetHeight js/window.innerHeight)
           ;; Position of scrollbar in the window
           scroll-placement js/window.pageYOffset

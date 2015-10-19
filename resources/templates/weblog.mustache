@@ -1,20 +1,27 @@
 {{> header}}
 
+<style>
+
+</style>
+
 <div class="container" id="mainContent">
     <header>
         <h1>{{page-title}}</h1>
         <h2>{{page-subtitle}}</h2>
     </header>
 
-    <div class="row">
-        <div class="col-xs-12">
-            {{#posts}}
+    {{#posts}}
+    <div class="post-row row">
+        <div class="post-header-sm4">
+            <p class="small">{{{published-date}}}</p>
+            <p class="small"><a href="{{{link}}}" target="_blank">permalink</a></p>
+        </div>
+        <div class="post-sm8-xs12">
             <p>{{#description}}{{{value}}}{{/description}}</p>
             <hr />
-            {{/posts}}
-
         </div> <!-- /column -->
     </div> <!-- /row -->
+    {{/posts}}
 
 </div>
 
