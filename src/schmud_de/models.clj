@@ -134,7 +134,7 @@
      :date "July 2015"
      :title "Harvesting Human Intelligence"
      :subtitle "Reframing the Surveillance Discourse"
-     :synopsis "Digitalegesellschaft: Netzpolitischen Abend #38: The history of surveillance machines and the restrictions of engeneering"
+     :synopsis "Digitalegesellschaft: Netzpolitischen Abend #38: A talk that details the limits of engineering and the power of ecosystems."
      :link ""
      :media "https://player.vimeo.com/video/132857801"
      :video true
@@ -145,7 +145,8 @@
     {:location "Pecha Kucha, Berlin, Germany"
      :date "July 2015"
      :title "Comptuers & Intimacy"
-     :synopsis "The Story of the Largest Machines and the Smallest Details"
+     :subtitle "The Story of the Largest Machines and the Smallest Details"
+     :synopsis "Our thoughts are the material of the Internet. In the midst of ever-evolving man/machine integration, I’ll use declassified documents to show how politicians have used computers to monitor these thoughts in the past, and suggest new ways of thinking about intimacy and computers in the future."
      :link "http://pechakucha.de/berlin/player/?event=PK_39_1&position=03&presenter=D.%20Schm%C3%BCdde&presentation=Computers%20&%20Intimacy%20%E2%80%93%20The%20Story%20of%20the%20Largest%20Machines%20and%20the%20Smallest%20Details"
      :media "intimacy.jpg"
      :video false
@@ -223,6 +224,7 @@
     }
     {:title "Music Hall of Williamsburg (Performance, New York City, 2015)"
      :piece "Borderless"
+     :highlight "strong"
     }
     {:title "ArtStars* Bits & Beats (Berlin 2015)"
      :piece "Jack and the Machine"
@@ -232,6 +234,7 @@
     }
     {:title "Now&After Festival 2015, Schusev State Museum of Architecture in Moscow (Installation)"
      :piece "Borderless"
+     :highlight "strong"
     }
     {:title "IndieWorks 2015 (New York City)"
      :piece "The Assassination of Chicago's Mayor"
@@ -244,18 +247,21 @@
     }
     {:title "ShortsHD Channel - Dish Network, DirecTV, AT&T (Broadcast, 2014)"
      :piece "The Assassination of Chicago’s Mayor"
+     :highlight "strong"
     }
     {:title "Filmstock Film Festival 2013 (Utah)"
      :piece "A Simple Reminder"
     }
     {:title "Hollyshorts 2013 (New York)"
      :piece "The Assassination of Chicago's Mayor"
+     :highlight "strong"
     }
     {:title "Filmstock Film Festival 2013 (New Mexico)"
      :piece "Refuge"
     }
     {:title "IndieFlix (Internet Distribution, 2014)"
      :piece "The Assassination of Chicago's Mayor"
+     :highlight "strong"
     }
     {:title "Beneath the Earth Film Festival 2012"
      :piece "Refuge"
@@ -268,6 +274,7 @@
     }
     {:title "Aesthetica Film Festival 2012 (York, UK)"
      :piece "The Assassination of Chicago's Mayor"
+     :highlight "strong"
     }
     {:title "Hollyshorts 2012 (Los Angeles, CA)"
      :piece "The Assassination of Chicago's Mayor"
@@ -283,12 +290,14 @@
     }
     {:title "ShortsHD Channel - Dish Network, DirecTV, AT&T (Broadcast, 2011)"
      :piece "Refuge"
+     :highlight "strong"
     }
     {:title "Short Story Film Showcase 2011, Chicago Filmmakers"
      :piece "Refuge"
     }
     {:title "Chicago International Film Festival 2010"
      :piece "Refuge"
+     :highlight "strong"
     }
     {:title "The New Art Film Festival 2010 (Champaign-Urbana, IL)"
      :piece "I am Concrete"
@@ -313,11 +322,81 @@
     }
     {:title "Version 2003, Chicago Museum of Contemporary Art"
      :piece "Lucid Dream Ensemble"
+     :highlight "strong"
     }
     {:title "SEAMUS national conference (Tempe, Az, 3/2003)"
      :piece "Lucid Dream Ensemble"
-    }
-    ]
+    }]
+   :awards
+    [{:title "Berlin/New York 2015 Media Residency Program"
+      :type "New Media Production Grant"
+      :org "Startup Germany, Medienboard"
+      :highlight "strong"
+     }
+     {:title "POV Hackathon 9"
+      :type "Competitve Selection"
+      :org "PBS"
+      :highlight "strong"
+     }
+     {:title "POV Hackathon 7"
+      :type "Competitve Selection"
+      :org "PBS"
+     }
+     {:title "Audience Choice Award, Best Director: &ldquo;The Assassination of Chicago&#39;s Mayor&rdquo;"
+      :type "Film Festival Award"
+      :org "Red Hook Film Festival 2014"
+      :highlight "strong"
+     }
+     {:title "Audience Choice Award: &ldquo;A Simple Reminder&rdquo;"
+      :type "Film Festival Award"
+      :org "Digipops Community Film Festival 2014"
+     }
+     {:title "Tribeca Hacks Winter 2013"
+      :type "Competitve Selection"
+      :org "Tribeca Film Institute"
+     }
+     {:title "Best Director, Best of Fest: &ldquo;Refuge&rdquo;"
+      :type "Film Festival Award"
+      :org "Filmstock Film Festival 2012"
+      :highlight "strong"
+     }
+     {:title "Best Actor: &ldquo;The Assassination of Chicago&#39;s Mayor&rdquo;"
+      :type "Film Festival Award"
+      :org "Filmstock Film Festival 2012"
+     }
+     {:title "Best Editing, Best Acting: &ldquo;Refuge&rdquo;"
+      :type "Film Festival Award"
+      :org "Beneath the Earth Film Festival 2012"
+      :highlight "strong"
+     }
+     {:title "Educator of the Year Nomination"
+      :type "Professional Distinction"
+      :org "International Academy of Design and Technology 2005"
+     }
+     {:title "Program for the Study of the Imagination 2003"
+      :type "Composition Grant"
+      :org "The Program in the Study of Imagination at Northwestern University"
+     }
+     {:title "Interactive Award - The One Show 1998"
+      :type "Competitve Showcase (Bronze Placement)"
+      :org "One Club"
+     }]
+   :affiliations
+    [{:org "The FilmShop: a New York Collective of Independent Filmmakers"
+      :title "Member"
+     }
+     {:org "Bushwick Film Festival 2013 &amp; 2014"
+      :title "New Media Advisor"
+     }
+     {:org "Himalaya Project: Education and Healthcare in Dolpo, Nepal"
+      :title "Volunteer Media Director and Producer"
+     }
+     {:org "&lt;StoryCode&gt;: an Immersive Media Meetup"
+      :title "Videography Volunteer"
+     }
+     {:org "The Script Lab"
+      :title "Screenwriting Analysis for &ldquo;From Script to Screen&rdquo;"
+     }]
    :page-title "Exhibitions"})
 
 (def weblog-db

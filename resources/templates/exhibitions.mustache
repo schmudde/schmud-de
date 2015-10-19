@@ -1,20 +1,57 @@
 {{> header}}
 
+<style>
+    .strong {
+        font-weight: bold;
+        }
+</style>
+
 <div class="container" id="mainContent">
     <header>
         <h1>{{page-title}}</h1>
         <h2></h2>
     </header>
 
+
     <div class="row">
         <div class="col-xs-12">
+            <h2>Screenings &amp; Exhibitions</h2>
             <ul class="">
                 {{#exhibitions}}
-                <li>{{title}} - <em>{{piece}}</em></li>
+                <li class="{{highlight}}">{{title}} - <em>{{piece}}</em></li>
                 {{/exhibitions}}
             </ul>
         </div> <!-- /column -->
     </div> <!-- /row -->
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Awards</h2>
+            <ul class="">
+                {{#awards}}
+                <li class="{{highlight}}">{{&title}} <small>({{type}})</small></li>
+                <ul>
+                    <li>Awarded By: {{org}}</li>
+                </ul>
+                {{/awards}}
+            </ul>
+        </div> <!-- /column -->
+    </div> <!-- /row -->
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Affiliations</h2>
+            <ul class="">
+                {{#affiliations}}
+                <li>{{&org}}</li>
+                <ul>
+                    <li>{{&title}}</li>
+                </ul>
+                {{/affiliations}}
+            </ul>
+        </div> <!-- /column -->
+    </div> <!-- /row -->
+
 
 </div>
 
