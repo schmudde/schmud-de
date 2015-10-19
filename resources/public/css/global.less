@@ -3,8 +3,12 @@
 } */
 
 html {
-     position: relative;
-     min-height: 100%;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 70px;
 }
 
 h1, h3 {
@@ -135,12 +139,26 @@ article {
     }
 }
 
-#titleContainer {
+#titleContainer-col-sm3-xs5 {
+    .make-xs-column(5);
+    .make-sm-column(3);
 
     a {
         text-decoration: none;
     }
 
+    #canvasContainer {
+        margin: 0px auto;
+        @media (min-width: @screen-sm-min) {
+            float: right;
+        }
+    }
+}
+
+#nav-links {
+    @media (max-width: @screen-xs-max) {
+        border: 1px solid red;
+    }
 }
 
 #titleRow {
