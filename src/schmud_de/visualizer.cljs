@@ -17,6 +17,16 @@
         (cycle-point (rest ys) (inc position))
         nil)))
 
+(defn range-scaler [value original-min original-max destination-min destination-max]
+  "I take a value and scale it to another range"
+  (let [destination-range (- destination-max destination-min)
+        original-range (- original-max original-min)
+        absolute-difference (- value original-min)
+        scaler (/ absolute-difference original-range)]
+    (if (not= original-range 0)
+      (+ (* destination-min (- 1 scaler)) (* destination-max scaler))
+      0)))
+
 (defn duration [ys]
   (cycle-point ys 0))
 
@@ -85,10 +95,15 @@
           dec-amount3 (* frame 1.45)
           wavetable (q/state :coordinates)
           one-cycle (q/state :one-cycle)
-          hue 137
-          color-xformer (min js/window.pageYOffset (- 255 hue))]
+          hue 137 ;; Blue
+          ;; Height of the document - height of the document visible in the window
+          window-height-max (- js/document.documentElement.offsetHeight js/window.innerHeight)
+          ;; Position of scrollbar in the window
+          scroll-placement js/window.pageYOffset
+          ;; Scale a color value
+          color-xformer (range-scaler scroll-placement 0 window-height-max 1 (- 255 hue))]
       (q/stroke (+ hue color-xformer) 148 217)
-      (q/stroke-weight (+ 1 (/ color-xformer 50)))
+      (q/stroke-weight (+ 1 (range-scaler scroll-placement 0 window-height-max 0 1)))
       ; parameters for draw-wavetable include the wavetable, the decrement amount, & the SCALER
       (draw-wavetable wavetable dec-amount (iteration-x-axis-scaler dec-amount one-cycle))
       (draw-wavetable wavetable dec-amount2 (iteration-x-axis-scaler dec-amount2 one-cycle))
