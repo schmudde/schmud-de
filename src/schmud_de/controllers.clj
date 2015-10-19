@@ -38,6 +38,6 @@
              [:header :footer])))
 
 (defn index
-  "Right now this expects 'main', 'projects', 'talks', 'exhibitions', or 'weblog'"
+  "Right now this expects 'main', 'projects', 'talks', 'exhibitions', 'weblog', 'etc'"
   [template-type]
   (index-builder template-type))

@@ -8,14 +8,22 @@ html {
 }
 
 body {
-    padding-top: 70px;
+    padding-top: 95px;
+}
+
+h1, h2, h3 {
+    color: @brand-primary;
+}
+
+h1 small {
+    color: @brand-info;
 }
 
 h1, h3 {
     .fontHeavyMixin;
 }
 
-h2, h4, blockquote {
+h1 small, h2, h4, blockquote {
     .fontLightMixin;
 }
 
@@ -69,7 +77,6 @@ article {
 .exhibitions {
     h3 {
         font-size: 24px;
-        color: @brand-primary;
         margin-top: 0px;
         font-weight: normal;
     }

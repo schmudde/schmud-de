@@ -18,6 +18,8 @@
        (controller/index "exhibitions"))
   (GET "/weblog" []
        (controller/index "weblog"))
+  (GET "/etc" []
+       (controller/index "etc"))
   (route/resources "/")
   (route/not-found "Not Found")
   (ANY "*" []
