@@ -1,0 +1,95 @@
+nav {
+
+    h1, h1 > small {
+       .fontVeryVeryLightMixin;
+       a, a:hover, a:focus, a:link, a:visited {
+           color: black;
+       }
+    }
+
+    ul {
+        display: inline-block;
+        line-height: 1;
+        margin: auto;
+        vertical-align: middle;
+        .fontVeryLightMixin;
+    }
+}
+
+.nav > li > a {
+     padding: 0px 15px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+     background-color: transparent;
+}
+
+.navbar {
+    background-color: @blueBG;
+    border-bottom: @blueFG;
+    min-height: 0px;
+}
+
+.navbar-inverse > div {
+
+}
+
+.navbar-inverse {
+    border: none;
+}
+
+#canvasContainer {
+    position: relative;
+    width: @waveform-width;
+    height: @waveform-height;
+    margin: 0px auto;
+
+    #mainBox {
+        width: @waveform-width;
+        height: @waveform-height;
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #canvasGradient {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        width: @waveform-width;
+        height: @waveform-height;
+        .css-gradient;
+    }
+}
+
+#nav-links {
+    @media (max-width: @screen-xs-max) {
+        /*border: 1px solid blue;*/
+    }
+    .make-sm-column(9);
+    .make-xs-column(12);
+}
+
+#titleRow {
+    .make-row();
+    padding: 20px 0px;
+
+    #titleContainer-col-sm3-xs5 {
+        //.make-xs-column(5);
+        .hidden-xs;
+        .make-sm-column(3);
+
+        a {
+            text-decoration: none;
+        }
+
+        #canvasContainer {
+            margin: 0px auto;
+            @media (min-width: @screen-sm-min) {
+                float: right;
+            }
+        }
+    }
+}

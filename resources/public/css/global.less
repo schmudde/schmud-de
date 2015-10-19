@@ -45,79 +45,6 @@ p {
     line-height: 1.5em;
 }
 
-nav {
-
-    h1, h1 > small {
-       .fontVeryVeryLightMixin;
-       a, a:hover, a:focus, a:link, a:visited {
-           color: black;
-       }
-    }
-
-    ul {
-        display: inline-block;
-        line-height: 1;
-        margin: auto;
-        vertical-align: middle;
-        .fontVeryLightMixin;
-    }
-}
-
-.nav > li > a {
-     padding: 0px 15px;
-}
-
-.nav > li > a:hover,
-.nav > li > a:focus {
-     background-color: transparent;
-}
-
-.navbar {
-    background-color: @blueBG;
-    border-bottom: @blueFG;
-    min-height: 0px;
-}
-
-.navbar-inverse > div {
-
-}
-
-.navbar-inverse {
-    border: none;
-}
-
-#canvasContainer {
-    position: relative;
-    width: @waveform-width;
-    height: @waveform-height;
-    margin: 0px auto;
-}
-
-#mainBox {
-    width: @waveform-width;
-    height: @waveform-height;
-    position: relative;
-    padding: 0px;
-    margin: 0px;
-}
-
-#canvasGradient {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 2;
-    width: @waveform-width;
-    height: @waveform-height;
-    /*opacity: 1;*/
-    .css-gradient;
-    /*
-    background: -webkit-gradient(linear, left top, right top, @blueBG-hex, rgba(0,0,255,0), @blueBG-hex);
-    background: -webkit-linear-gradient(left, @blueBG-hex, rgba(0,0,255,0), @blueBG-hex);
-    background: -o-linear-gradient(left, @blueBG-hex, rgba(0,0,255,0), @blueBG-hex);
-    background: -moz-linear-gradient(left, @blueBG-hex, rgba(0,0,255,0), @blueBG-hex);
-    background: linear-gradient(to right, @blueBG-hex, rgba(0,0,255,0), @blueBG-hex);*/
-}
-
 header {
    padding-bottom: 40px;
 
@@ -137,33 +64,6 @@ article {
         padding-bottom: 25px;
         .center-block();
     }
-}
-
-#titleContainer-col-sm3-xs5 {
-    .make-xs-column(5);
-    .make-sm-column(3);
-
-    a {
-        text-decoration: none;
-    }
-
-    #canvasContainer {
-        margin: 0px auto;
-        @media (min-width: @screen-sm-min) {
-            float: right;
-        }
-    }
-}
-
-#nav-links {
-    @media (max-width: @screen-xs-max) {
-        border: 1px solid red;
-    }
-}
-
-#titleRow {
-    .make-row();
-    padding: 20px 0px;
 }
 
 .exhibitions {
