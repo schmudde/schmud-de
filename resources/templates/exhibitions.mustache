@@ -1,57 +1,43 @@
 {{> header}}
 
-<style>
-    .strong {
-        font-weight: bold;
-        }
-</style>
-
-<div class="container" id="mainContent">
+<div class="container exhibitions" id="mainContent">
     <header>
         <h1>{{page-title}}</h1>
-        <h2></h2>
+        <h2>Exhibitions, screenings, awards, and the like...</h2>
     </header>
 
 
     <div class="row">
-        <div class="col-xs-12">
-            <h2>Screenings &amp; Exhibitions</h2>
-            <ul class="">
+        <div class="col-sm-6">
+            <h3>Screenings &amp; Exhibitions</h3>
+            <ul>
                 {{#exhibitions}}
-                <li class="{{highlight}}">{{title}} - <em>{{piece}}</em></li>
+                <li class="{{highlight}}">{{title}}</li>
+                <li><small>({{place}})</small></li>
+                <li class="sublist">Piece: <em>{{piece}}</em></li>
                 {{/exhibitions}}
             </ul>
         </div> <!-- /column -->
-    </div> <!-- /row -->
 
-    <div class="row">
-        <div class="col-xs-12">
-            <h2>Awards</h2>
-            <ul class="">
+        <div class="col-sm-6">
+            <h3>Awards</h3>
+            <ul>
                 {{#awards}}
-                <li class="{{highlight}}">{{&title}} <small>({{type}})</small></li>
-                <ul>
-                    <li>Awarded By: {{org}}</li>
-                </ul>
+                <li class="{{highlight}}">{{&title}}</li>
+                <li><small>({{type}})</small></li>
+                <li class="sublist">Awarded By: {{org}}</li>
                 {{/awards}}
             </ul>
-        </div> <!-- /column -->
-    </div> <!-- /row -->
 
-    <div class="row">
-        <div class="col-xs-12">
-            <h2>Affiliations</h2>
-            <ul class="">
+            <h3>Affiliations</h3>
+            <ul>
                 {{#affiliations}}
                 <li>{{&org}}</li>
-                <ul>
-                    <li>{{&title}}</li>
-                </ul>
+                <li class="sublist">{{&title}}</li>
                 {{/affiliations}}
             </ul>
         </div> <!-- /column -->
     </div> <!-- /row -->
-
 
 </div>
 

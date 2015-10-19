@@ -219,112 +219,145 @@
 
 (def exhibitions-db
   {:exhibitions
-   [{:title "Livestream Public (Performance, New York City, 2015)"
+   [{:title "FUSE @ Livestream Public"
+     :place "Performance, New York City, 2015"
      :piece "Borderless"
     }
-    {:title "Music Hall of Williamsburg (Performance, New York City, 2015)"
+    {:title "Music Hall of Williamsburg"
+     :place "Performance, New York City, 2015"
      :piece "Borderless"
      :highlight "strong"
     }
-    {:title "ArtStars* Bits & Beats (Berlin 2015)"
+    {:title "ArtStars* Bits & Beats"
+     :place "Berlin 2015"
      :piece "Jack and the Machine"
     }
-    {:title "310 XNRD in London (2 Day Workshop & Installation, 2015)"
+    {:title "310 XNRD"
+     :place "2 Day Workshop & Installation, London, 2015"
      :piece "Borderless"
     }
-    {:title "Now&After Festival 2015, Schusev State Museum of Architecture in Moscow (Installation)"
+    {:title "Schusev State Museum of Architecture Now&After Festival"
+     :place "Installation, Moscow, 2015"
      :piece "Borderless"
      :highlight "strong"
     }
-    {:title "IndieWorks 2015 (New York City)"
+    {:title "IndieWorks"
+     :place "New York City, 2015"
      :piece "The Assassination of Chicago's Mayor"
     }
-    {:title "IFP Made in NY Media Center (Installation, 2014)"
+    {:title "IFP Made in NY Media Center"
+     :place "Installation, New York City, 2014"
      :piece "Borderless"
     }
-    {:title "Red Hook Film Festival 2014 (New York City)"
+    {:title "Red Hook Film Festival"
+     :place "New York City, 2014"
      :piece "The Assassination of Chicago’s Mayor"
     }
-    {:title "ShortsHD Channel - Dish Network, DirecTV, AT&T (Broadcast, 2014)"
+    {:title "ShortsHD Channel - Dish Network, DirecTV, AT&T"
+     :place "Broadcast, 2014"
      :piece "The Assassination of Chicago’s Mayor"
      :highlight "strong"
     }
-    {:title "Filmstock Film Festival 2013 (Utah)"
+    {:title "Filmstock Film Festival"
+     :place "Utah, 2013"
      :piece "A Simple Reminder"
     }
-    {:title "Hollyshorts 2013 (New York)"
+    {:title "Hollyshorts"
+     :place "New York City, 2013"
      :piece "The Assassination of Chicago's Mayor"
      :highlight "strong"
     }
-    {:title "Filmstock Film Festival 2013 (New Mexico)"
+    {:title "Filmstock Film Festival"
+     :place "New Mexico, 2013"
      :piece "Refuge"
     }
-    {:title "IndieFlix (Internet Distribution, 2014)"
+    {:title "IndieFlix"
+     :place "Internet Distribution, 2014"
      :piece "The Assassination of Chicago's Mayor"
      :highlight "strong"
     }
-    {:title "Beneath the Earth Film Festival 2012"
+    {:title "Beneath the Earth Film Festival"
+     :place "Internet Distribution, 2012"
      :piece "Refuge"
     }
-    {:title "Filmstock Film Festival 2012 (Arizona) "
+    {:title "Filmstock Film Festival"
+     :place "Arizona, 2012"
      :piece "The Assassination of Chicago's Mayor"
     }
-    {:title "Filmstock Film Festival 2012 (Arizona) "
+    {:title "Filmstock Film Festival"
+     :place "Arizona, 2012"
      :piece "Refuge"
     }
-    {:title "Aesthetica Film Festival 2012 (York, UK)"
+    {:title "Aesthetica Film Festival"
+     :place "York, UK, 2013"
      :piece "The Assassination of Chicago's Mayor"
      :highlight "strong"
     }
-    {:title "Hollyshorts 2012 (Los Angeles, CA)"
+    {:title "Hollyshorts"
+     :place "Los Angeles, 2012"
      :piece "The Assassination of Chicago's Mayor"
     }
-    {:title "MoFest 2012 (Chicago, IL)"
+    {:title "MoFest"
+     :place "Chicago, 2012"
      :piece "Elements • Spring to Summer to Autumn 2011"
     }
-    {:title "Short Story Showcase 2012, Chicago Filmmakers"
+    {:title "Chicago Filmmakers Short Story Showcase"
+     :place "Chicago, 2012"
      :piece "Elements • Spring to Summer to Autumn 2011"
     }
-    {:title "Moving Pictures Film Festival 2012 (Quincy, IL)"
+    {:title "Moving Pictures Film Festival"
+     :place "Quincy, Illinois, 2012"
      :piece "Refuge"
     }
-    {:title "ShortsHD Channel - Dish Network, DirecTV, AT&T (Broadcast, 2011)"
-     :piece "Refuge"
-     :highlight "strong"
-    }
-    {:title "Short Story Film Showcase 2011, Chicago Filmmakers"
-     :piece "Refuge"
-    }
-    {:title "Chicago International Film Festival 2010"
+    {:title "ShortsHD Channel - Dish Network, DirecTV, AT&T"
+     :place "Broadcast, 2011"
      :piece "Refuge"
      :highlight "strong"
     }
-    {:title "The New Art Film Festival 2010 (Champaign-Urbana, IL)"
+    {:title "Chicago Filmmakers Short Story Film Showcase"
+     :place "Chicago, 2011"
+     :piece "Refuge"
+    }
+    {:title "Chicago International Film Festival"
+     :place "Chicago, 2010"
+     :piece "Refuge"
+     :highlight "strong"
+    }
+    {:title "The New Art Film Festival"
+     :place "Champaign-Urbana, Illinois, 2010"
      :piece "I am Concrete"
     }
-    {:title "Chicago Filmmakers 2008"
+    {:title "Chicago Filmmakers"
+     :place "Chicago, 2008"
      :piece "Aijo"
     }
-    {:title "Georgetown Film Fest 2006 (Washington, DC)"
+    {:title "Georgetown Film Fest"
+     :place "Washington DC, 2006"
      :piece "Aijo"
     }
-    {:title "S.N.O.B Film Festival 2006 (Boston, MA)"
+    {:title "S.N.O.B Film Festival"
+     :place "Boston, 2006"
      :piece "Aijo"
     }
-    {:title "River’s Edge International Film Festival 2005 (Paducah, Kentucky)"
+    {:title "River’s Edge International Film Festival"
+     :place "Paducah, Kentucky, 2005"
      :piece "Year of the Rooster"
     }
-    {:title "Block Museum (Evanston, IL, 11/2003)"
+    {:title "Block Museum"
+     :place "Evanston, Illinois, 11/2003"
      :piece "Lucid Dream Ensemble"
     }
-    {:title "Block Museum (Evanston, IL, 4/2003)"
+    {:title "Block Museum"
+     :place "Evanston, Illinois, 4/2003"
      :piece "Lucid Dream Ensemble"
     }
-    {:title "Version 2003, Chicago Museum of Contemporary Art"
+    {:title "Chicago Museum of Contemporary Art Version Festival"
+     :place "Chicago 2003"
      :piece "Lucid Dream Ensemble"
      :highlight "strong"
     }
-    {:title "SEAMUS national conference (Tempe, Az, 3/2003)"
+    {:title "SEAMUS National Conference"
+     :place "Tempe, Arizona, 2003"
      :piece "Lucid Dream Ensemble"
     }]
    :awards
@@ -397,7 +430,7 @@
      {:org "The Script Lab"
       :title "Screenwriting Analysis for &ldquo;From Script to Screen&rdquo;"
      }]
-   :page-title "Exhibitions"})
+   :page-title "Vitae"})
 
 (def weblog-db
   {:exhibitions

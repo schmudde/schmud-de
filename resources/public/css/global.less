@@ -7,12 +7,15 @@ html {
      min-height: 100%;
 }
 
-h1, h2 {
+h1, h3 {
     .fontHeavyMixin;
 }
 
-h3, h4, blockquote {
+h2, h4, blockquote {
     .fontLightMixin;
+}
+
+h4, blockquote {
     color: @gray;
 }
 
@@ -31,9 +34,7 @@ h1 {
 h2 {
 	padding-top: 0px;
 	margin-top: 0px;
-	font-weight:400;
 }
-
 
 p {
     .fontLightMixin;
@@ -145,6 +146,36 @@ article {
 #titleRow {
     .make-row();
     padding: 20px 0px;
+}
+
+.exhibitions {
+    h3 {
+        font-size: 24px;
+        color: @brand-primary;
+        margin-top: 0px;
+        font-weight: normal;
+    }
+
+    ul {
+        color: @blueFG;
+        list-style-type: none;
+        padding-bottom: 11px;
+    }
+
+    .strong {
+        font-weight: bold;
+    }
+
+    small {
+        font-weight: normal;
+        color: gray;
+    }
+
+    .sublist {
+        color: @blueFG-lighter;
+        list-style-type: none;
+        padding-bottom: 11px;
+    }
 }
 
 .socialIcons {
