@@ -24,6 +24,7 @@ return cljs.core.filter.call(null,cljs.core.complement.call(null,cljs.core.nil_Q
 });
 schmud_de.filter.click_handler = (function schmud_de$filter$click_handler(e){
 
+var ready_state = document.readyState;
 var class$ = dommy.core.text.call(null,e.currentTarget);
 var elements = dommy.utils.__GT_Array.call(null,document.querySelectorAll(dommy.core.selector.call(null,cljs.core.keyword.call(null,[cljs.core.str("."),cljs.core.str(class$)].join('')))));
 var box_class_name = ".project-box";
@@ -42,6 +43,8 @@ dommy.core.remove_class_BANG_.call(null,box_5731,"animated");
 dommy.core.remove_class_BANG_.call(null,box_5731,"bounce");
 
 dommy.core.show_BANG_.call(null,box_5731);
+
+dommy.core.set_px_BANG_.call(null,box_5731,new cljs.core.Keyword(null,"top","top",-1856271961),dommy.core.px.call(null,box_5731,new cljs.core.Keyword(null,"top","top",-1856271961)));
 
 var G__5732 = seq__5715_5727;
 var G__5733 = chunk__5716_5728;
@@ -74,6 +77,8 @@ dommy.core.remove_class_BANG_.call(null,box_5743,"animated");
 dommy.core.remove_class_BANG_.call(null,box_5743,"bounce");
 
 dommy.core.show_BANG_.call(null,box_5743);
+
+dommy.core.set_px_BANG_.call(null,box_5743,new cljs.core.Keyword(null,"top","top",-1856271961),dommy.core.px.call(null,box_5743,new cljs.core.Keyword(null,"top","top",-1856271961)));
 
 var G__5744 = cljs.core.next.call(null,seq__5715_5737__$1);
 var G__5745 = null;

@@ -19,7 +19,8 @@
 
 (defn click-handler [e]
   "I filter based on what button you press"
-  (let [class (dommy/text (.-currentTarget e))        ;; The class of the current button
+  (let [ready-state (. js/document -readyState)
+        class (dommy/text (.-currentTarget e))        ;; The class of the current button
         elements (sel (keyword (str "." class)))      ;; Select all the elements w/ that class
         box-class-name ".project-box"
         all-boxes (sel box-class-name)
@@ -32,14 +33,17 @@
     (doseq [box all-boxes]
       (dommy/remove-class! box "animated")
       (dommy/remove-class! box "bounce")
-      (dommy/show! box))
+      (dommy/show! box)
+      ;; This little nugget triggers a reflow in between removing and adding the class names.
+      ;; The upshot: the boxes in the dom are considered 100% fresh and the animation is triggered
+      ;; on every element (source: css-tricks.com/restart-css-animation).
+      (dommy/set-px! box :top (dommy/px box :top)))
 
     (doseq [box hide-boxes]
       (dommy/hide! box))
 
     (doseq [box select-boxes]
-      (dommy/add-class! box "animated bounce"))
-))
+      (dommy/add-class! box "animated bounce"))))
 
 (defn filterer []
   (doseq [buttons (sel [:.filters :li])]
