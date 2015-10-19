@@ -2,6 +2,11 @@
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="css/animate.min.css" />
+<style>
+.btn {
+    text-transform: capitalize;
+}
+</style>
 
 <div class="container" id="mainContent">
     <header>
@@ -9,6 +14,7 @@
         <h2>I work at the intersection of storytelling and technology to create compelling experiences.</h2>
         <p class="text-center">Filter by your interest</p>
         <ul class="list-inline text-center filters">
+                <li><button class="btn">show all</button></li>
             {{#tags}}
                 <li><button class="btn {{tag}}" id="{{tag}}">{{tag}}</button></li>
             {{/tags}}
@@ -21,7 +27,7 @@
         {{#projects}}
             <div class="{{position}} project-box">
                 {{#video}}
-                    <div class="embed-responsive embed-responsive-16by9"><iframe src="{{media}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                    <!-- <div class="embed-responsive embed-responsive-16by9"><iframe src="{{media}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div> -->
                 {{/video}}
                 {{#image}}
                     <img src="img/{{media}}" class="img-responsive" />

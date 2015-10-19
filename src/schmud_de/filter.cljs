@@ -9,14 +9,22 @@
 (defn htmlize [elements]
   (map #(dommy/html %) elements))
 
+(defn grab-parents [class elements box-class-name all-boxes]
+  "If you request to see all the boxes, I just return 'all-boxes.' However, if you request a specific category, I return a list of boxes that have that label contained within."
+  (if (= class "show all")
+    all-boxes
+    ;; filter = 'Do not add a label w/o a parent (nil).'
+    (filter (complement nil?) (box-parent elements box-class-name)))
+)
+
 (defn click-handler [e]
   "I filter based on what button you press"
   (let [class (dommy/text (.-currentTarget e))        ;; The class of the current button
         elements (sel (keyword (str "." class)))      ;; Select all the elements w/ that class
         box-class-name ".project-box"
-        ;; Grab all parents of all the label keywords. Do not add a label w/o a parent (nil).
-        select-boxes (filter (complement nil?) (box-parent elements box-class-name))
         all-boxes (sel box-class-name)
+        ;; Grab all parents of all the label keywords.
+        select-boxes (grab-parents class elements box-class-name all-boxes)
         ;; Grab all the Project Boxes we want to hide by finding the difference between
         ;; the *selected* boxes and *all* the boxes on the screen
         hide-boxes (comparer/difference (set all-boxes) (set select-boxes))]
