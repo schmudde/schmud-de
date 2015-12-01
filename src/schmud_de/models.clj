@@ -130,12 +130,14 @@
 
 (def talks-db
   {:talks
-   [{:location "C-Base: home of the Chaos Computer Club in Berlin, Germany"
+   [{:location "C-Base: Home of the Chaos Computer Club in Berlin, Germany"
      :date "July 2015"
      :title "Harvesting Human Intelligence"
      :subtitle "Reframing the Surveillance Discourse"
-     :synopsis "Digitalegesellschaft: Netzpolitischen Abend #38: A talk that details the limits of engineering and the power of ecosystems."
-     :link ""
+     :synopsis "The power of large government and corporate surveillance systems feel like an intractable part of our everyday digital lifestyle. However, the raw intelligence of centralized computer systems pale in comparison to decentralized personal computers, each augmented by a human actor. This talk examines how the PC threatens traditional power structures and how those systems have responded."
+     :link-status true
+     :link "https://digitalegesellschaft.de/2015/07/npa039/"
+     :link-name "Digitalegesellschaft: Netzpolitischen Abend #38"
      :media "https://player.vimeo.com/video/132857801"
      :video true
      :image false
@@ -147,7 +149,9 @@
      :title "Comptuers & Intimacy"
      :subtitle "The Story of the Largest Machines and the Smallest Details"
      :synopsis "Our thoughts are the material of the Internet. In the midst of ever-evolving man/machine integration, I’ll use declassified documents to show how politicians have used computers to monitor these thoughts in the past, and suggest new ways of thinking about intimacy and computers in the future."
+     :link-status true
      :link "http://pechakucha.de/berlin/player/?event=PK_39_1&position=03&presenter=D.%20Schm%C3%BCdde&presentation=Computers%20&%20Intimacy%20%E2%80%93%20The%20Story%20of%20the%20Largest%20Machines%20and%20the%20Smallest%20Details"
+     :link-name "Pecha Kucha Slides &amp; Audio"
      :media "intimacy.jpg"
      :video false
      :image true
@@ -159,7 +163,9 @@
      :title "Associate Professor"
      :subtitle "Illinois Institute of Art"
      :synopsis "Courses: Sound Design for Film (DFV 365), Survey of Film (DFV 100), Digital Filmmaking Portfolio Preparation I (DFV 330), Digital Filmmaking Portfolio Preparation II (DFV 430), Fundamentals of Audio (DFV 120), Survey of the Music Industry (AUD 100), Music Theory (AUD 201)"
+     :link-status false
      :link ""
+     :link-name ""
      :media "ai.png"
      :video false
      :image true
@@ -171,7 +177,9 @@
      :title "Guest Lecturer"
      :subtitle "Columbia College Chicago"
      :synopsis "Master Class - Hybrid Scores and Atonality"
+     :link-status false
      :link ""
+     :link-name ""
      :media "ccc.jpg"
      :video false
      :image true
@@ -183,7 +191,9 @@
      :title "Adjunct Faculty"
      :subtitle "International Academy of Design and Technology"
      :synopsis "Courses: Directing and Producing, Application Design, Digital Production I, Advanced Post Production, Digital Video Editing, Audio Production, Digital Audio Editing, Senior Project for Visual Communications, Career Portfolio Development for Visual Communications, Independent Study"
+     :link-status false
      :link ""
+     :link-name ""
      :media "iadt.png"
      :video false
      :image true
@@ -194,8 +204,10 @@
      :date "September 2009"
      :title "Moderator"
      :subtitle "&quot;Low Budget Filmmaking&quot;"
-     :synopsis "Another synopsis"
+     :synopsis "A discussion of low budget filmmaking techniques for independent filmmakers."
+     :link-status false
      :link ""
+     :link-name ""
      :media "miff.png"
      :video false
      :image true
@@ -208,7 +220,9 @@
      :title "Panelist"
      :subtitle "&quot;Casting in Student Films&quot;"
      :synopsis "Another synopsis"
+     :link-status false
      :link ""
+     :link-name ""
      :media ""
      :video false
      :image false

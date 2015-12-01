@@ -26,8 +26,10 @@
                         <dd>{{location}}</dd>
                         <dt>Synopsis</dt>
                         <dd>{{synopsis}}</dd>
+                        {{#link-status}}
                         <dt>Link</dt>
-                        <dd><a href="{{link}}">Talk</a></dd>
+                        <dd><a href="{{link}}">{{{link-name}}}</a></dd>
+                        {{/link-status}}
                     </dl>
                 </div>
             </div> <!-- /panel -->
