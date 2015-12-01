@@ -179,7 +179,7 @@
      :synopsis "<blockquote><p>It may be that in order to make the cinematic image sound authentically, in its full diapason, music has to be abandoned.</p><footer>Andrei Tarkovsky</footer></blockquote>A master class that examines the intersection between sound design and traditional notions of composing music for the screen."
      :link-status true
      :link "http://beyondthefra-me.tumblr.com/post/5545059622"
-     :link-name "Beyond the Frame: &quot;Composing for <em>The Assassination of Chicago&#39;s Mayor</em>&quot;"
+     :link-name "D. Schm&uuml;dde: &quot;Composing for <em>The Assassination of Chicago&#39;s Mayor</em>&quot;"
      :media "ccc.jpg"
      :video false
      :image true
@@ -207,7 +207,7 @@
      :synopsis "A discussion of low budget filmmaking techniques for independent filmmakers."
      :link-status true
      :link "http://beyondthefra-me.tumblr.com/post/53206393777"
-     :link-name "Beyond the Frame: &quot;The Magic of M&#233;li&#232s: Low Budget Filmmaking&quot;"
+     :link-name "D. Schm&uuml;dde: &quot;The Magic of M&#233;li&#232s: Low Budget Filmmaking&quot;"
      :media "miff.png"
      :video false
      :image true
@@ -222,7 +222,7 @@
      :synopsis "A discussion with actors on the benefits and concerns associated with working on student-run film sets."
      :link-status true
      :link "http://beyondthefra-me.tumblr.com/post/28430696505"
-     :link-name "Beyond the Frame: &quot;Reader Question: Student/Actor Expectations&quot;"
+     :link-name "D. Schm&uuml;dde: &quot;Reader Question: Student/Actor Expectations&quot;"
      :media ""
      :video false
      :image false
