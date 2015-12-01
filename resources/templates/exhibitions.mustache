@@ -36,6 +36,15 @@
                 <li class="sublist">{{&title}}</li>
                 {{/affiliations}}
             </ul>
+
+            <h3>Education</h3>
+            <ul>
+                {{#education}}
+                <li><strong>{{title}}</strong>, {{year}}</li>
+                <li>{{org}}</li>
+                <li class="sublist">Concentrations: {{concentrations}}</li>
+                {{/education}}
+            </ul>
         </div> <!-- /column -->
     </div> <!-- /row -->
 

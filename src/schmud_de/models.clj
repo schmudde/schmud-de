@@ -146,7 +146,7 @@
     }
     {:location "Pecha Kucha, Berlin, Germany"
      :date "July 2015"
-     :title "Comptuers & Intimacy"
+     :title "Commute's & Intimacy"
      :subtitle "The Story of the Largest Machines and the Smallest Details"
      :synopsis "Our thoughts are the material of the Internet. In the midst of ever-evolving man/machine integration, I’ll use declassified documents to show how politicians have used computers to monitor these thoughts in the past, and suggest new ways of thinking about intimacy and computers in the future."
      :link-status true
@@ -162,7 +162,7 @@
      :date "January 2006 - January 2012"
      :title "Associate Professor"
      :subtitle "Illinois Institute of Art"
-     :synopsis "Courses: Sound Design for Film (DFV 365), Survey of Film (DFV 100), Digital Filmmaking Portfolio Preparation I (DFV 330), Digital Filmmaking Portfolio Preparation II (DFV 430), Fundamentals of Audio (DFV 120), Survey of the Music Industry (AUD 100), Music Theory (AUD 201)"
+     :synopsis "Courses: Sound Design for Film <span class='small'>(DFV 365)</span>, Survey of Film <span class='small'>(DFV 100)</span>, Digital Filmmaking Portfolio Preparation I <span class='small'>(DFV 330)</span>, Digital Filmmaking Portfolio Preparation II <span class='small'>(DFV 430)</span>, Fundamentals of Audio <span class='small'>(DFV 120)</span>, Survey of the Music Industry <span class='small'>(AUD 100)</span>, Music Theory <span class='small'>(AUD 201)</span>"
      :link-status false
      :link ""
      :link-name ""
@@ -174,12 +174,12 @@
     }
     {:location "MFA: Music Composition for the Screen, Chicago, IL"
      :date "October 2009"
-     :title "Guest Lecturer"
+     :title "Hybrid Scores and Atonality"
      :subtitle "Columbia College Chicago"
-     :synopsis "Master Class - Hybrid Scores and Atonality"
-     :link-status false
-     :link ""
-     :link-name ""
+     :synopsis "<blockquote><p>It may be that in order to make the cinematic image sound authentically, in its full diapason, music has to be abandoned.</p><footer>Andrei Tarkovsky</footer></blockquote>A master class that examines the intersection between sound design and traditional notions of composing music for the screen."
+     :link-status true
+     :link "http://beyondthefra-me.tumblr.com/post/5545059622"
+     :link-name "Beyond the Frame: &quot;Composing for <em>The Assassination of Chicago&#39;s Mayor</em>&quot;"
      :media "ccc.jpg"
      :video false
      :image true
@@ -205,9 +205,9 @@
      :title "Moderator"
      :subtitle "&quot;Low Budget Filmmaking&quot;"
      :synopsis "A discussion of low budget filmmaking techniques for independent filmmakers."
-     :link-status false
-     :link ""
-     :link-name ""
+     :link-status true
+     :link "http://beyondthefra-me.tumblr.com/post/53206393777"
+     :link-name "Beyond the Frame: &quot;The Magic of M&#233;li&#232s: Low Budget Filmmaking&quot;"
      :media "miff.png"
      :video false
      :image true
@@ -219,10 +219,10 @@
      :date "July 2008 &amp; July 2009"
      :title "Panelist"
      :subtitle "&quot;Casting in Student Films&quot;"
-     :synopsis "Another synopsis"
-     :link-status false
-     :link ""
-     :link-name ""
+     :synopsis "A discussion with actors on the benefits and concerns associated with working on student-run film sets."
+     :link-status true
+     :link "http://beyondthefra-me.tumblr.com/post/28430696505"
+     :link-name "Beyond the Frame: &quot;Reader Question: Student/Actor Expectations&quot;"
      :media ""
      :video false
      :image false
@@ -381,12 +381,12 @@
       :highlight "strong"
      }
      {:title "POV Hackathon 9"
-      :type "Competitve Selection"
+      :type "Competitive Selection"
       :org "PBS"
       :highlight "strong"
      }
      {:title "POV Hackathon 7"
-      :type "Competitve Selection"
+      :type "Competitive Selection"
       :org "PBS"
      }
      {:title "Audience Choice Award, Best Director: &ldquo;The Assassination of Chicago&#39;s Mayor&rdquo;"
@@ -399,7 +399,7 @@
       :org "Digipops Community Film Festival 2014"
      }
      {:title "Tribeca Hacks Winter 2013"
-      :type "Competitve Selection"
+      :type "Competitive Selection"
       :org "Tribeca Film Institute"
      }
      {:title "Best Director, Best of Fest: &ldquo;Refuge&rdquo;"
@@ -425,7 +425,7 @@
       :org "The Program in the Study of Imagination at Northwestern University"
      }
      {:title "Interactive Award - The One Show 1998"
-      :type "Competitve Showcase (Bronze Placement)"
+      :type "Competitive Showcase (Bronze Placement)"
       :org "One Club"
      }]
    :affiliations
@@ -443,6 +443,22 @@
      }
      {:org "The Script Lab"
       :title "Screenwriting Analysis for &ldquo;From Script to Screen&rdquo;"
+     }]
+   :education
+    [{:org "Northwestern University, Magna Cum Laude"
+      :title "Masters in Music"
+      :concentrations "Electroacoustic Performance, Composition, Intermedia Studies"
+      :year "2004"
+     }
+     {:org "University of Northern Iowa"
+      :title "Bachelor of Arts in Computer Science"
+      :concentrations "Artificial Intelligence, Creative Computing and the Visual Arts"
+      :year "2001"
+     }
+     {:org "DID Deutsch-Institut, Berlin, Germany"
+      :title "Language Intensive"
+      :concentrations "German"
+      :year "2005"
      }]
    :page-title "Vitae"})
 
