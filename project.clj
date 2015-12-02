@@ -20,9 +20,13 @@
   :plugins [[environ/environ.lein "0.3.1"]
             [lein-cljsbuild "1.1.0"]
             [lein-ring "0.9.7"]]
-  :ring {:handler schmud-de.handler/-main}
+  :ring {:handler schmud-de.handler/-main
+         :init schmud-de.handler/init
+         :destroy schmud-de.handler/destroy
+         :open-browser? false}
   :hooks [environ.leiningen.hooks leiningen.cljsbuild]
-  :uberjar-name "schmud-de-standalone.jar"
+  :uberjar-name "schmud-de-standalone.jar" ; Need for Heroku
+  :uberwar-name "schmud-de-standalone.war" ; Need for Tomcat
   :cljsbuild {
       :builds [
                {:source-paths ["src"]
