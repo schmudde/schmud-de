@@ -11,10 +11,16 @@
                  [quil "2.2.6"]
                  [org.clojure/clojurescript "1.7.48"]
                  [prismatic/dommy "1.1.0"]
-                 [org.clojars.scsibug/feedparser-clj "0.4.0"]]
+                 [org.clojars.scsibug/feedparser-clj "0.4.0"]
+                 [ring/ring-servlet "1.4.0"]
+                 [ring/ring-defaults "0.1.5"]
+                 [hiccup "1.0.5"]
+                 [twitter-api "0.7.8"]]
   :min-lein-version "2.0.0"
   :plugins [[environ/environ.lein "0.3.1"]
-            [lein-cljsbuild "1.1.0"]]
+            [lein-cljsbuild "1.1.0"]
+            [lein-ring "0.9.7"]]
+  :ring {:handler schmud-de.handler/-main}
   :hooks [environ.leiningen.hooks leiningen.cljsbuild]
   :uberjar-name "schmud-de-standalone.jar"
   :cljsbuild {

@@ -15,23 +15,23 @@ goog.require('cljs.core');
  * [2 5 1 3 6 2])
  */
 schmud_de.drawing.line_join_points = (function schmud_de$drawing$line_join_points(){
-var args9211 = [];
-var len__9159__auto___9214 = arguments.length;
-var i__9160__auto___9215 = (0);
+var args9743 = [];
+var len__9691__auto___9746 = arguments.length;
+var i__9692__auto___9747 = (0);
 while(true){
-if((i__9160__auto___9215 < len__9159__auto___9214)){
-args9211.push((arguments[i__9160__auto___9215]));
+if((i__9692__auto___9747 < len__9691__auto___9746)){
+args9743.push((arguments[i__9692__auto___9747]));
 
-var G__9216 = (i__9160__auto___9215 + (1));
-i__9160__auto___9215 = G__9216;
+var G__9748 = (i__9692__auto___9747 + (1));
+i__9692__auto___9747 = G__9748;
 continue;
 } else {
 }
 break;
 }
 
-var G__9213 = args9211.length;
-switch (G__9213) {
+var G__9745 = args9743.length;
+switch (G__9745) {
 case 1:
 return schmud_de.drawing.line_join_points.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -45,7 +45,7 @@ return schmud_de.drawing.line_join_points.cljs$core$IFn$_invoke$arity$3((argumen
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9211.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9743.length)].join('')));
 
 }
 });

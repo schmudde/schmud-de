@@ -1,18 +1,12 @@
 (ns schmud-de.controllers
   (:require [clostache.parser :as clostache]
+            [compojure.core :refer :all]
             [schmud-de.models :as models]
             [schmud-de.weblog :as weblog]))
-;; 2) Function that returns a template (view) which is an appropriate match to the map. Is there a way to combine smaller functions - each one that returns the view for the data being supplied?
 
 (defn read-template [template-name]
   (slurp (clojure.java.io/resource
           (str "templates/" (name template-name) ".mustache"))))
-
-(defn render-template
-;; Deprecated
-  "Pass in the template name (a string, sans its .mustache filename extension), the data for the template (a map), and a list of partials (keywords) corresponding to like-named template filenames."
-  [template-file params]
-  (clostache/render (read-template template-file) params))
 
 (defn data-model
   "This function returns a map of data to pass along to the view."
@@ -41,3 +35,17 @@
   "Right now this expects 'main', 'projects', 'talks', 'exhibitions', 'weblog', 'etc'"
   [template-type]
   (index-builder template-type))
+
+(defroutes available-routes
+  (GET "/" []
+       (index "main"))
+  (GET "/projects" []
+       (index "projects"))
+  (GET "/talks" []
+       (index "talks"))
+  (GET "/exhibitions" []
+       (index "exhibitions"))
+  (GET "/weblog" []
+       (index "weblog"))
+  (GET "/etc" []
+       (index "etc")))
