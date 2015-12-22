@@ -36,13 +36,15 @@
                 <div class="panel panel-info">
                     <div class="panel-heading"><h3>{{&title}}</h3></div>
                     <div class="panel-content">
-                        <dl class="dl-horizontal">
+                        <dl class="dl-horizontal-noBS">
                             <dt>Synopsis</dt>
-                            <dd>{{synopsis}}</dd>
+                            <dd>{{{synopsis}}}</dd>
                             <dt>Status</dt>
                             <dd>{{status}}</dd>
-                            <dt>Link</dt>
-                            <dd><a href="{{link}}">Homepage</a></dd>
+                            {{#link-status}}
+                                <dt>Link</dt>
+                                <dd><a href="{{link}}" target="_blank">Homepage</a></dd>
+                            {{/link-status}}
                             <dt></dt>
                             <dd class="labels">{{#tags}}<span class="label {{tag}}">{{tag}}</span>{{/tags}}</dd>
                         </dl>

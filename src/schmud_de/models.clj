@@ -5,6 +5,7 @@
    [{:title "Jack and the Machine"
      :synopsis "Once known as #148445 within the Third Reich, Jack Tramiel rose from the Nazi concentration camps and built the information age's great equalizer: the world's first 'computer for the masses, not the classes.'"
      :status "In Production"
+     :link-status true
      :link "http://www.jackandthemachine.com"
      :tags [{:tag "documentary"} {:tag "interactive"}]
      :media "https://player.vimeo.com/video/74458487"
@@ -12,9 +13,10 @@
      :image false
      :position "oneBox"}
     {:title "Borderless"
-     :synopsis "Pool party."
-     :status "In Exhibition"
-     :link ""
+     :synopsis "&ldquo;Borderless&rdquo; is an exploration of unconscious interactions among strangers. The piece examines the way we shape and are shaped by our surroundings, creating invisible movement within society's social fabric. &ldquo;Borderless&rdquo; tests the idea that by recreating unconscious interactions within a tactile and visible medium, we can unveil nuances in social behavior and response."
+     :status "Performance Premier: Music Hall of Williamsburg 2015 (USA); Exhibition Premier: Schusev State Museum of Architecture Now&After Festival 2015 (World)"
+     :link-status true
+     :link "http://www.beyondthefra.me/borderless.html"
      :tags [{:tag "installation"}]
      :media "https://player.vimeo.com/video/119274499"
      :video true
@@ -22,7 +24,8 @@
      :position "twoBox"}
     {:title "The Assassination of Chicago's Mayor"
      :synopsis "A 19th-century newspaper peddler named Patrick Prendergast has delusions of greatness. Evidently slighted by the mayor, this self-anointed messenger prepares for a glorious rise from ignored lobbyist to influential icon. Prendergast sees himself as a martyr, serving God with a noble purpose. The reality is far different."
-     :status "Complete 2012. In distribution"
+     :status "Festival Premier: Hollyshorts 2012 (USA), Aesthetica Film Festival 2012 (World); Broadcast Premier: ShortsHD Channel - Dish Network, DirecTV, AT&T; Internet: IndieFlix"
+     :link-status true
      :link "https://indieflix.com/indie-films/the-assassination-of-chicagos-mayor-34358/"
      :tags [{:tag "narrative"}]
      :media "https://player.vimeo.com/video/30803843"
@@ -31,7 +34,8 @@
      :position "twoBox"}
     {:title "A Simple Reminder"
      :synopsis "The essence of memory - a possessor, a liberator."
-     :status "Online"
+     :status "Festival Premier: Filmstock Film Festival 2013"
+     :link-status false
      :link ""
      :tags [{:tag "narrative"}]
      :media "https://player.vimeo.com/video/46622645"
@@ -41,6 +45,7 @@
     {:title "The Invisible Majority"
      :synopsis "Every single day, people volunteer, search for cures, and engineer leaps in efficiency. Unfortunately, media is often usurped by fearmongers and fundamentalists who spread false conceptions as facts. It is up to us, the majority of us who do good day-in and day-out, to guide the larger narrative."
      :status "Online"
+     :link-status false
      :link ""
      :tags [{:tag "documentary"}]
      :media "https://player.vimeo.com/video/52299617"
@@ -48,8 +53,9 @@
      :image false
      :position "twoBox"}
     {:title "Refuge"
-     :synopsis "Grant is trapped with his conscious on the long, lonely drive across the American Midwest. As the endless road stretches on, he is confronted by those he has loved and those he has hurt. REFUGE is a metaphysical journey to truth, quickly turning the open road into a claustrophobic asylum of haunting self-examination."
-     :status "Online"
+     :synopsis "Grant is trapped with his conscious on the long, lonely drive across the American Midwest. As the endless road stretches on, he is confronted by those he has loved and those he has hurt. &ldquo;Refuge&rdquo; is a metaphysical journey to truth, quickly turning the open road into a claustrophobic asylum of haunting self-examination."
+     :status "Festival Premier: Chicago International Film Festival 2010; Broadcast Premier: ShortsHD Channel - Dish Network, DirecTV, AT&T"
+     :link-status false
      :link ""
      :tags [{:tag "narrative"}]
      :media "https://player.vimeo.com/video/8247688"
@@ -59,7 +65,8 @@
     {:title "Schm&uuml;dde: A Retrospective"
      :synopsis "A Selection of Music Written Between 1998 and 2012."
      :status "Online"
-     :link ""
+     :link-status true
+     :link "https://soundcloud.com/schmudde/sets/schmudde-a-retrospective"
      :tags [{:tag "sound"}]
      :media "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/23618316&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"
      :video true
@@ -68,7 +75,8 @@
     {:title "Schm&uuml;dde: Film Music"
      :synopsis "Music for Films"
      :status "Online"
-     :link ""
+     :link-status true
+     :link "https://soundcloud.com/schmudde/sets/film-scores"
      :tags [{:tag "sound"}]
      :media "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/144853848&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"
      :video true
@@ -76,7 +84,8 @@
      :position "twoBox"}
     {:title "Elements: Spring to Summer to Autumn 2011"
      :synopsis "Human-kind is essential. Without us, who would admire the flower? Who would discover new worlds and pay tribute to old ones?"
-     :status "Online"
+     :status "Festival Premier: Chicago Filmmakers Short Story Showcase 2011"
+     :link-status false
      :link ""
      :tags [{:tag "documentary"}]
      :media "https://player.vimeo.com/video/34661968"
@@ -86,6 +95,7 @@
     {:title "Elements: Winter 2011"
      :synopsis "The four elements in winter."
      :status "Online"
+     :link-status false
      :link ""
      :tags [{:tag "documentary"}]
      :media "https://player.vimeo.com/video/21351915"
@@ -95,6 +105,7 @@
     {:title "Elements: Fall 2010"
      :synopsis "The beginning of fall as told through the elements."
      :status "Online"
+     :link-status false
      :link ""
      :tags [{:tag "documentary"}]
      :media "https://player.vimeo.com/video/15209878"
@@ -102,9 +113,9 @@
      :image false
      :position "twoBox"}
     {:title "Lucid Dream Ensemble - 3. Red (2003)"
-     :synopsis "Live at the Museum of Contemporary Art in Chicago, SEAMUS in Tempe, AZ, and the Block Museum at Northwestern University."
-     :exhibition "Performers: Virgil Moorefield: Founder, V-Drums; D. Schmüdde: Virtual Analog Synthesizers, Analogue Sequencing; Nathan Woleck: Max/MSP, Granular Synthesis; Jeff Weeter: Jitter Visuals"
-     :status "Online"
+     :synopsis "A live digital arts performance ensemble. Performers: Virgil Moorefield: Founder, V-Drums; D. Schm&uuml;dde: Virtual Analog Synthesizers, Analogue Sequencing; Nathan Woleck: Max/MSP, Granular Synthesis; Jeff Weeter: Jitter Visuals."
+     :status "Performance Premier: SEAMUS National Conference; Noted Performance: Museum of Contemporary Art in Chicago"
+     :link-status false
      :link ""
      :tags [{:tag "documentary"}]
      :media "https://player.vimeo.com/video/84801854"
@@ -112,11 +123,12 @@
      :image false
      :position "twoBox"}
     {:title "Reflections"
-     :synopsis ""
+     :synopsis "&ldquo;Continuing to explore human truths in a vox populi format, Ginsburg trains his camera on Chicago citizens to ask &#39;What is freedom?&#39; The answer is always surprising. Like their previous films &#39;Aijo&#39; and &#39;The Year of the Rooster,&#39; narrative elements add suspense and a poignant dimension to the interviews featured on screen.&rdquo; -- Todd Lillethum, August 2009, Programming Director, Chicago Filmmakers"
      :status "Online"
-     :link ""
+     :link-status true
+     :link "https://www.youtube.com/watch?v=5yB2LWTfSYs"
      :tags [{:tag "documentary"}]
-     :media "https://www.youtube.com/watch?v=5yB2LWTfSYs"
+     :media "reflections.jpg"
      :video false
      :image true
      :position "twoBox"}]
@@ -146,7 +158,7 @@
     }
     {:location "Pecha Kucha, Berlin, Germany"
      :date "July 2015"
-     :title "Commute's & Intimacy"
+     :title "Computers & Intimacy"
      :subtitle "The Story of the Largest Machines and the Smallest Details"
      :synopsis "Our thoughts are the material of the Internet. In the midst of ever-evolving man/machine integration, I’ll use declassified documents to show how politicians have used computers to monitor these thoughts in the past, and suggest new ways of thinking about intimacy and computers in the future."
      :link-status true

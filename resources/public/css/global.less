@@ -62,9 +62,9 @@ p {
 }
 
 header {
-   padding-bottom: 40px;
+   padding-bottom: 28px;
 
-   .filters li {
+   ul.filters {
        padding-top: 15px;
    }
 }
@@ -80,6 +80,11 @@ article {
         padding-bottom: 25px;
         .center-block();
     }
+}
+
+menu {
+    padding-top: 40px;
+    padding-left: 0px;
 }
 
 .post-row {
@@ -147,6 +152,39 @@ article {
         color: darken(@brand-primary, 15%);
     }
 }
+
+/**
+ *  BOOTSTRAP OVERRIDES
+ *  These are detailed overrides of the Bootstrap defaults
+ */
+/**
+ * Horizontal description lists
+ * Defaults to being stacked without any of the below styles applied, until the
+ * grid breakpoint is reached (default defined in variables.less
+ *
+ * I had to copy the BS code and use a different class selector because the media breakpoint
+ * did not suit my purposes.
+ */
+
+.dl-horizontal-noBS {
+  dd {
+    &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
+  }
+
+  @media (min-width: @dl-horizontal-breakpoint) {
+    dt {
+      float: left;
+      width: (@dl-horizontal-offset - 20);
+      clear: left;
+      text-align: right;
+      .text-overflow();
+    }
+    dd {
+      margin-left: @dl-horizontal-offset;
+    }
+  }
+}
+
 
 /**
  *  LAYOUT
