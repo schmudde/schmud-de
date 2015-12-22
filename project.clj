@@ -23,10 +23,11 @@
   :ring {:handler schmud-de.handler/-main
          :init schmud-de.handler/init
          :destroy schmud-de.handler/destroy
-         :open-browser? false}
+         :open-browser? false
+         :uberwar-name home.war}
   :hooks [environ.leiningen.hooks leiningen.cljsbuild]
   :uberjar-name "schmud-de-standalone.jar" ; Need for Heroku
-  :uberwar-name "schmud-de-standalone.war" ; Need for Tomcat
+;  :uberwar-name "schmud-de-standalone.war" ; Need for Tomcat
   :cljsbuild {
       :builds [
                {:source-paths ["src"]
