@@ -26,7 +26,7 @@
          :open-browser? false
          :uberwar-name home.war}
   :hooks [environ.leiningen.hooks leiningen.cljsbuild]
-  :uberjar-name "schmud-de-standalone.jar" ; Need for Heroku
+;  :uberjar-name "schmud-de-standalone.jar" ; Need for Heroku
 ;  :uberwar-name "schmud-de-standalone.war" ; Need for Tomcat
   :cljsbuild {
       :builds [

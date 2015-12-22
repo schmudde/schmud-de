@@ -1,14 +1,23 @@
 @videoWidth: 595px;
 
-@brand-primary: darken(@brand-info, 30%);
-@blueFG: darken(@brand-info, 15%);
-@blueFG-lighter: darken(@brand-info, 5%);
-@blueBG: lighten(@brand-info, 35%);
+@brand-primary: #001F3F;
+@brand-info: #7FDBFF;
+@brand-success: #85144b;
+@brand-warning: #3d9970;
+@brand-danger: #39CCCC;
+
+@blueFG: @brand-primary;
+@blueFG-lighter: lighten(@brand-primary, 20%);
+@blueBG: lighten(@brand-primary, 35%);
 @blueBG-hex: rgba(240,249,252,1.0);
 @greenBG: @state-success-bg;
 @greenFG: @state-success-text;
 @redFG: @brand-danger;
 @redBG: lighten(@redFG, 35%);
+
+@black: #111111;
+@background-gray: #fafafa;
+@foreground-gray: #aaaaaa;
 
 // Header Values
 @waveform-width: 100px;
@@ -42,7 +51,7 @@
     font-weight: 100;
 }
 
-.css-gradient(@from: @blueBG-hex, @to: rgba(255,255,255,0)) {
+.css-gradient(@from: @background-gray, @to: rgba(255,255,255,0)) {
     background-color: @to;
     background-image: -webkit-gradient(linear, left top, right top, from(@from), to(@to), from(@from));
     background-image: -webkit-linear-gradient(left, @from, @to, @from);

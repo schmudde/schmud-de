@@ -3,7 +3,7 @@ nav {
     h1, h1 > small {
        .fontVeryVeryLightMixin;
        a, a:hover, a:focus, a:link, a:visited {
-           color: black;
+           color: @black;
        }
     }
 
@@ -32,7 +32,7 @@ nav {
 }
 
 .navbar {
-    background-color: @blueBG;
+    background-color: @background-gray;
     border-bottom: @blueFG;
     min-height: 0px;
 }
@@ -107,4 +107,73 @@ nav {
             }
         }
     }
+}
+
+.button-style {
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.btn-danger, .btn-info, .btn-warning, .btn-success, .btn-primary, .btn-default {
+    background: none;
+    color: black;
+}
+
+.btn-danger {
+    color: @brand-primary;
+}
+
+.btn-info {
+    color: @brand-info;
+}
+
+.btn-warning {
+    color: @brand-warning;
+}
+
+.btn-success {
+    color: @brand-success;
+}
+
+.btn-primary {
+    color: @brand-primary;
+}
+
+.generic-button-tag {
+    .button-style;
+    .btn-default;
+}
+
+.filters {
+    .btn {
+        background-color: none;
+        border-radius: 0px;
+        border-style: double;
+        border-width: 5px;
+    }
+}
+
+/**
+ *  LINKS
+ */
+
+/* unvisited link */
+a:link {
+    color: @blueFG;
+}
+
+/* visited link */
+a:visited {
+    color: @foreground-gray;
+}
+
+/* mouse over link */
+a:hover {
+    color: @blueFG-lighter;
+}
+
+/* selected link */
+a:active, a:active, a:focus {
+    color: @blueFG;
+    text-decoration: none;
 }

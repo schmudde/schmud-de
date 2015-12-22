@@ -14,11 +14,6 @@
     }
 }
 
-.button-style {
-    display: inline-block;
-    text-transform: capitalize;
-}
-
 .narrative {
     .button-style;
     .btn-danger;
@@ -42,6 +37,18 @@
 .sound {
     .button-style;
     .btn-primary;
+}
+
+.label.installation, .label.sound, .label.interactive, .label.documentary, .label.narrative  {
+    background-color: @background-gray;
+    border: 0.5px dotted;
+    border-radius: 0em;
+    font-weight: normal;
+}
+
+// Overwrites the Bootstrap default for labels on hover
+span[class*="label"] {
+    pointer-events: none;
 }
 
 h3 {

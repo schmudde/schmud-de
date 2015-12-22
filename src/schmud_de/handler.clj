@@ -5,12 +5,12 @@
             [ring.middleware.defaults :refer :all]
             [schmud-de.controllers :refer [available-routes]]
             ;; Porting to new handler/controller
-            ;; [ring.middleware.resource :refer [wrap-resource]]
-            ;; [ring.middleware.file-info :refer [wrap-file-info]]
+            [ring.middleware.resource :refer [wrap-resource]]
+            [ring.middleware.file-info :refer [wrap-file-info]]
 	        ; Heroku
-            [clojure.java.io :as io] ;; For Heroku Deployment
-            [ring.adapter.jetty :as jetty] ;; For Heroku Deployment
-            [environ.core :refer [env]] ;; For Heroku Deployment
+            ;; [clojure.java.io :as io] ;; For Heroku Deployment
+            ;; [ring.adapter.jetty :as jetty] ;; For Heroku Deployment
+            ;; [environ.core :refer [env]] ;; For Heroku Deployment
             ))
 
 (defroutes app-routes
@@ -36,18 +36,18 @@
   (println "Ring shutting down"))
 
 ;; -main for the Tomcat deployment
-;; (def -main
-;;   (-> (routes available-routes app-routes)
-;;       (website)
-;;       (wrap-base-url)))
+(def -main
+  (-> (routes available-routes app-routes)
+      (website)
+      (wrap-base-url)))
 
 ;; function for Heroku deployment
-(def route-maker
- (-> (routes available-routes app-routes)
-     (website)
-     (wrap-base-url)))
+;; (def route-maker
+;;  (-> (routes available-routes app-routes)
+;;      (website)
+;;      (wrap-base-url)))
 
-(defn -main [& [port]]
-  "-main for the Heroku deployment"
-  (let [port (Integer. (or port (env :port) 5000))]
-    (jetty/run-jetty #'route-maker {:port port :join? false})))
+;; (defn -main [& [port]]
+;;   "-main for the Heroku deployment"
+;;   (let [port (Integer. (or port (env :port) 5000))]
+;;     (jetty/run-jetty #'route-maker {:port port :join? false})))
