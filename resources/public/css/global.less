@@ -19,12 +19,12 @@ h1 small {
     color: @brand-info;
 }
 
-h1, h3 {
-    .fontHeavyMixin;
+h1, h2, h3 {
+    .fontDisplayMixin;
 }
 
-h1 small, h2, h4, blockquote {
-    .fontLightMixin;
+h1 small, h4, blockquote {
+    .fontBodyTextMixin;
 }
 
 h4, blockquote {
@@ -44,9 +44,10 @@ blockquote {
 
 h1 {
 	padding-top: 0px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -55,8 +56,9 @@ h2 {
 }
 
 p {
-    .fontLightMixin;
+    .fontBodyTextMixin;
     line-height: 1.5em;
+    color: @black;
 }
 
 header {

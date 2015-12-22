@@ -61,6 +61,7 @@ h4 {
 
 .panel {
     margin-top: 10px;
+    border-radius: 0px;
 
     small {
         display: block;
@@ -76,6 +77,22 @@ h4 {
             padding-bottom: 0em;
         }
     }
+}
+
+.panel-info {
+    border-color: @foreground-gray;
+    border-width: 0.5px;
+}
+
+.panel-info > .panel-heading {
+    background-color: @background-gray;
+    border-color: @foreground-gray;
+}
+
+.panel-heading {
+    border-bottom: 5px double;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .panel-content {
