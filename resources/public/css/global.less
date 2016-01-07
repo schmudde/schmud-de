@@ -64,8 +64,13 @@ p {
 header {
    padding-bottom: 28px;
 
-   ul.filters {
+   .list-inline > li {
        padding-top: 15px;
+   }
+
+   p {
+       text-align: right;
+       padding-right: 20px;
    }
 }
 
@@ -93,6 +98,15 @@ menu {
     .make-sm-column(7);
     .make-xs-column(12);
     padding-bottom: 18px;
+
+    h1 {
+        padding-bottom: 3px;
+    }
+
+    .socialIcons {
+        padding-bottom: 25px;
+        padding-left: 7px;
+    }
 }
 
 .twitter-box-col {
@@ -113,18 +127,18 @@ menu {
     img {
         border-radius: 5px;
         max-width: 500px;
-    }
-
-    .post-sm8-xs12 {
-        max-width: 500px;
-        .make-sm-column(8);
-        .make-xs-column(12);
+        .img-responsive;
     }
 
     .post-header-sm4 {
         .make-sm-column(4);
         .hidden-xs;
         text-align: right;
+    }
+
+    .post-sm8-xs12 {
+        .make-sm-column(8);
+        .make-xs-column(12);
     }
 }
 
@@ -165,6 +179,23 @@ menu {
     a:hover {
         color: darken(@brand-primary, 15%);
     }
+}
+
+.etc-col-sm6-xs12 {
+    .make-sm-column(6);
+    .make-xs-column(12);
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.pgp-key-col {
+    .make-md-column-offset(1);
+    .make-md-column(8);
+    .make-sm-column-offset(1);
+    .make-sm-column(10);
+    .make-xs-column(12);
 }
 
 /**

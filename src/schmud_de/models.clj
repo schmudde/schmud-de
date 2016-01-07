@@ -473,15 +473,15 @@
       :concentrations "German"
       :year "2005"
      }]
-   :page-title "Vitae"})
+   :page-title "Curriculum Vitae"})
 
-(def weblog-db
-  {:exhibitions
-   [{:location "C-Base: home of the Chaos Computer Club in Berlin, Germany"
-    }
-    {:location "Pecha Kucha, Berlin, Germany"
-    }]
-   :page-title "Weblog"})
+;; (def weblog-db
+;;   {:exhibitions
+;;    [{:location "C-Base: home of the Chaos Computer Club in Berlin, Germany"
+;;     }
+;;     {:location "Pecha Kucha, Berlin, Germany"
+;;     }]
+;;    :page-title "Weblog"})
 
 (def main-db
   (twitter/twitter-map))
@@ -491,4 +491,5 @@
    :talks talks-db
    :projects projects-db
    :exhibitions exhibitions-db
-   :weblog weblog-db})
+;;   :weblog weblog-db
+})

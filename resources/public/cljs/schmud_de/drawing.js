@@ -1,4 +1,4 @@
-// Compiled by ClojureScript 1.7.48 {}
+// Compiled by ClojureScript 1.7.48 {:static-fns true, :optimize-constants true}
 goog.provide('schmud_de.drawing');
 goog.require('cljs.core');
 /**
@@ -15,23 +15,23 @@ goog.require('cljs.core');
  * [2 5 1 3 6 2])
  */
 schmud_de.drawing.line_join_points = (function schmud_de$drawing$line_join_points(){
-var args14533 = [];
-var len__14481__auto___14536 = arguments.length;
-var i__14482__auto___14537 = (0);
+var args16201 = [];
+var len__14481__auto___16204 = arguments.length;
+var i__14482__auto___16205 = (0);
 while(true){
-if((i__14482__auto___14537 < len__14481__auto___14536)){
-args14533.push((arguments[i__14482__auto___14537]));
+if((i__14482__auto___16205 < len__14481__auto___16204)){
+args16201.push((arguments[i__14482__auto___16205]));
 
-var G__14538 = (i__14482__auto___14537 + (1));
-i__14482__auto___14537 = G__14538;
+var G__16206 = (i__14482__auto___16205 + (1));
+i__14482__auto___16205 = G__16206;
 continue;
 } else {
 }
 break;
 }
 
-var G__14535 = args14533.length;
-switch (G__14535) {
+var G__16203 = args16201.length;
+switch (G__16203) {
 case 1:
 return schmud_de.drawing.line_join_points.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -45,16 +45,16 @@ return schmud_de.drawing.line_join_points.cljs$core$IFn$_invoke$arity$3((argumen
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args14533.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args16201.length)].join('')));
 
 }
 });
 
 schmud_de.drawing.line_join_points.cljs$core$IFn$_invoke$arity$1 = (function (interleaved_points){
 return (new cljs.core.LazySeq(null,(function (){
-var head = cljs.core.take.call(null,(2),interleaved_points);
-if(cljs.core._EQ_.call(null,(2),cljs.core.count.call(null,head))){
-return cljs.core.cons.call(null,cljs.core.apply.call(null,cljs.core.concat,head),schmud_de.drawing.line_join_points.call(null,cljs.core.drop.call(null,(1),interleaved_points)));
+var head = cljs.core.take.cljs$core$IFn$_invoke$arity$2((2),interleaved_points);
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((2),cljs.core.count(head))){
+return cljs.core.cons(cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.concat,head),schmud_de.drawing.line_join_points.cljs$core$IFn$_invoke$arity$1(cljs.core.drop.cljs$core$IFn$_invoke$arity$2((1),interleaved_points)));
 } else {
 return null;
 }
@@ -63,8 +63,8 @@ return null;
 
 schmud_de.drawing.line_join_points.cljs$core$IFn$_invoke$arity$2 = (function (xs,ys){
 return (new cljs.core.LazySeq(null,(function (){
-if((cljs.core.next.call(null,xs)) && (cljs.core.next.call(null,ys))){
-return cljs.core.cons.call(null,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.first.call(null,xs),cljs.core.first.call(null,ys),cljs.core.second.call(null,xs),cljs.core.second.call(null,ys)], null),schmud_de.drawing.line_join_points.call(null,cljs.core.next.call(null,xs),cljs.core.next.call(null,ys)));
+if((cljs.core.next(xs)) && (cljs.core.next(ys))){
+return cljs.core.cons(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.first(xs),cljs.core.first(ys),cljs.core.second(xs),cljs.core.second(ys)], null),schmud_de.drawing.line_join_points.cljs$core$IFn$_invoke$arity$2(cljs.core.next(xs),cljs.core.next(ys)));
 } else {
 return cljs.core.PersistentVector.EMPTY;
 }
@@ -73,8 +73,8 @@ return cljs.core.PersistentVector.EMPTY;
 
 schmud_de.drawing.line_join_points.cljs$core$IFn$_invoke$arity$3 = (function (xs,ys,zs){
 return (new cljs.core.LazySeq(null,(function (){
-if((cljs.core.next.call(null,xs)) && (cljs.core.next.call(null,ys)) && (cljs.core.next.call(null,zs))){
-return cljs.core.cons.call(null,new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.first.call(null,xs),cljs.core.first.call(null,ys),cljs.core.first.call(null,zs),cljs.core.second.call(null,xs),cljs.core.second.call(null,ys),cljs.core.second.call(null,zs)], null),schmud_de.drawing.line_join_points.call(null,cljs.core.next.call(null,xs),cljs.core.next.call(null,ys),cljs.core.next.call(null,zs)));
+if((cljs.core.next(xs)) && (cljs.core.next(ys)) && (cljs.core.next(zs))){
+return cljs.core.cons(new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.first(xs),cljs.core.first(ys),cljs.core.first(zs),cljs.core.second(xs),cljs.core.second(ys),cljs.core.second(zs)], null),schmud_de.drawing.line_join_points.cljs$core$IFn$_invoke$arity$3(cljs.core.next(xs),cljs.core.next(ys),cljs.core.next(zs)));
 } else {
 return cljs.core.PersistentVector.EMPTY;
 }
@@ -84,15 +84,13 @@ return cljs.core.PersistentVector.EMPTY;
 schmud_de.drawing.line_join_points.cljs$lang$maxFixedArity = 3;
 schmud_de.drawing.last_x_point = (function schmud_de$drawing$last_x_point(line){
 
-return cljs.core.last.call(null,cljs.core.drop_last.call(null,line));
+return cljs.core.last(cljs.core.drop_last.cljs$core$IFn$_invoke$arity$1(line));
 });
 schmud_de.drawing.line_decomposer = (function schmud_de$drawing$line_decomposer(line_segment){
 
-var x1 = cljs.core.first.call(null,line_segment);
-var y1 = cljs.core.second.call(null,line_segment);
-var x2 = cljs.core.nth.call(null,line_segment,(2));
-var y2 = cljs.core.nth.call(null,line_segment,(3));
-return new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"x1","x1",-1863922247),x1,new cljs.core.Keyword(null,"y1","y1",589123466),y1,new cljs.core.Keyword(null,"x2","x2",-1362513475),x2,new cljs.core.Keyword(null,"y2","y2",-718691301),y2], null);
+var x1 = cljs.core.first(line_segment);
+var y1 = cljs.core.second(line_segment);
+var x2 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(line_segment,(2));
+var y2 = cljs.core.nth.cljs$core$IFn$_invoke$arity$2(line_segment,(3));
+return new cljs.core.PersistentArrayMap(null, 4, [cljs.core.cst$kw$x1,x1,cljs.core.cst$kw$y1,y1,cljs.core.cst$kw$x2,x2,cljs.core.cst$kw$y2,y2], null);
 });
-
-//# sourceMappingURL=drawing.js.map
