@@ -1,4 +1,5 @@
-(ns schmud-de.models)
+(ns schmud-de.models
+  (:require [schmud-de.twitter :as twitter]))
 
 (def projects-db
   {:projects
@@ -482,8 +483,12 @@
     }]
    :page-title "Weblog"})
 
+(def main-db
+  (twitter/twitter-map))
+
 (def database
-  {:talks talks-db
+  {:main main-db
+   :talks talks-db
    :projects projects-db
    :exhibitions exhibitions-db
    :weblog weblog-db})

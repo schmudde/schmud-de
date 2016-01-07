@@ -2,6 +2,7 @@
   (:require [clostache.parser :as clostache]
             [compojure.core :refer :all]
             [schmud-de.models :as models]
+            ;; [schmud-de.twitter :as twitter]
             [schmud-de.weblog :as weblog]))
 
 (defn read-template [template-name]

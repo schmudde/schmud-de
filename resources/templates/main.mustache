@@ -2,10 +2,35 @@
 
 <div class="container" id="mainContent">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="intro-box-col">
             <h1>D. Schm&uuml;dde <small>Artist</small></h1>
-            <h2>I'm interested in stories, algorithms, histories, patterns and building experiences.</h2>
-        </div> <!-- /column -->
+            <h2><u>Interests</u>
+                <ul class="interest-list list-unstyled">
+                    <li>researching histories</li>
+                    <li>studying patterns</li>
+                    <li>writing algorithms</li>
+                    <li>creating stories</li>
+                    <li>building experiences</li>
+                </ul>
+            </h2>
+       </div>
+        <aside class="twitter-box-col">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3>Latest Twitter <a href="//twitter.com/dschmudde">nothing thoughts</a></h3>
+                </div>
+                <div class="panel-content">
+                    {{#tweets}}
+                        <p>{{text}} ~ {{created_at}}</p>
+                        <hr />
+                    {{/tweets}}
+                </div>
+                <div class="panel-heading panel-footer">
+                    <a href="//twitter.com/dschmudde"><p>@{{#bio}}{{#body}}{{screen_name}}{{/body}}{{/bio}}</p></a>
+                    <img src="{{#bio}}{{#body}}{{profile_image_url}}{{/body}}{{/bio}}" id="avatar"/>
+                </div>
+            </div> <!-- /panel -->
+        </aside> <!-- /column -->
     </div> <!-- /row -->
 </div>
 

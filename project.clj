@@ -18,6 +18,7 @@
                  [twitter-api "0.7.8"]]
   :min-lein-version "2.0.0"
   :plugins [[environ/environ.lein "0.3.1"]
+            [cider/cider-nrepl "0.10.0"]
             [lein-cljsbuild "1.1.0"]
             [lein-ring "0.9.7"]]
   :ring {:handler schmud-de.handler/-main
