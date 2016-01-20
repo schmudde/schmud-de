@@ -1,5 +1,4 @@
-(ns schmud-de.models
-  (:require [schmud-de.twitter :as twitter]))
+(ns schmud-de.models)
 
 (def projects-db
   {:projects
@@ -14,7 +13,7 @@
      :image false
      :position "oneBox"}
     {:title "Borderless"
-     :synopsis "&ldquo;Borderless&rdquo; is an exploration of unconscious interactions among strangers. The piece examines the way we shape and are shaped by our surroundings, creating invisible movement within society's social fabric. &ldquo;Borderless&rdquo; tests the idea that by recreating unconscious interactions within a tactile and visible medium, we can unveil nuances in social behavior and response."
+     :synopsis "&ldquo;Borderless&rdquo; is an exploration of unconscious interactions among strangers. The piece examines the way we shape and are shaped by our surroundings, creating invisible movement within society's social fabric. &ldquo;Borderless&rdquo; tests the idea that by recreating unconscious interactions within a tactile and visible medium, we can unveil nuances in social behavior and response. A collaboration with artist Kim Burgas."
      :status "Performance Premier: Music Hall of Williamsburg 2015 (USA); Exhibition Premier: Schusev State Museum of Architecture Now&After Festival 2015 (World)"
      :link-status true
      :link "http://www.beyondthefra.me/borderless.html"
@@ -475,21 +474,8 @@
      }]
    :page-title "Curriculum Vitae"})
 
-;; (def weblog-db
-;;   {:exhibitions
-;;    [{:location "C-Base: home of the Chaos Computer Club in Berlin, Germany"
-;;     }
-;;     {:location "Pecha Kucha, Berlin, Germany"
-;;     }]
-;;    :page-title "Weblog"})
-
-(def main-db
-  (twitter/twitter-map))
-
 (def database
-  {:main main-db
-   :talks talks-db
+  {:talks talks-db
    :projects projects-db
    :exhibitions exhibitions-db
-;;   :weblog weblog-db
 })

@@ -2,7 +2,7 @@
   (:require [clostache.parser :as clostache]
             [compojure.core :refer :all]
             [schmud-de.models :as models]
-            ;; [schmud-de.twitter :as twitter]
+            [schmud-de.twitter :as twitter]
             [schmud-de.weblog :as weblog]))
 
 (defn read-template [template-name]
@@ -21,16 +21,21 @@
      :page-title "The Beyond the Frame Weblog"
      :page-subtitle "Composition, Time Dilation, and an Opportunity for the Sublime and Serendipitous."}))
 
+(defn twitter-parser []
+  (twitter/twitter-map))
+
 (defn index-builder [template-type]
   (clostache/render-resource
-   (str "templates/" template-type ".mustache")
-   (if (= template-type "weblog")
-     (weblog-parser)
-     (data-model template-type))
-   (reduce (fn [accum pt] ;; "pt" is the name (as a keyword) of the partial
-             (assoc accum pt (read-template pt)))
-             {}
-             [:header :footer])))
+    (str "templates/" template-type ".mustache") ;; call the mustache template
+    (case template-type                          ;; grab the data
+      "main" (twitter-parser)                    ;; from Twitter or
+      "weblog" (weblog-parser)                   ;; from RSS or
+      (data-model template-type))                ;; from the local database
+
+    (reduce (fn [accum pt] ;; "pt" is the name (as a keyword) of the partial
+              (assoc accum pt (read-template pt)))
+              {}
+              [:header :footer])))
 
 (defn index
   "Right now this expects 'main', 'projects', 'talks', 'exhibitions', 'weblog', 'etc'"
