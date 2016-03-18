@@ -472,6 +472,31 @@
       :concentrations "German"
       :year "2005"
      }]
+   :publications
+    [{:title "The Computer Revolution Has Yet to Happen"
+      :publication "The Absurdist"
+      :link "https://medium.com/absurdist/the-computer-revolution-has-yet-to-happen-f1dbf983d477"
+      }
+     {:title "Beyond the Frame"
+      :publication "A Weekly Weblog With 57,000 Subscribers"
+      :link "http://beyondthefra-me.tumblr.com"
+      }
+     {:title "A Brief History of Machine Personalities - The Character &amp; Ephemera From a Century of Machine Thinking"
+      :publication "Self-Published"
+      :link "https://medium.com/@dschmudde/a-brief-history-of-machine-personalities-f7116c85c2ed"
+      }
+     {:title "From Script to Screen: &quot;Five Easy Pieces&quot; - Bobby &amp; Rayette"
+      :publication "The Script Lab"
+      :link "http://thescriptlab.com/screenwriting-101/screenplay/from-script-to-screen/1228-five-easy-pieces-1970-bobby-a-rayette"
+      }
+     {:title "From Script to Screen: &quot;The Matrix&quot; - Lobby Scene"
+      :publication "The Script Lab"
+      :link "http://thescriptlab.com/screenwriting-101/screenplay/from-script-to-screen/1231-the-matrix-1999-lobby-scene"
+      }
+     {:title "A Year and Forty Megabytes"
+      :publication "Broken Toilets (forthcoming)"
+      :link ""
+      }]
    :page-title "Curriculum Vitae"})
 
 (def database
