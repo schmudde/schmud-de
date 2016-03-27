@@ -43,3 +43,12 @@
                                        :q "%23%E4%BE%98%E5%AF%82"})
         results (tweet-builder ((query :body) :statuses ) [])]
     {:tweets results :bio bio}))
+
+(defn twitter-map-distant
+  "Returns a Twitter map of useful information"
+  []
+  (let [bio (rest/users-show :oauth-creds my-creds :params {:screen-name "dschmudde"})
+        query (searchy/search :oauth-creds my-creds
+                              :params {:q "\"I%20apologize\"%20pain%20-killers%20-killer%20-lol%20-pills%20-meds%20-liver%20-laugh%20-laughing%20-filter:retweets"})
+        results (tweet-builder ((query :body) :statuses ) [])]
+    {:tweets results :bio bio}))

@@ -29,6 +29,7 @@
     (str "templates/" template-type ".mustache") ;; call the mustache template
     (case template-type                          ;; grab the data
       "main" (twitter-parser)                    ;; from Twitter or
+      "distant" (twitter/twitter-map-distant)    ;; from Twitter or
       "weblog" (weblog-parser)                   ;; from RSS or
       (data-model template-type))                ;; from the local database
 
@@ -38,7 +39,7 @@
               [:header :footer])))
 
 (defn index
-  "Right now this expects 'main', 'projects', 'talks', 'exhibitions', 'weblog', 'etc'"
+  "Right now this expects 'main', 'projects', 'talks', 'exhibitions', 'weblog', 'etc', 'distant'"
   [template-type]
   (index-builder template-type))
 
@@ -54,4 +55,6 @@
   (GET "/weblog" []
        (index "weblog"))
   (GET "/etc" []
-       (index "etc")))
+       (index "etc"))
+  (GET "/distant" []
+       (index "distant")))
