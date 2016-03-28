@@ -1,39 +1,39 @@
 {{> header}}
 
-<style>
-
-ul.panel-content > li {
-
-}
-
-ul.panel-content > li:not(:last-child) {
-
-}
-</style>
+<link rel="stylesheet" href="css/animate.min.css" />
 
 <div class="container" id="mainContent">
-    <div class="row">
-        <header class="col">
+    <div class="row" id="distant-apologies">
+        <header class="header-col">
             <h1>Distant Apologies</h1>
         </header> <!-- col -->
-
-        <aside class="twitter-box-col">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h3>Latest Twitter <a href="" target="_blank">apologies</a></h3>
-                </div>
-                <ul class="panel-content">
-                    {{#tweets}}
-                        <li>{{text}} ~ {{created_at}}</li>
-                    {{/tweets}}
-                </ul>
-                <div class="panel-heading panel-footer">
-                </div>
-            </div> <!-- /panel -->
-        </aside> <!-- /column -->
     </div> <!-- /row -->
 
-<iframe src="https://player.vimeo.com/video/85394216" width="500" height="366" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/85394216">Lucid Dream Ensemble - 4. White</a> from <a href="https://vimeo.com/schmudde">Schm&uuml;dde</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+    <div class="row">
+        <div class="twitter-box-apol-col">
+            <div class="row">
+                <div class="header-col">
+                    <h3>Latest apologies made on <a href="" target="_blank">Twitter</a></h3>
+                </div> <!-- col -->
+                <div class="header-col-right">
+                    <h3><small>Not moderated for content.</small></h3>
+                </div> <!-- col -->
+            </div>
+            <!-- <h3 class="distant-apologies">Latest apologies made on <a href="" target="_blank">Twitter</a> <small>Not moderated for content.</small></h3> -->
+            <ul class="panel-content" id="distant-tweets">
+                {{#tweets}}
+                    <li style="display:none;">{{{text}}} ~ {{created_at}}</li>
+                {{/tweets}}
+            </ul>
+        </div>
+    </div> <!-- /row -->
+
+    <div class="row">
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe src="https://player.vimeo.com/video/85394216" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+    </div> <!-- /row -->
+
 </div>
 
 {{> footer}}
