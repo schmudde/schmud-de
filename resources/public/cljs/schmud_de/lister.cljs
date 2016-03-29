@@ -16,3 +16,5 @@
         tweets           (take number-of-tweets (cycle (sel [:#distant-tweets :li])))
         multiplier       (range number-of-tweets)]
     (dorun (map timed-putter tweets multiplier))))
+
+(set! (.-onload js/window) lister)

@@ -2,6 +2,7 @@
   (:require [quil.core :as q :include-macros true]
             [schmud-de.drawing :as liner]
             [schmud-de.filter :as filter]
+            [schmud-de.lister :as lister]
             [quil.middleware :as m]))
 
 (enable-console-print!)
@@ -112,6 +113,12 @@
       ;;(if (= 0 (int (rem dec-amount one-cycle)))
       ;;  (.log js/console js/window.pageYOffset js/document.documentElement.scrollTop))
 )))
+
+; load specific JS on specific pages
+(let [path (.-location.pathname js/window)]
+  (case path
+    "/projects" (set! (.-onload js/window) filter/filterer)
+    "/distant" (set! (.-onload js/window) lister/lister)))
 
 (q/defsketch mainBox
   :host "mainBox"         ;; the id of the <canvas> element

@@ -1,6 +1,5 @@
-ul.panel-content#distant-tweets, ul.panel-content#distant-tweets > li:not(:last-child) {
+ul.panel-content#distant-tweets > li, ul.panel-content#distant-tweets > li:not(:last-child) {
     .fontVeryLightMixin;
-    min-height: 80px;
     color: @black;
     border-bottom: none;
     margin-bottom: 0;
@@ -8,6 +7,7 @@ ul.panel-content#distant-tweets, ul.panel-content#distant-tweets > li:not(:last-
 
 .twitter-box-apol-col {
     .make-xs-column(12);
+     min-height: 85px;
 
     .panel-content {
         padding-top: 0px;
@@ -19,7 +19,6 @@ ul.panel-content#distant-tweets, ul.panel-content#distant-tweets > li:not(:last-
         margin-bottom: 8px;
     }
 
-
     .header-col, .header-col-right {
         .make-sm-column(6);
         .make-xs-column(12);
@@ -27,7 +26,12 @@ ul.panel-content#distant-tweets, ul.panel-content#distant-tweets > li:not(:last-
     }
 
     .header-col-right {
-        text-align: right;
+        @media (min-width: @screen-sm-min) {
+            text-align: right;
+        }
+        @media (max-width: @screen-sm-min) {
+            text-align: left;
+        }
     }
 }
 

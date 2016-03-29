@@ -36,6 +36,6 @@
                     :output-dir "resources/public/cljs"
                     :main "schmud-de.visualizer"
                     :asset-path "cljs"
-                    :optimizations :advanced ;; Was :none
+                    :optimizations :advanced ;; Was :none or :advanced
                     :pretty-print false}}]}  ;; was true
   :profiles {:production {:env {:production true}}})

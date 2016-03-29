@@ -27,8 +27,8 @@ return new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$position,new 
 quil.middlewares.navigation_2d.setup_2d_nav = (function quil$middlewares$navigation_2d$setup_2d_nav(user_setup,user_settings){
 var initial_state = cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.array_seq([quil.middlewares.navigation_2d.default_position(),cljs.core.select_keys(user_settings,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$position,cljs.core.cst$kw$zoom], null))], 0));
 return cljs.core.update_in.cljs$core$IFn$_invoke$arity$3((user_setup.cljs$core$IFn$_invoke$arity$0 ? user_setup.cljs$core$IFn$_invoke$arity$0() : user_setup.call(null)),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$navigation_DASH_2d], null),((function (initial_state){
-return (function (p1__19025_SHARP_){
-return cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.array_seq([initial_state,p1__19025_SHARP_], 0));
+return (function (p1__10111_SHARP_){
+return cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.array_seq([initial_state,p1__10111_SHARP_], 0));
 });})(initial_state))
 );
 });
@@ -61,15 +61,15 @@ quil.middlewares.navigation_2d.assert_state_has_navigation(state);
 
 quil.core.push_matrix();
 
-var nav_2d_19026 = cljs.core.cst$kw$navigation_DASH_2d.cljs$core$IFn$_invoke$arity$1(state);
-var zoom_19027 = cljs.core.cst$kw$zoom.cljs$core$IFn$_invoke$arity$1(nav_2d_19026);
-var pos_19028 = cljs.core.cst$kw$position.cljs$core$IFn$_invoke$arity$1(nav_2d_19026);
-quil.core.scale.cljs$core$IFn$_invoke$arity$1(zoom_19027);
+var nav_2d_10112 = cljs.core.cst$kw$navigation_DASH_2d.cljs$core$IFn$_invoke$arity$1(state);
+var zoom_10113 = cljs.core.cst$kw$zoom.cljs$core$IFn$_invoke$arity$1(nav_2d_10112);
+var pos_10114 = cljs.core.cst$kw$position.cljs$core$IFn$_invoke$arity$1(nav_2d_10112);
+quil.core.scale.cljs$core$IFn$_invoke$arity$1(zoom_10113);
 
-var tr__17411__auto___19029 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(((quil.core.width() / (2)) / zoom_19027) - cljs.core.first(pos_19028)),(((quil.core.height() / (2)) / zoom_19027) - cljs.core.second(pos_19028))], null);
+var tr__8497__auto___10115 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(((quil.core.width() / (2)) / zoom_10113) - cljs.core.first(pos_10114)),(((quil.core.height() / (2)) / zoom_10113) - cljs.core.second(pos_10114))], null);
 quil.core.push_matrix();
 
-try{quil.core.translate.cljs$core$IFn$_invoke$arity$1(tr__17411__auto___19029);
+try{quil.core.translate.cljs$core$IFn$_invoke$arity$1(tr__8497__auto___10115);
 
 (user_draw.cljs$core$IFn$_invoke$arity$1 ? user_draw.cljs$core$IFn$_invoke$arity$1(state) : user_draw.call(null,state));
 }finally {quil.core.pop_matrix();
@@ -104,15 +104,15 @@ return cljs.core.PersistentArrayMap.EMPTY;
 );
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$variadic(options,cljs.core.cst$kw$setup,cljs.core.partial.cljs$core$IFn$_invoke$arity$3(quil.middlewares.navigation_2d.setup_2d_nav,setup,user_settings),cljs.core.array_seq([cljs.core.cst$kw$draw,cljs.core.partial.cljs$core$IFn$_invoke$arity$2(quil.middlewares.navigation_2d.draw,user_draw),cljs.core.cst$kw$mouse_DASH_dragged,((function (user_settings,user_draw,user_mouse_dragged,user_mouse_wheel,setup){
 return (function (state,event){
-var G__19034 = quil.middlewares.navigation_2d.mouse_dragged(state,event);
-var G__19035 = event;
-return (user_mouse_dragged.cljs$core$IFn$_invoke$arity$2 ? user_mouse_dragged.cljs$core$IFn$_invoke$arity$2(G__19034,G__19035) : user_mouse_dragged.call(null,G__19034,G__19035));
+var G__10120 = quil.middlewares.navigation_2d.mouse_dragged(state,event);
+var G__10121 = event;
+return (user_mouse_dragged.cljs$core$IFn$_invoke$arity$2 ? user_mouse_dragged.cljs$core$IFn$_invoke$arity$2(G__10120,G__10121) : user_mouse_dragged.call(null,G__10120,G__10121));
 });})(user_settings,user_draw,user_mouse_dragged,user_mouse_wheel,setup))
 ,cljs.core.cst$kw$mouse_DASH_wheel,((function (user_settings,user_draw,user_mouse_dragged,user_mouse_wheel,setup){
 return (function (state,event){
-var G__19036 = quil.middlewares.navigation_2d.mouse_wheel(state,event);
-var G__19037 = event;
-return (user_mouse_wheel.cljs$core$IFn$_invoke$arity$2 ? user_mouse_wheel.cljs$core$IFn$_invoke$arity$2(G__19036,G__19037) : user_mouse_wheel.call(null,G__19036,G__19037));
+var G__10122 = quil.middlewares.navigation_2d.mouse_wheel(state,event);
+var G__10123 = event;
+return (user_mouse_wheel.cljs$core$IFn$_invoke$arity$2 ? user_mouse_wheel.cljs$core$IFn$_invoke$arity$2(G__10122,G__10123) : user_mouse_wheel.call(null,G__10122,G__10123));
 });})(user_settings,user_draw,user_mouse_dragged,user_mouse_wheel,setup))
 ], 0));
 });

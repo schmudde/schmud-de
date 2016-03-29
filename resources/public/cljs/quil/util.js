@@ -31,11 +31,11 @@ throw (new Error([cljs.core.str("Expecting a keyword, got: "),cljs.core.str(key)
  * (length-of-longest-key {}) ;=> 0
  */
 quil.util.length_of_longest_key = (function quil$util$length_of_longest_key(m){
-var or__13442__auto__ = cljs.core.last(cljs.core.sort.cljs$core$IFn$_invoke$arity$1(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__18886_SHARP_){
-return p1__18886_SHARP_.length();
+var or__4526__auto__ = cljs.core.last(cljs.core.sort.cljs$core$IFn$_invoke$arity$1(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__9972_SHARP_){
+return p1__9972_SHARP_.length();
 }),cljs.core.keys(m))));
-if(cljs.core.truth_(or__13442__auto__)){
-return or__13442__auto__;
+if(cljs.core.truth_(or__4526__auto__)){
+return or__4526__auto__;
 } else {
 return (0);
 }
@@ -47,23 +47,23 @@ return (0);
  * empty string and also without pad in which case it defaults to a single space
  */
 quil.util.gen_padding = (function quil$util$gen_padding(){
-var args18887 = [];
-var len__14481__auto___18890 = arguments.length;
-var i__14482__auto___18891 = (0);
+var args9973 = [];
+var len__5565__auto___9976 = arguments.length;
+var i__5566__auto___9977 = (0);
 while(true){
-if((i__14482__auto___18891 < len__14481__auto___18890)){
-args18887.push((arguments[i__14482__auto___18891]));
+if((i__5566__auto___9977 < len__5565__auto___9976)){
+args9973.push((arguments[i__5566__auto___9977]));
 
-var G__18892 = (i__14482__auto___18891 + (1));
-i__14482__auto___18891 = G__18892;
+var G__9978 = (i__5566__auto___9977 + (1));
+i__5566__auto___9977 = G__9978;
 continue;
 } else {
 }
 break;
 }
 
-var G__18889 = args18887.length;
-switch (G__18889) {
+var G__9975 = args9973.length;
+switch (G__9975) {
 case 1:
 return quil.util.gen_padding.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -77,7 +77,7 @@ return quil.util.gen_padding.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arg
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args18887.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args9973.length)].join('')));
 
 }
 });
@@ -102,10 +102,10 @@ quil.util.gen_padding.cljs$lang$maxFixedArity = 3;
 quil.util.print_definition_list = (function quil$util$print_definition_list(definitions){
 var longest_key = quil.util.length_of_longest_key(definitions);
 return cljs.core.dorun.cljs$core$IFn$_invoke$arity$1(cljs.core.map.cljs$core$IFn$_invoke$arity$2(((function (longest_key){
-return (function (p__18896){
-var vec__18897 = p__18896;
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__18897,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__18897,(1),null);
+return (function (p__9982){
+var vec__9983 = p__9982;
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__9983,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__9983,(1),null);
 var len = k.length();
 var diff = (longest_key - len);
 var pad = quil.util.gen_padding.cljs$core$IFn$_invoke$arity$1(diff);

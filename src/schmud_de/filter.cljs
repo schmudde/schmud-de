@@ -48,5 +48,3 @@
 (defn filterer []
   (doseq [buttons (sel [:.filters :li])]
     (dommy/listen! buttons :click click-handler)))
-
-(set! (.-onload js/window) filterer)

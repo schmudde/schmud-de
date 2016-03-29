@@ -2,6 +2,7 @@
   (:require [quil.core :as q :include-macros true]
             [schmud-de.drawing :as liner]
             [schmud-de.filter :as filter]
+            [schmud-de.lister :as lister]
             [quil.middleware :as m]))
 
 (enable-console-print!)
