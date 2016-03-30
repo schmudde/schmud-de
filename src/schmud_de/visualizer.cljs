@@ -118,7 +118,8 @@
 (let [path (.-location.pathname js/window)]
   (case path
     "/projects" (set! (.-onload js/window) filter/filterer)
-    "/distant" (set! (.-onload js/window) lister/lister)))
+    "/distant" (set! (.-onload js/window) lister/lister)
+    ""))
 
 (q/defsketch mainBox
   :host "mainBox"         ;; the id of the <canvas> element
