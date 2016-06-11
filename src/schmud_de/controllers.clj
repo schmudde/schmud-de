@@ -39,7 +39,7 @@
               [:header :footer])))
 
 (defn index
-  "Right now this expects 'main', 'projects', 'talks', 'exhibitions', 'weblog', 'etc', 'distant'"
+  "Right now this expects 'main', 'projects', 'talks', 'exhibitions', 'weblog', 'etc', 'distant', 'the-rhythm-of-time'"
   [template-type]
   (index-builder template-type))
 
@@ -57,4 +57,6 @@
   (GET "/etc" []
        (index "etc"))
   (GET "/distant" []
-       (index "distant")))
+       (index "distant"))
+  (GET "/the-rhythm-of-time" []
+       (index "the-rhythm-of-time")))
