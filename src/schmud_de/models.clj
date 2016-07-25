@@ -22,12 +22,22 @@
      :video true
      :image false
      :position "twoBox"}
+    {:title "The Rhythm of Time"
+     :synopsis "&ldquo;The Rhythm of Time&rdquo; weaves past and future in musical counterpoint as it explores the life and times of an enigmatic instrumentalist hailing from an unexpected place."
+     :status "New Release"
+     :link-status true
+     :link "http://rhythmoftime.xyz"
+     :tags [{:tag "documentary"}{:tag "interactive"}]
+     :media "rhythm-16x9.jpg"
+     :video false
+     :image true
+     :position "twoBox"}
     {:title "Distant Apologies"
      :synopsis "The closer you are, the more difficult it is to say, &quot;I'm sorry.&quot;"
      :status "New Release"
      :link-status true
      :link "http://schmud.de/distant"
-     :tags [{:tag "narrative"}]
+     :tags [{:tag "narrative"}{:tag "interactive"}]
      :media "https://player.vimeo.com/video/160771838"
      :video true
      :image false
@@ -255,7 +265,11 @@
 
 (def exhibitions-db
   {:exhibitions
-   [{:title "FUSE @ Livestream Public"
+   [{:title "Third Shift @ Third Space Gallery"
+     :place "Installation, Saint John, N.B., Canada, 2016"
+     :piece "Borderless"
+    }
+    {:title "FUSE @ Livestream Public"
      :place "Performance, New York City, 2015"
      :piece "Borderless"
     }
@@ -484,7 +498,7 @@
      }]
    :publications
     [{:title "Our Lives, Encoded"
-      :publication "Broken Toilets"
+      :publication "Broken Toilets and shared by <a href='http://epodharvard.tumblr.com/post/146951238165/five-favorites-7516' target='_blank'>Evidence For Policy Design at Harvard University</a>"
       :link "http://brokentoilets.org/article/year-twenty-megabytes/"
       }
      {:title "The Computer Revolution Has Yet to Happen"
