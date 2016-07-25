@@ -36,11 +36,11 @@
      :synopsis "The closer you are, the more difficult it is to say, &quot;I'm sorry.&quot;"
      :status "New Release"
      :link-status true
-     :link "http://schmud.de/distant"
+     :link "http://distantapologies.xyz"
      :tags [{:tag "narrative"}{:tag "interactive"}]
-     :media "https://player.vimeo.com/video/160771838"
-     :video true
-     :image false
+     :media "distant-16x9.jpg"
+     :video false
+     :image true
      :position "twoBox"}
     {:title "The Assassination of Chicago's Mayor"
      :synopsis "A 19th-century newspaper peddler named Patrick Prendergast has delusions of greatness. Evidently slighted by the mayor, this self-anointed messenger prepares for a glorious rise from ignored lobbyist to influential icon. Prendergast sees himself as a martyr, serving God with a noble purpose. The reality is far different."
