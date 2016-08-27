@@ -517,11 +517,11 @@
       :title "Screenwriting Analysis for &ldquo;From Script to Screen&rdquo;"
      }]
    :education
-    [{:org "Northwestern University, Magna Cum Laude"
-      :title "Masters in Music"
+    [{:org "Northwestern University"
+      :title "Masters in Music (Magna Cum Laude)"
       :concentrations "Electroacoustic Performance, Composition, Intermedia Studies"
       :year "2004"
-     }
+     }   
      {:org "University of Northern Iowa"
       :title "Bachelor of Arts in Computer Science"
       :concentrations "Artificial Intelligence, Creative Computing and the Visual Arts"
