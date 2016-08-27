@@ -160,6 +160,34 @@
           {:tag "sound"}]
    })
 
+(def employment-db
+  {:employers
+   [{:employer "Beyond the Frame"
+     :date "1/2005 - Present"
+     :title "Creative Technologist"
+     :technology "Clojure, Apache, Tomcat, Digital and 35mm Cameras, Final Cut X, Logic X, Asana, GitHub"
+     :desc "As the company's founder, I interface with clients, manage projects, and generate media assets while acting as the lead developer and creative director."
+     }
+    {:employer "Penguin Random House"
+     :date "10/2015 - 4/2016"
+     :title "Developer"
+     :technology "PHP, JavaScript, Wordpress"
+     :desc "Developer for independent author sites and initiatives at the Crown Publishing Group subsidiary of Random House. Sites include Hogarth Shakespeare, Arianna Huffington, and Carol Burnett."
+     }
+    {:employer "NetGalley"
+     :date "12/2013 - 4/2015"
+     :title "Front End Developer"
+     :technology "Symfony 2, Symfony 1, PHP, JavaScript, JQuery, Less, Doctrine, GitHub."
+     :desc "Front end developer for publishing website with 40,000+ members and 100k+ uniques/month. The team used agile methodologies to deploy new releases every two weeks."
+     }
+    {:employer "F#"
+     :date "9/2012 - 12/2012"
+     :title "Digital Project Manager/Digital Producer"
+     :technology "Jira, Spotify API"
+     :desc "I managed the creation of online advertising for clients such as Universal Pictures, Chevrolet, Philips, Gap, and Spotify.  The process included ideation, wireframes, design, agile development, content management solutions, and launch.  The agile-based production process spanned three continents making cultural awareness and timezone management key."
+     }]
+})
+
 (def talks-db
   {:talks
    [{:location "C-Base: Home of the Chaos Computer Club in Berlin, Germany"
