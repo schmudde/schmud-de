@@ -11,7 +11,9 @@
      :media "https://player.vimeo.com/video/74458487"
      :video true
      :image false
-     :position "oneBox"}
+     :position "oneBox"
+     :technology "Clojure, PHP, JavaScript"
+     :desc "Interactive documentary based on the life and times of Jack Tramiel, the founder of Commodore Business Machines. Awarded a three month residency where prototypes were built and video/audio assets were compiled."}
     {:title "Borderless"
      :synopsis "&ldquo;Borderless&rdquo; is an exploration of unconscious interactions among strangers. The piece examines the way we shape and are shaped by our surroundings, creating invisible movement within society's social fabric. &ldquo;Borderless&rdquo; tests the idea that by recreating unconscious interactions within a tactile and visible medium, we can unveil nuances in social behavior and response. A collaboration with artist Kim Burgas."
      :status "Performance Premier: Music Hall of Williamsburg 2015 (USA); Exhibition Premier: Schusev State Museum of Architecture Now&After Festival 2015 (World)"
@@ -21,7 +23,9 @@
      :media "https://player.vimeo.com/video/119274499"
      :video true
      :image false
-     :position "twoBox"}
+     :position "twoBox"
+     :technology "Clojure, Overtone, Kinect, TSPS, Blackmagic Cinema Camera, portable projection"
+     :desc "The experience is a combination of traditional projection onto semi-transparent organza sheets and soundscapes generated in real-time. Overtone, an open source audio environment in Clojure, receives room information from a Kinect and reacts accordingly."}
     {:title "The Rhythm of Time"
      :synopsis "&ldquo;The Rhythm of Time&rdquo; weaves past and future in musical counterpoint as it explores the life and times of an enigmatic instrumentalist hailing from an unexpected place."
      :status "New Release"
@@ -31,17 +35,21 @@
      :media "rhythm-16x9.jpg"
      :video false
      :image true
-     :position "twoBox"}
+     :position "twoBox"
+     :technology "ClojureScript, FigWheel, Quil, JavaScript, Canon 7D, Final Cut X, Logic X"
+     :desc "&ldquo;The Rhythm of Time&rdquo; is a poetic documentary on the life and times of renowned synthesist Suit & Tie Guy. An interactive element familiarizes the audience with the tools of electronic music sequencing, a key theme of the film."}
     {:title "Distant Apologies"
      :synopsis "The closer you are, the more difficult it is to say, &quot;I'm sorry.&quot;"
      :status "New Release"
      :link-status true
-     :link "http://distantapologies.xyz"
+     :link "http://schmud.de/distant"
      :tags [{:tag "narrative"}{:tag "interactive"}]
-     :media "distant-16x9.jpg"
-     :video false
-     :image true
-     :position "twoBox"}
+     :media "https://player.vimeo.com/video/160771838"
+     :video true
+     :image false
+     :position "twoBox"
+     :technology "Clojure, Leiningen, Tomcat, Twitter API, Super 8 Kodak Film, Final Cut X, Logic X"
+     :desc "&ldquo;Distant Apologies&rdquo; mixes rich NASA archival with a short narrative shot on Super 8 film. The experience begins on a website that streams recent apologies broadcast by individuals around the world on Twitter."}
     {:title "The Assassination of Chicago's Mayor"
      :synopsis "A 19th-century newspaper peddler named Patrick Prendergast has delusions of greatness. Evidently slighted by the mayor, this self-anointed messenger prepares for a glorious rise from ignored lobbyist to influential icon. Prendergast sees himself as a martyr, serving God with a noble purpose. The reality is far different."
      :status "Festival Premier: Hollyshorts 2012 (USA), Aesthetica Film Festival 2012 (World); Broadcast Premier: ShortsHD Channel - Dish Network, DirecTV, AT&T; Internet: IndieFlix"
