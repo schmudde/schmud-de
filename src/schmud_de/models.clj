@@ -563,4 +563,5 @@
   {:talks talks-db
    :projects projects-db
    :exhibitions exhibitions-db
+   :employment employment-db
 })
