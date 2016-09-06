@@ -174,7 +174,7 @@
      :date "1/2005 - Present"
      :title "Creative Technologist"
      :technology "Clojure, Apache, Tomcat, Digital and 35mm Cameras, Final Cut X, Logic X, Asana, GitHub"
-     :desc "Responsibilities include creative development, client and vendor communication, programming, production, and post-production; Project awards include a three (3) month Medienboard-sponsored residency in Berlin, Germany and multiple “Best of Festival” distinctions; Negotiated distribution and exhibition agreements for short films (“Refuge”), installations (“Borderless”), and interactive work (“Jack and the Machine”); Clients include Harper’s Bazaar, NetGalley, Elks National Foundation, Bushwick Film Festival, Himalaya Project, University of California, F#, Soul Pancake, and Throughline Films;"
+     :desc "Responsibilities include creative development, client and vendor communication, programming, production, and post-production; Project awards include a three (3) month Medienboard-sponsored residency in Berlin, Germany and multiple 'Best of Festival' distinctions; Negotiated distribution and exhibition agreements for short films ('Refuge'), installations ('Borderless'), and interactive work ('Jack and the Machine'); Clients include Harper's Bazaar, NetGalley, Elks National Foundation, Bushwick Film Festival, Himalaya Project, University of California, F#, Soul Pancake, and Throughline Films;"
      }
     {:employer "Penguin Random House"
      :date "10/2015 - 4/2016"
