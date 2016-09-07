@@ -180,19 +180,19 @@
      :date "10/2015 - 4/2016"
      :title "Developer"
      :technology "PHP, JavaScript, Wordpress"
-     :desc "Developer for independent author sites and initiatives at the Crown Publishing Group subsidiary of Random House. Sites include Hogarth Shakespeare, Arianna Huffington, and Carol Burnett."
+     :desc "Developer for independent author sites and initiatives at the Crown Publishing Group subsidiary of Random House; Managed client relations, delivery timelines, review process, and cost estimates; Wrote custom code for Wordpress sites and conformed to corporate security standards; Sites included Hogarth Shakespeare, Arianna Huffington, and Carol Burnett;"
      }
     {:employer "NetGalley"
      :date "12/2013 - 4/2015"
      :title "Front End Developer"
      :technology "Symfony 2, Symfony 1, PHP, JavaScript, JQuery, Less, Doctrine, GitHub."
-     :desc "Front end developer for publishing website with 40,000+ members and 100k+ uniques/month. The team used agile methodologies to deploy new releases every two weeks."
+     :desc "Developer for publishing web site with 40,000+ members and 100K+ uniques/month; Full stack responsibilities with an emphasis on front end: I wrote queries, pagination, templates, and styling; Released code every two weeks, accurately hitting sprint targets while committing quality code;"
      }
     {:employer "F#"
      :date "9/2012 - 12/2012"
      :title "Digital Project Manager/Digital Producer"
      :technology "Jira, Spotify API"
-     :desc "I managed the creation of online advertising for clients such as Universal Pictures, Chevrolet, Philips, Gap, and Spotify.  The process included ideation, wireframes, design, agile development, content management solutions, and launch.  The agile-based production process spanned three continents making cultural awareness and timezone management key."
+     :desc "Managed the creation of interactive advertising campaigns; Led ideation process for wireframe design, development, content management solution, and launch; Led agile production process that included teams on three continents making culture awareness and time zone management key; Clients included Universal Pictures, Chevrolet, Philips, Gap, and Spotify;"
      }]
 })
 
