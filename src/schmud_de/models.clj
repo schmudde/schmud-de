@@ -201,11 +201,11 @@
    [{:location "Clojure/conj, Austin, TX"
      :date "December 2016"
      :title "Programming What Cannot Be Programmed"
-     :subtitle ""
+     :subtitle "Aesthetics and Narrative"
      :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
-     :link-status false
-     :link ""
-     :link-name ""
+     :link-status true
+     :link "http://2016.clojure-conj.org/aesthetics-and-narrative/"
+     :link-name "Clojure/conj"
      :media "conj.png"
      :video false
      :image true
@@ -215,7 +215,7 @@
     {:location "Vintage Computer Festival Midwest 11, Elk Grove, IL"
      :date "September 2016"
      :title "Accidentally Arming a Hacker Revolution"
-     :subtitle "Commodore and Jack Tramiel"
+     :subtitle "The Role of Commodore and Jack Tramiel"
      :synopsis "The popularity of Commodore computers and modems hastened the spread and associated public fears of hacking. This is partially due to Jack Tramiel's ethos, which inadvertently aligned with hacker principles."
      :link-status true
      :link "https://www.youtube.com/watch?v=1lBaqC6kKEo"
@@ -238,7 +238,7 @@
      :video true
      :image false
      :row-start ""
-     :row-end ""
+     :row-end "</div><!-- /row -->"
     }
     {:location "Pecha Kucha, Berlin, Germany"
      :date "July 2015"
@@ -251,7 +251,7 @@
      :media "intimacy.jpg"
      :video false
      :image true
-     :row-start ""
+     :row-start "<div class='row'>"
      :row-end ""
     }
     {:location "Department of Digital Film and Video, Chicago, IL"
@@ -266,7 +266,7 @@
      :video false
      :image true
      :row-start ""
-     :row-end "</div> <!-- /row -->"
+     :row-end ""
     }
     {:location "MFA: Music Composition for the Screen, Chicago, IL"
      :date "October 2009"
@@ -279,8 +279,8 @@
      :media "ccc.jpg"
      :video false
      :image true
-     :row-start "<div class='row'>"
-     :row-end ""
+     :row-start ""
+     :row-end "</div><!-- /row -->"
     }
     {:location "Video and Animation Department, Chicago, IL"
      :date "January 2005 - June 2007"
@@ -293,7 +293,7 @@
      :media "iadt.png"
      :video false
      :image true
-     :row-start ""
+     :row-start "<div class='row'>"
      :row-end ""
     }
     {:location "Midwest Independent Film Festival, Chicago, IL"
@@ -308,9 +308,8 @@
      :video false
      :image true
      :row-start ""
-     :row-end "</div> <!-- /row -->"
+     :row-end ""
     }
-
     {:location "Chicago Actors Casting Summit, Chicago, IL"
      :date "July 2008 &amp; July 2009"
      :title "Panelist"
@@ -319,11 +318,11 @@
      :link-status true
      :link "http://beyondthefra-me.tumblr.com/post/28430696505"
      :link-name "D. Schm&uuml;dde: &quot;Reader Question: Student/Actor Expectations&quot;"
-     :media ""
+     :media "16x9spacer.gif"
      :video false
-     :image false
-     :row-start "<div class='row'>"
-     :row-end "</div> <!-- /row -->"
+     :image true
+     :row-start ""
+     :row-end "</div><!-- /row -->"
     }]
    :page-title "Talks"})
 
@@ -479,13 +478,17 @@
       :type "New Media Production Grant"
       :org "Startup Germany, Medienboard"
       :highlight "strong"
+      }
+     {:title "Interactive Co/Lab, Detroit, MI"
+      :type "Competitive Selection"
+      :org "Tribeca Film Institute"
      }
-     {:title "POV Hackathon 9"
+     {:title "POV Hackathon 9, Chicago, IL"
       :type "Competitive Selection"
       :org "PBS"
       :highlight "strong"
      }
-     {:title "POV Hackathon 7"
+     {:title "POV Hackathon 7, New York, NY"
       :type "Competitive Selection"
       :org "PBS"
      }
@@ -498,7 +501,7 @@
       :type "Film Festival Award"
       :org "Digipops Community Film Festival 2014"
      }
-     {:title "Tribeca Hacks Winter 2013"
+     {:title "Tribeca Hacks 2013, New York, NY"
       :type "Competitive Selection"
       :org "Tribeca Film Institute"
      }
@@ -529,7 +532,10 @@
       :org "One Club"
      }]
    :affiliations
-    [{:org "The FilmShop: a New York Collective of Independent Filmmakers"
+    [{:org "Kitchen Table Coders: A Studio For Creative Coding"
+      :title "Member"
+     }
+     {:org "The FilmShop: a New York Collective of Independent Filmmakers"
       :title "Member"
      }
      {:org "Bushwick Film Festival 2013 &amp; 2014"
