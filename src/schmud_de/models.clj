@@ -13,7 +13,7 @@
      :image false
      :position "oneBox"
      :technology "Clojure, PHP, JavaScript"
-     :desc "Interactive documentary based on the life and times of Jack Tramiel, the founder of Commodore Business Machines. Awarded a three month residency where prototypes were built and video/audio assets were compiled."}
+     :desc "Interactive documentary based on the life and times of Jack Tramiel, the founder of Commodore Business Machines."}
     {:title "Borderless"
      :synopsis "&ldquo;Borderless&rdquo; is an exploration of unconscious interactions among strangers. The piece examines the way we shape and are shaped by our surroundings, creating invisible movement within society's social fabric. &ldquo;Borderless&rdquo; tests the idea that by recreating unconscious interactions within a tactile and visible medium, we can unveil nuances in social behavior and response. A collaboration with artist Kim Burgas."
      :status "Performance Premier: Music Hall of Williamsburg 2015 (USA); Exhibition Premier: Schusev State Museum of Architecture Now&After Festival 2015 (World)"
@@ -25,7 +25,7 @@
      :image false
      :position "twoBox"
      :technology "Clojure, Overtone, Kinect, TSPS, Blackmagic Cinema Camera, portable projection"
-     :desc "The experience is a combination of traditional projection onto semi-transparent organza sheets and soundscapes generated in real-time. Overtone, an open source audio environment in Clojure, receives room information from a Kinect and reacts accordingly."}
+     :desc "Dance installation that consists of a video projection accompanied by soundscapes generated in real-time using data acquired from a Kinect."}
     {:title "The Rhythm of Time"
      :synopsis "&ldquo;The Rhythm of Time&rdquo; weaves past and future in musical counterpoint as it explores the life and times of an enigmatic instrumentalist hailing from an unexpected place."
      :status "New Release"
@@ -37,7 +37,7 @@
      :image true
      :position "twoBox"
      :technology "ClojureScript, FigWheel, Quil, JavaScript, Canon 7D, Final Cut X, Logic X"
-     :desc "&ldquo;The Rhythm of Time&rdquo; is a poetic documentary on the life and times of renowned synthesist Suit & Tie Guy. An interactive element familiarizes the audience with the tools of electronic music sequencing, a key theme of the film."}
+     :desc "Interactive documentary on the life and times of enigmatic synthesist Suit & Tie Guy."}
     {:title "Distant Apologies"
      :synopsis "The closer you are, the more difficult it is to say, &quot;I'm sorry.&quot;"
      :status "New Release"
@@ -49,7 +49,7 @@
      :image false
      :position "twoBox"
      :technology "Clojure, Leiningen, Tomcat, Twitter API, Super 8 Kodak Film, Final Cut X, Logic X"
-     :desc "&ldquo;Distant Apologies&rdquo; mixes rich NASA archival with a short narrative shot on Super 8 film. The experience begins on a website that streams recent apologies broadcast by individuals around the world on Twitter."}
+     :desc "Short film mixes rich NASA archival, original Super 8 footage, and a stream of recent apologies scraped from Twitter."}
     {:title "The Assassination of Chicago's Mayor"
      :synopsis "A 19th-century newspaper peddler named Patrick Prendergast has delusions of greatness. Evidently slighted by the mayor, this self-anointed messenger prepares for a glorious rise from ignored lobbyist to influential icon. Prendergast sees himself as a martyr, serving God with a noble purpose. The reality is far different."
      :status "Festival Premier: Hollyshorts 2012 (USA), Aesthetica Film Festival 2012 (World); Broadcast Premier: ShortsHD Channel - Dish Network, DirecTV, AT&T; Internet: IndieFlix"
@@ -174,25 +174,25 @@
      :date "1/2005 - Present"
      :title "Creative Technologist"
      :technology "Clojure, Apache, Tomcat, Digital and 35mm Cameras, Final Cut X, Logic X, Asana, GitHub"
-     :desc "As the company's founder, I interface with clients, manage projects, and generate media assets while acting as the lead developer and creative director."
+     :desc "Responsibilities include creative development, client and vendor communication, programming, production, and post-production; Project awards include a three (3) month Medienboard-sponsored residency in Berlin, Germany and multiple 'Best of Festival' distinctions; Negotiated distribution and exhibition agreements for short films ('Refuge'), installations ('Borderless'), and interactive work ('Jack and the Machine'); Clients include Harper's Bazaar, NetGalley, Elks National Foundation, Bushwick Film Festival, Himalaya Project, University of California, F#, Soul Pancake, and Throughline Films;"
      }
     {:employer "Penguin Random House"
      :date "10/2015 - 4/2016"
      :title "Developer"
      :technology "PHP, JavaScript, Wordpress"
-     :desc "Developer for independent author sites and initiatives at the Crown Publishing Group subsidiary of Random House. Sites include Hogarth Shakespeare, Arianna Huffington, and Carol Burnett."
+     :desc "Developer for independent author sites and initiatives at the Crown Publishing Group subsidiary of Random House; Managed client relations, delivery timelines, review process, and cost estimates; Wrote custom code for Wordpress sites and conformed to corporate security standards; Sites included Hogarth Shakespeare, Arianna Huffington, and Carol Burnett;"
      }
     {:employer "NetGalley"
      :date "12/2013 - 4/2015"
      :title "Front End Developer"
      :technology "Symfony 2, Symfony 1, PHP, JavaScript, JQuery, Less, Doctrine, GitHub."
-     :desc "Front end developer for publishing website with 40,000+ members and 100k+ uniques/month. The team used agile methodologies to deploy new releases every two weeks."
+     :desc "Developer for publishing web site with 40,000+ members and 100K+ uniques/month; Full stack responsibilities with an emphasis on front end: I wrote queries, pagination, templates, and styling; Released code every two weeks, accurately hitting sprint targets while committing quality code;"
      }
     {:employer "F#"
      :date "9/2012 - 12/2012"
      :title "Digital Project Manager/Digital Producer"
      :technology "Jira, Spotify API"
-     :desc "I managed the creation of online advertising for clients such as Universal Pictures, Chevrolet, Philips, Gap, and Spotify.  The process included ideation, wireframes, design, agile development, content management solutions, and launch.  The agile-based production process spanned three continents making cultural awareness and timezone management key."
+     :desc "Managed the creation of interactive advertising campaigns; Led ideation process for wireframe design, development, content management solution, and launch; Led agile production process that included teams on three continents making culture awareness and time zone management key; Clients included Universal Pictures, Chevrolet, Philips, Gap, and Spotify;"
      }]
 })
 
