@@ -198,7 +198,35 @@
 
 (def talks-db
   {:talks
-   [{:location "C-Base: Home of the Chaos Computer Club in Berlin, Germany"
+   [{:location "Clojure/conj, Austin, TX"
+     :date "December 2016"
+     :title "Programming What Cannot Be Programmed"
+     :subtitle ""
+     :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
+     :link-status false
+     :link ""
+     :link-name ""
+     :media "conj.png"
+     :video false
+     :image true
+     :row-start "<div class='row'>"
+     :row-end ""
+    }
+    {:location "Vintage Computer Festival Midwest 11, Elk Grove, IL"
+     :date "September 2016"
+     :title "Accidentally Arming a Hacker Revolution"
+     :subtitle "Commodore and Jack Tramiel"
+     :synopsis "The popularity of Commodore computers and modems hastened the spread and associated public fears of hacking. This is partially due to Jack Tramiel's ethos, which inadvertently aligned with hacker principles."
+     :link-status true
+     :link "https://www.youtube.com/watch?v=1lBaqC6kKEo"
+     :link-name "Vintage Computer Festival on YouTube"
+     :media "https://www.youtube.com/embed/1lBaqC6kKEo"
+     :video true
+     :image false
+     :row-start ""
+     :row-end ""
+    }
+    {:location "C-Base: Home of the Chaos Computer Club in Berlin, Germany"
      :date "July 2015"
      :title "Harvesting Human Intelligence"
      :subtitle "Reframing the Surveillance Discourse"
@@ -209,7 +237,7 @@
      :media "https://player.vimeo.com/video/132857801"
      :video true
      :image false
-     :row-start "<div class='row'>"
+     :row-start ""
      :row-end ""
     }
     {:location "Pecha Kucha, Berlin, Germany"
@@ -521,7 +549,7 @@
       :title "Masters in Music (Magna Cum Laude)"
       :concentrations "Electroacoustic Performance, Composition, Intermedia Studies"
       :year "2004"
-     }   
+     }
      {:org "University of Northern Iowa"
       :title "Bachelor of Arts in Computer Science"
       :concentrations "Artificial Intelligence, Creative Computing and the Visual Arts"
