@@ -267,6 +267,7 @@
      :image true
      :row-start ""
      :row-end ""
+     :desc "Core curriculum design and development for the Bachelors in Audio Engineering; Faculty advisor for Audio Club; Portfolio review: regular seat on faculty committee for senior film portfolio defense;"
     }
     {:location "MFA: Music Composition for the Screen, Chicago, IL"
      :date "October 2009"
@@ -295,6 +296,7 @@
      :image true
      :row-start "<div class='row'>"
      :row-end ""
+     :desc "Core curriculum design and development for the Interactive Multimedia Track; IADT kiosk: class developed and implemented public informational kiosk that aided visitors new to the campus;"     
     }
     {:location "Midwest Independent Film Festival, Chicago, IL"
      :date "September 2009"
