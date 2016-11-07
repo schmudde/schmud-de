@@ -226,7 +226,7 @@
      :row-start ""
      :row-end ""
     }
-    {:location "C-Base: Home of the Chaos Computer Club in Berlin, Germany"
+    {:location "C-Base: Home of the Chaos Computer Club, Berlin, Germany"
      :date "July 2015"
      :title "Harvesting Human Intelligence"
      :subtitle "Reframing the Surveillance Discourse"
