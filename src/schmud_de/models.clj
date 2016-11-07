@@ -271,9 +271,9 @@
     }
     {:location "MFA: Music Composition for the Screen, Chicago, IL"
      :date "October 2009"
-     :title "Hybrid Scores and Atonality"
+     :title "Visiting Lecturer"
      :subtitle "Columbia College Chicago"
-     :synopsis "<blockquote><p>It may be that in order to make the cinematic image sound authentically, in its full diapason, music has to be abandoned.</p><footer>Andrei Tarkovsky</footer></blockquote>A master class that examines the intersection between sound design and traditional notions of composing music for the screen."
+     :synopsis "<em>Hybrid Scores and Atonality</em><blockquote><p>It may be that in order to make the cinematic image sound authentically, in its full diapason, music has to be abandoned.</p><footer>Andrei Tarkovsky</footer></blockquote>A master class that examines the intersection between sound design and traditional notions of composing music for the screen."
      :link-status true
      :link "http://beyondthefra-me.tumblr.com/post/5545059622"
      :link-name "D. Schm&uuml;dde: &quot;Composing for <em>The Assassination of Chicago&#39;s Mayor</em>&quot;"
