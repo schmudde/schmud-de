@@ -360,6 +360,10 @@
      :place "New York City, 2015"
      :piece "The Assassination of Chicago's Mayor"
     }
+    {:title "Fonlad International Exhibition of Video Art"
+     :place "Cologne, Germany, 2014"
+     :piece "Borderless"
+    }    
     {:title "IFP Made in NY Media Center"
      :place "Installation, New York City, 2014"
      :piece "Borderless"
