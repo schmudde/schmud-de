@@ -200,15 +200,15 @@
   {:talks
    [{:location "Clojure/conj, Austin, TX"
      :date "December 2016"
-     :title "Programming What Cannot Be Programmed"
-     :subtitle "Aesthetics and Narrative"
+     :title "Aesthetics and Narrative"
+     :subtitle "Programming What Cannot Be Programmed"
      :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
      :link-status true
      :link "http://2016.clojure-conj.org/aesthetics-and-narrative/"
      :link-name "Clojure/conj"
-     :media "conj.png"
-     :video false
-     :image true
+     :media "https://www.youtube.com/embed/UJ1pD-Z6PEY"
+     :video true
+     :image false
      :row-start "<div class='row'>"
      :row-end ""
     }
@@ -296,7 +296,7 @@
      :image true
      :row-start "<div class='row'>"
      :row-end ""
-     :desc "Core curriculum design and development for the Interactive Multimedia Track; IADT kiosk: class developed and implemented public informational kiosk that aided visitors new to the campus;"     
+     :desc "Core curriculum design and development for the Interactive Multimedia Track; IADT kiosk: class developed and implemented public informational kiosk that aided visitors new to the campus;"
     }
     {:location "Midwest Independent Film Festival, Chicago, IL"
      :date "September 2009"
@@ -330,7 +330,11 @@
 
 (def exhibitions-db
   {:exhibitions
-   [{:title "Third Shift @ Third Space Gallery"
+   [{:title "Hack && Tell"
+     :place "Presentation, New York City, 2016"
+     :piece "The Rhythm of Time"
+    }
+    {:title "Third Shift @ Third Space Gallery"
      :place "Installation, Saint John, N.B., Canada, 2016"
      :piece "Borderless"
     }
@@ -363,7 +367,7 @@
     {:title "Fonlad International Exhibition of Video Art"
      :place "Cologne, Germany, 2014"
      :piece "Borderless"
-    }    
+    }
     {:title "IFP Made in NY Media Center"
      :place "Installation, New York City, 2014"
      :piece "Borderless"
