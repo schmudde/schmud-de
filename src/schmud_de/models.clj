@@ -232,6 +232,48 @@
      :row-start (positioner 2 :row-start)
      :row-end (positioner 2 :row-end)
      }
+    {:location "I T.A.K.E Unconference (Keynote)"
+     :date "May 2017"
+     :title "Aesthetics and Narrative"
+     :subtitle "Programming What Cannot Be Programmed"
+     :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
+     :link-status true
+     :link "http://itakeunconf.com/sessions/aesthetics-and-narrative-programming-what-cannot-be-programmed/"
+     :link-name "I T.A.K.E Unconference profile"
+     :media "itake.png"
+     :video false
+     :image true
+     :row-start (positioner 3 :row-start)
+     :row-end (positioner 3 :row-end)
+     }
+    {:location "ClojureBridge New York City"
+     :date "June 2017"
+     :title "Teacher: Advanced Track"
+     :subtitle "Basics and Functions"
+     :synopsis "ClojureBridge is an all-volunteer organization dedicated to increasing diversity in the Clojure community. I prepared the syllabus and all instructional materials with another facilitator. During the weekend programming intensive, I lectured and provided hands-on support for experienced female engineers seeking to learn functional programming."
+     :link-status true
+     :link " http://www.clojurebridge.org/events/2017-05-26-new-york-ny"
+     :link-name "ClojureBridge Event Information"
+     :media "clojurebridge.png"
+     :video false
+     :image true
+     :row-start (positioner 1 :row-start)
+     :row-end (positioner 1 :row-end)
+     }
+    {:location "Codes & Modes Symposium hosted by Hunter College"
+     :date "March 2017"
+     :title "The Grammar of the Internet"
+     :subtitle ""
+     :synopsis "Cinematic language is robust enough to clearly depict the flow of time through a collection of shots - whether they span centuries, seconds, or instant conceptual leaps. Early experiments in hypertext and interactive media often attempted to reconcile the new mediums by adopting the rules of cinema. This talk nods to the elegance of cinematic grammar and examines an idiosyncratic path forward for interconnected, interactive, nonfiction media."
+     :link-status true
+     :link "http://www.hunterintegratedmedia.org/reframe/speaker-lineup/dschmudde/"
+     :link-name "Codes & Modes profile"
+     :media "hunter-sm.jpg"
+     :video false
+     :image true
+     :row-start (positioner 2 :row-start)
+     :row-end (positioner 2 :row-end)
+     }
     {:location "New York City Digital Humanities Festival"
      :date "February 2017"
      :title "Strategies for Interactive and Immersive Dance"
@@ -251,9 +293,9 @@
      :title "Adjunct Professor"
      :subtitle "Stevens Institute of Technology"
      :synopsis "<em>Computers and Society</em> (HSS-371)<br /><br />An examination of the politics and culture embodied by powerful technology. This includes internet governance (multi-stakeholderism, online communities, decentralization vs. centralization), ethical issues in computing (hacking, artificial intelligence, participatory design), privacy, intellectual property, and the global digital divide."
-     :link-status false
-     :link ""
-     :link-name ""
+     :link-status true
+     :link "http://beyondtheframe.digital/computersandsociety/"
+     :link-name "<em>Computers and Society</em> class website"
      :media "stevens.png"
      :video false
      :image true
