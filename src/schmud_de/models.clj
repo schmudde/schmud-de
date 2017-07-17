@@ -232,7 +232,7 @@
      :row-start (positioner 2 :row-start)
      :row-end (positioner 2 :row-end)
      }
-    {:location "I T.A.K.E Unconference (Keynote)"
+    {:location "I T.A.K.E Unconference (Keynote), Bucharest, Romania"
      :date "May 2017"
      :title "Aesthetics and Narrative"
      :subtitle "Programming What Cannot Be Programmed"
