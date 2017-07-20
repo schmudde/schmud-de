@@ -174,25 +174,25 @@
      :date "1/2005 - Present"
      :title "Creative Technologist"
      :technology "Clojure, Apache, Tomcat, Digital and 35mm Cameras, Final Cut X, Logic X, Asana, GitHub"
-     :synopsis "Responsibilities include creative development, client and vendor communication, programming, production, and post-production; Project awards include a three (3) month Medienboard-sponsored residency in Berlin, Germany and multiple 'Best of Festival' distinctions; Negotiated distribution and exhibition agreements for short films ('Refuge'), installations ('Borderless'), and interactive work ('Jack and the Machine'); Clients include Harper's Bazaar, NetGalley, Elks National Foundation, Bushwick Film Festival, Himalaya Project, University of California, F#, Soul Pancake, and Throughline Films;"
+     :desc "Responsibilities include creative development, client and vendor communication, programming, production, and post-production; Project awards include a three (3) month Medienboard-sponsored residency in Berlin, Germany and multiple 'Best of Festival' distinctions; Negotiated distribution and exhibition agreements for short films ('Refuge'), installations ('Borderless'), and interactive work ('Jack and the Machine'); Clients include Harper's Bazaar, NetGalley, Elks National Foundation, Bushwick Film Festival, Himalaya Project, University of California, F#, Soul Pancake, and Throughline Films;"
      }
     {:subtitle "Penguin Random House"
      :date "10/2015 - 4/2016"
      :title "Developer"
      :technology "PHP, JavaScript, Wordpress"
-     :synopsis "Developer for independent author sites and initiatives at the Crown Publishing Group subsidiary of Random House; Managed client relations, delivery timelines, review process, and cost estimates; Wrote custom code for Wordpress sites and conformed to corporate security standards; Sites included Hogarth Shakespeare, Arianna Huffington, and Carol Burnett;"
+     :desc "Developer for independent author sites and initiatives at the Crown Publishing Group subsidiary of Random House; Managed client relations, delivery timelines, review process, and cost estimates; Wrote custom code for Wordpress sites and conformed to corporate security standards; Sites included Hogarth Shakespeare, Arianna Huffington, and Carol Burnett;"
      }
     {:subtitle "NetGalley"
      :date "12/2013 - 4/2015"
      :title "Front End Developer"
      :technology "Symfony 2, Symfony 1, PHP, JavaScript, JQuery, Less, Doctrine, GitHub."
-     :synopsis "Developer for publishing web site with 40,000+ members and 100K+ uniques/month; Full stack responsibilities with an emphasis on front end: I wrote queries, pagination, templates, and styling; Released code every two weeks, accurately hitting sprint targets while committing quality code;"
+     :desc "Developer for publishing web site with 40,000+ members and 100K+ uniques/month; Full stack responsibilities with an emphasis on front end: I wrote queries, pagination, templates, and styling; Released code every two weeks, accurately hitting sprint targets while committing quality code;"
      }
     {:subtitle "F#"
      :date "9/2012 - 12/2012"
      :title "Digital Project Manager/Digital Producer"
      :technology "Jira, Spotify API"
-     :synopsis "Managed the creation of interactive advertising campaigns; Led ideation process for wireframe design, development, content management solution, and launch; Led agile production process that included teams on three continents making culture awareness and time zone management key; Clients included Universal Pictures, Chevrolet, Philips, Gap, and Spotify;"
+     :desc "Managed the creation of interactive advertising campaigns; Led ideation process for wireframe design, development, content management solution, and launch; Led agile production process that included teams on three continents making culture awareness and time zone management key; Clients included Universal Pictures, Chevrolet, Philips, Gap, and Spotify;"
      }]
 })
 
