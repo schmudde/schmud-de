@@ -638,20 +638,20 @@
       :title "Screenwriting Analysis for &ldquo;From Script to Screen&rdquo;"
      }]
    :education
-    [{:org "Northwestern University"
+    [{:subtitle "Northwestern University"
       :title "Masters in Music (Magna Cum Laude)"
-      :concentrations "Electroacoustic Performance, Composition, Intermedia Studies"
-      :year "2004"
+      :technology "Electroacoustic Performance, Composition, Intermedia Studies"
+      :date "2002 - 2004"
      }
-     {:org "University of Northern Iowa"
+     {:subtitle "University of Northern Iowa"
       :title "Bachelor of Arts in Computer Science"
-      :concentrations "Artificial Intelligence, Creative Computing and the Visual Arts"
-      :year "2001"
+      :technology "Artificial Intelligence, Creative Computing and the Visual Arts"
+      :date "1997 - 2001"
      }
-     {:org "DID Deutsch-Institut, Berlin, Germany"
+     {:subtitle "DID Deutsch-Institut, Berlin, Germany"
       :title "Language Intensive"
-      :concentrations "German"
-      :year "2005"
+      :technology "German"
+      :date "2005"
      }]
    :publications
     [{:title "Our Lives, Encoded"
