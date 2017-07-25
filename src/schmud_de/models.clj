@@ -248,9 +248,9 @@
      }
     {:location "ClojureBridge New York City"
      :date "June 2017"
-     :title "Teacher: Advanced Track"
-     :subtitle "Basics and Functions"
-     :synopsis "ClojureBridge is an all-volunteer organization dedicated to increasing diversity in the Clojure community. I prepared the syllabus and all instructional materials with another facilitator. During the weekend programming intensive, I lectured and provided hands-on support for experienced female engineers seeking to learn functional programming."
+     :title "Workshop Instructor"
+     :subtitle "The Fundamentals of Functional Programming and Clojure: A Workshop For Programmers"
+     :synopsis "ClojureBridge is an all-volunteer organization dedicated to increasing diversity in the Clojure community. I lectured and provided hands-on support for experienced engineers looking to learn functional programming based on a collaboratively prepared curriculum."
      :link-status true
      :link " http://www.clojurebridge.org/events/2017-05-26-new-york-ny"
      :link-name "ClojureBridge Event Information"
@@ -276,8 +276,8 @@
      }
     {:location "New York City Digital Humanities Festival"
      :date "February 2017"
-     :title "Strategies for Interactive and Immersive Dance"
-     :subtitle "A &quot;Boderless&quot; Case Study"
+     :title "Workshop Instructor"
+     :subtitle "Strategies for Interactive and Immersive Dance"
      :synopsis "This workshop focuses on strategies for creating cross-domain experiences. We dive deep into visual projection, software, sound, and dance while respecting each medium's idiosyncratic strengths."
      :link-status true
      :link "http://dhweek.nycdh.org/event/strategies-for-interactive-and-immersive-dance/"
@@ -622,7 +622,7 @@
     [{:org "Kitchen Table Coders: A Studio For Creative Coding"
       :title "Member"
      }
-     {:org "The FilmShop: a New York Collective of Independent Filmmakers"
+     {:org "The FilmShop: A New York Collective of Independent Filmmakers"
       :title "Member"
      }
      {:org "Bushwick Film Festival 2013 &amp; 2014"
@@ -631,7 +631,7 @@
      {:org "Himalaya Project: Education and Healthcare in Dolpo, Nepal"
       :title "Volunteer Media Director and Producer"
      }
-     {:org "&lt;StoryCode&gt;: an Immersive Media Meetup"
+     {:org "&lt;StoryCode&gt;: An Immersive Media Meetup"
       :title "Videography Volunteer"
      }
      {:org "The Script Lab"
