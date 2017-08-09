@@ -204,35 +204,7 @@
 
 (def talks-db
   {:talks
-   [{:location "Clojure/conj, Austin, TX"
-     :date "December 2016"
-     :title "Aesthetics and Narrative"
-     :subtitle "Programming What Cannot Be Programmed"
-     :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
-     :link-status true
-     :link "http://2016.clojure-conj.org/aesthetics-and-narrative/"
-     :link-name "Clojure/conj"
-     :media "https://www.youtube.com/embed/UJ1pD-Z6PEY"
-     :video true
-     :image false
-     :row-start (positioner 1 :row-start)
-     :row-end (positioner 1 :row-end)
-    }
-    {:location "Vintage Computer Festival Midwest 11, Elk Grove, IL"
-     :date "September 2016"
-     :title "Accidentally Arming a Hacker Revolution"
-     :subtitle "The Role of Commodore and Jack Tramiel"
-     :synopsis "The popularity of Commodore computers and modems hastened the spread and associated public fears of hacking. This is partially due to Jack Tramiel's ethos, which inadvertently aligned with hacker principles."
-     :link-status true
-     :link "https://www.youtube.com/watch?v=1lBaqC6kKEo"
-     :link-name "Vintage Computer Festival on YouTube"
-     :media "https://www.youtube.com/embed/1lBaqC6kKEo"
-     :video true
-     :image false
-     :row-start (positioner 2 :row-start)
-     :row-end (positioner 2 :row-end)
-     }
-    {:location "I T.A.K.E Unconference (Keynote), Bucharest, Romania"
+   [{:location "I T.A.K.E Unconference (Keynote), Bucharest, Romania"
      :date "May 2017"
      :title "Aesthetics and Narrative"
      :subtitle "Programming What Cannot Be Programmed"
@@ -240,22 +212,8 @@
      :link-status true
      :link "http://itakeunconf.com/sessions/aesthetics-and-narrative-programming-what-cannot-be-programmed/"
      :link-name "I T.A.K.E Unconference profile"
-     :media "itake.png"
-     :video false
-     :image true
-     :row-start (positioner 3 :row-start)
-     :row-end (positioner 3 :row-end)
-     }
-    {:location "ClojureBridge New York City"
-     :date "June 2017"
-     :title "Workshop Instructor"
-     :subtitle "The Fundamentals of Functional Programming and Clojure: A Workshop For Programmers"
-     :synopsis "ClojureBridge is an all-volunteer organization dedicated to increasing diversity in the Clojure community. I lectured and provided hands-on support for experienced engineers looking to learn functional programming based on a collaboratively prepared curriculum."
-     :link-status true
-     :link " http://www.clojurebridge.org/events/2017-05-26-new-york-ny"
-     :link-name "ClojureBridge Event Information"
-     :media "clojurebridge.png"
-     :video false
+     :media "https://www.youtube.com/watch?v=loksl7ED0Hg"
+     :video true
      :image true
      :row-start (positioner 1 :row-start)
      :row-end (positioner 1 :row-end)
@@ -271,6 +229,48 @@
      :media "hunter-sm.jpg"
      :video false
      :image true
+     :row-start (positioner 2 :row-start)
+     :row-end (positioner 2 :row-end)
+     }
+    {:location "Clojure/conj, Austin, TX"
+     :date "December 2016"
+     :title "Aesthetics and Narrative"
+     :subtitle "Programming What Cannot Be Programmed"
+     :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
+     :link-status true
+     :link "http://2016.clojure-conj.org/aesthetics-and-narrative/"
+     :link-name "Clojure/conj"
+     :media "https://www.youtube.com/embed/UJ1pD-Z6PEY"
+     :video true
+     :image false
+     :row-start (positioner 3 :row-start)
+     :row-end (positioner 3 :row-end)
+    }
+    {:location "ClojureBridge New York City"
+     :date "June 2017"
+     :title "Workshop Instructor"
+     :subtitle "The Fundamentals of Functional Programming and Clojure: A Workshop for Programmers"
+     :synopsis "ClojureBridge is an all-volunteer organization dedicated to increasing diversity in the Clojure community. I lectured and provided hands-on support for experienced engineers looking to learn functional programming based on a collaboratively prepared curriculum."
+     :link-status true
+     :link " http://www.clojurebridge.org/events/2017-05-26-new-york-ny"
+     :link-name "ClojureBridge Event Information"
+     :media "clojurebridge.png"
+     :video false
+     :image true
+     :row-start (positioner 1 :row-start)
+     :row-end (positioner 1 :row-end)
+     }
+    {:location "Vintage Computer Festival Midwest 11, Elk Grove, IL"
+     :date "September 2016"
+     :title "Accidentally Arming a Hacker Revolution"
+     :subtitle "The Role of Commodore and Jack Tramiel"
+     :synopsis "The popularity of Commodore computers and modems hastened the spread and associated public fears of hacking. This is partially due to Jack Tramiel's ethos, which inadvertently aligned with hacker principles."
+     :link-status true
+     :link "https://www.youtube.com/watch?v=1lBaqC6kKEo"
+     :link-name "Vintage Computer Festival on YouTube"
+     :media "https://www.youtube.com/embed/1lBaqC6kKEo"
+     :video true
+     :image false
      :row-start (positioner 2 :row-start)
      :row-end (positioner 2 :row-end)
      }
@@ -407,13 +407,17 @@
 
 (def exhibitions-db
   {:exhibitions
-   [{:title "Hack && Tell"
+   [{:title "Holocenter: Center for the Holographic Arts"
+     :place "Installation, New York City, 2017"
+     :piece "Borderless IV"
+    }
+    {:title "Hack && Tell"
      :place "Presentation, New York City, 2016"
      :piece "The Rhythm of Time"
     }
     {:title "Third Shift @ Third Space Gallery"
      :place "Installation, Saint John, N.B., Canada, 2016"
-     :piece "Borderless"
+     :piece "Borderless IV"
     }
     {:title "FUSE @ Livestream Public"
      :place "Performance, New York City, 2015"
@@ -561,7 +565,11 @@
      :piece "Lucid Dream Ensemble"
     }]
    :awards
-    [{:title "Berlin/New York 2015 Media Residency Program"
+   [{:title "2017 Space:Light Artist Residency"
+      :type "Residency"
+      :org "Holocenter: Center for the Holographic Arts"
+      }
+    {:title "Berlin/New York 2015 Media Residency Program"
       :type "New Media Production Grant"
       :org "Startup Germany, Medienboard"
       :highlight "strong"
@@ -619,7 +627,7 @@
       :org "One Club"
      }]
    :affiliations
-    [{:org "Kitchen Table Coders: A Studio For Creative Coding"
+    [{:org "Kitchen Table Coders: A Studio for Creative Coding"
       :title "Member"
      }
      {:org "The FilmShop: A New York Collective of Independent Filmmakers"
@@ -655,7 +663,7 @@
      }]
    :publications
     [{:title "Our Lives, Encoded"
-      :publication "Broken Toilets and shared by <a href='http://epodharvard.tumblr.com/post/146951238165/five-favorites-7516' target='_blank'>Evidence For Policy Design at Harvard University</a>"
+      :publication "Broken Toilets and shared by <a href='http://epodharvard.tumblr.com/post/146951238165/five-favorites-7516' target='_blank'>Evidence for Policy Design at Harvard University</a>"
       :link "http://brokentoilets.org/article/year-twenty-megabytes/"
       :date "May 20, 2016"
       }
