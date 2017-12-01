@@ -170,7 +170,13 @@
 
 (def employment-db
   {:employers
-   [{:subtitle "Beyond the Frame"
+   [{:subtitle "Nextjournal"
+     :date "9/2017 - Present"
+     :title "Developer"
+     :technology "Clojure, ClojureScript, Datomic"
+     :desc "Developer for open science platform that emphasizes running code, reproducibility, and collaboration tools; Developed the user group management feature from database calls to front end design and layout; Tackled abstract problems such as new user onboarding flows."
+     }
+    {:subtitle "Beyond the Frame"
      :date "1/2005 - Present"
      :title "Creative Technologist"
      :technology "Clojure, Apache, Tomcat, Digital and 35mm Cameras, Final Cut X, Logic X, Asana, GitHub"
@@ -260,16 +266,16 @@
      :row-start (positioner 1 :row-start)
      :row-end (positioner 1 :row-end)
      }
-    {:location "Vintage Computer Festival Midwest 11, Elk Grove, IL"
-     :date "September 2016"
-     :title "Accidentally Arming a Hacker Revolution"
-     :subtitle "The Role of Commodore and Jack Tramiel"
-     :synopsis "The popularity of Commodore computers and modems hastened the spread and associated public fears of hacking. This is partially due to Jack Tramiel's ethos, which inadvertently aligned with hacker principles."
+    {:location "Society for the History of Technology, Philadelphia, PA"
+     :date "October 2017"
+     :title "Unlikely Harbingers"
+     :subtitle "Office Machinery in the Mainframe Era"
+     :synopsis "This paper focuses on the significance of common mid-century desktop tools through the lens of Commodore Business Machines, a small company with a penchant for international deal-making. Commodore competed with very little capital against much larger players, and in doing so utilized emerging business practices that would come to define today's entrepreneurial climate."
      :link-status true
-     :link "https://www.youtube.com/watch?v=1lBaqC6kKEo"
-     :link-name "Vintage Computer Festival on YouTube"
-     :media "https://www.youtube.com/embed/1lBaqC6kKEo"
-     :video true
+     :link "http://sites.library.queensu.ca/transmissions/computers-and-futures/"
+     :link-name "Computers and Futures Retrospective on Transmissions"
+     :media ""
+     :video false
      :image false
      :row-start (positioner 2 :row-start)
      :row-end (positioner 2 :row-end)
@@ -317,6 +323,20 @@
      :row-start (positioner 2 :row-start)
      :row-end (positioner 2 :row-end)
      }
+    {:location "Vintage Computer Festival Midwest 11, Elk Grove, IL"
+     :date "September 2016"
+     :title "Accidentally Arming a Hacker Revolution"
+     :subtitle "The Role of Commodore and Jack Tramiel"
+     :synopsis "The popularity of Commodore computers and modems hastened the spread and associated public fears of hacking. This is partially due to Jack Tramiel's ethos, which inadvertently aligned with hacker principles."
+     :link-status true
+     :link "https://www.youtube.com/watch?v=1lBaqC6kKEo"
+     :link-name "Vintage Computer Festival on YouTube"
+     :media "https://www.youtube.com/embed/1lBaqC6kKEo"
+     :video true
+     :image false
+     :row-start (positioner 3 :row-start)
+     :row-end (positioner 3 :row-end)
+     }
     {:location "Pecha Kucha, Berlin, Germany"
      :date "July 2015"
      :title "Computers & Intimacy"
@@ -328,8 +348,8 @@
      :media "intimacy.jpg"
      :video false
      :image true
-     :row-start (positioner 3 :row-start)
-     :row-end (positioner 3 :row-end)
+     :row-start (positioner 1 :row-start)
+     :row-end (positioner 1 :row-end)
     }
     {:location "Department of Digital Film and Video, Chicago, IL"
      :date "January 2006 - January 2012"
@@ -342,8 +362,8 @@
      :media "ai.png"
      :video false
      :image true
-     :row-start (positioner 1 :row-start)
-     :row-end (positioner 1 :row-end)
+     :row-start (positioner 2 :row-start)
+     :row-end (positioner 2 :row-end)
      :desc "Core curriculum design and development for the Bachelors in Audio Engineering; Faculty advisor for Audio Club; Portfolio review: regular seat on faculty committee for senior film portfolio defense;"
     }
     {:location "MFA: Music Composition for the Screen, Chicago, IL"
@@ -357,8 +377,8 @@
      :media "ccc.jpg"
      :video false
      :image true
-     :row-start (positioner 2 :row-start)
-     :row-end (positioner 2 :row-end)
+     :row-start (positioner 3 :row-start)
+     :row-end (positioner 3 :row-end)
     }
     {:location "Video and Animation Department, Chicago, IL"
      :date "January 2005 - June 2007"
@@ -371,8 +391,8 @@
      :media "iadt.png"
      :video false
      :image true
-     :row-start (positioner 3 :row-start)
-     :row-end (positioner 3 :row-end)
+     :row-start (positioner 1 :row-start)
+     :row-end (positioner 1 :row-end)
      :desc "Core curriculum design and development for the Interactive Multimedia Track; IADT kiosk: class developed and implemented public informational kiosk that aided visitors new to the campus;"
     }
     {:location "Midwest Independent Film Festival, Chicago, IL"
@@ -386,8 +406,8 @@
      :media "miff.png"
      :video false
      :image true
-     :row-start (positioner 1 :row-start)
-     :row-end (positioner 1 :row-end)
+     :row-start (positioner 2 :row-start)
+     :row-end (positioner 2 :row-end)
     }
     {:location "Chicago Actors Casting Summit, Chicago, IL"
      :date "July 2008 &amp; July 2009"
@@ -407,7 +427,23 @@
 
 (def exhibitions-db
   {:exhibitions
-   [{:title "Holocenter: Center for the Holographic Arts"
+   [{:title "Bushwick Film Festival"
+     :place "New York City, 2017"
+     :piece "Distant Apologies"
+     }
+    {:title "Blow-Up Arthouse International Film Festival"
+     :place "Chicago, 2017"
+     :piece "Distant Apologies"
+     }
+    {:title "Blow-Up Arthouse International Film Festival"
+     :place "Chicago, 2017"
+     :piece "The Rhythm of Time"
+     }
+    {:title "YoFiFest Film Festival"
+     :place "Yonkers, New York, 2017"
+     :piece "Distant Apologies"
+    }
+    {:title "Holocenter: Center for the Holographic Arts"
      :place "Installation, New York City, 2017"
      :piece "Borderless IV"
     }
