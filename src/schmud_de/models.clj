@@ -218,9 +218,9 @@
      :link-status true
      :link "http://itakeunconf.com/sessions/aesthetics-and-narrative-programming-what-cannot-be-programmed/"
      :link-name "I T.A.K.E Unconference profile"
-     :media "https://www.youtube.com/watch?v=loksl7ED0Hg"
+     :media "https://www.youtube.com/embed/loksl7ED0Hg"
      :video true
-     :image true
+     :image false
      :row-start (positioner 1 :row-start)
      :row-end (positioner 1 :row-end)
      }
@@ -251,7 +251,35 @@
      :image false
      :row-start (positioner 3 :row-start)
      :row-end (positioner 3 :row-end)
-    }
+     }
+    {:location "RIXC Art Science Festival, Riga, Latvia"
+     :date "October 2017"
+     :title "Manifesting Human Relationships in Art and Technology"
+     :subtitle ""
+     :synopsis "The internet has produced a tangibly interconnected world. In hindsight, its grammar of nodes, edges, and protocols is as organic as natural language. This presentation examines the discovery of packet-switched networks from a mid-century context and reveals the metaphors for human interaction and consciousness baked within; concepts that provide a foundation for discussing post-digital contemporary art."
+     :link-status true
+     :link "http://festival2017.rixc.org/"
+     :link-name "RIXC: Virtualities and Realities"
+     :media "rixc.jpg"
+     :video false
+     :image true
+     :row-start (positioner 1 :row-start)
+     :row-end (positioner 1 :row-end)
+     }
+    {:location "Society for the History of Technology, Philadelphia, PA"
+     :date "October 2017"
+     :title "Unlikely Harbingers"
+     :subtitle "Office Machinery in the Mainframe Era"
+     :synopsis "This paper focuses on the significance of common mid-century desktop tools through the lens of Commodore Business Machines, a small company with a penchant for international deal-making. Commodore competed with very little capital against much larger players, and in doing so utilized emerging business practices that would come to define today's entrepreneurial climate. Part of a series on &quot;Computers and Futures.&quot;"
+     :link-status true
+     :link "http://sites.library.queensu.ca/transmissions/computers-and-futures/"
+     :link-name "Computers and Futures Retrospective on Transmissions"
+     :media "shot-logo.png"
+     :video false
+     :image true
+     :row-start (positioner 2 :row-start)
+     :row-end (positioner 2 :row-end)
+     }
     {:location "ClojureBridge New York City"
      :date "June 2017"
      :title "Workshop Instructor"
@@ -263,22 +291,8 @@
      :media "clojurebridge.png"
      :video false
      :image true
-     :row-start (positioner 1 :row-start)
-     :row-end (positioner 1 :row-end)
-     }
-    {:location "Society for the History of Technology, Philadelphia, PA"
-     :date "October 2017"
-     :title "Unlikely Harbingers"
-     :subtitle "Office Machinery in the Mainframe Era"
-     :synopsis "This paper focuses on the significance of common mid-century desktop tools through the lens of Commodore Business Machines, a small company with a penchant for international deal-making. Commodore competed with very little capital against much larger players, and in doing so utilized emerging business practices that would come to define today's entrepreneurial climate."
-     :link-status true
-     :link "http://sites.library.queensu.ca/transmissions/computers-and-futures/"
-     :link-name "Computers and Futures Retrospective on Transmissions"
-     :media ""
-     :video false
-     :image false
-     :row-start (positioner 2 :row-start)
-     :row-end (positioner 2 :row-end)
+     :row-start (positioner 3 :row-start)
+     :row-end (positioner 3 :row-end)
      }
     {:location "New York City Digital Humanities Festival"
      :date "February 2017"
@@ -291,8 +305,8 @@
      :media "nycdh.png"
      :video false
      :image true
-     :row-start (positioner 3 :row-start)
-     :row-end (positioner 3 :row-end)
+     :row-start (positioner 1 :row-start)
+     :row-end (positioner 1 :row-end)
      }
     {:location "College of Arts and Letters, Hoboken, NJ"
      :date "January 2017 - Present"
@@ -305,8 +319,8 @@
      :media "stevens.png"
      :video false
      :image true
-     :row-start (positioner 1 :row-start)
-     :row-end (positioner 1 :row-end)
+     :row-start (positioner 2 :row-start)
+     :row-end (positioner 2 :row-end)
      :desc ""
     }
     {:location "C-Base: Home of the Chaos Computer Club, Berlin, Germany"
@@ -320,8 +334,8 @@
      :media "https://player.vimeo.com/video/132857801"
      :video true
      :image false
-     :row-start (positioner 2 :row-start)
-     :row-end (positioner 2 :row-end)
+     :row-start (positioner 3 :row-start)
+     :row-end (positioner 3 :row-end)
      }
     {:location "Vintage Computer Festival Midwest 11, Elk Grove, IL"
      :date "September 2016"
@@ -334,8 +348,8 @@
      :media "https://www.youtube.com/embed/1lBaqC6kKEo"
      :video true
      :image false
-     :row-start (positioner 3 :row-start)
-     :row-end (positioner 3 :row-end)
+     :row-start (positioner 1 :row-start)
+     :row-end (positioner 1 :row-end)
      }
     {:location "Pecha Kucha, Berlin, Germany"
      :date "July 2015"
@@ -348,8 +362,8 @@
      :media "intimacy.jpg"
      :video false
      :image true
-     :row-start (positioner 1 :row-start)
-     :row-end (positioner 1 :row-end)
+     :row-start (positioner 2 :row-start)
+     :row-end (positioner 2 :row-end)
     }
     {:location "Department of Digital Film and Video, Chicago, IL"
      :date "January 2006 - January 2012"
@@ -362,8 +376,8 @@
      :media "ai.png"
      :video false
      :image true
-     :row-start (positioner 2 :row-start)
-     :row-end (positioner 2 :row-end)
+     :row-start (positioner 3 :row-start)
+     :row-end (positioner 3 :row-end)
      :desc "Core curriculum design and development for the Bachelors in Audio Engineering; Faculty advisor for Audio Club; Portfolio review: regular seat on faculty committee for senior film portfolio defense;"
     }
     {:location "MFA: Music Composition for the Screen, Chicago, IL"
@@ -377,8 +391,8 @@
      :media "ccc.jpg"
      :video false
      :image true
-     :row-start (positioner 3 :row-start)
-     :row-end (positioner 3 :row-end)
+     :row-start (positioner 1 :row-start)
+     :row-end (positioner 1 :row-end)
     }
     {:location "Video and Animation Department, Chicago, IL"
      :date "January 2005 - June 2007"
@@ -391,8 +405,8 @@
      :media "iadt.png"
      :video false
      :image true
-     :row-start (positioner 1 :row-start)
-     :row-end (positioner 1 :row-end)
+     :row-start (positioner 2 :row-start)
+     :row-end (positioner 2 :row-end)
      :desc "Core curriculum design and development for the Interactive Multimedia Track; IADT kiosk: class developed and implemented public informational kiosk that aided visitors new to the campus;"
     }
     {:location "Midwest Independent Film Festival, Chicago, IL"
@@ -406,8 +420,8 @@
      :media "miff.png"
      :video false
      :image true
-     :row-start (positioner 2 :row-start)
-     :row-end (positioner 2 :row-end)
+     :row-start (positioner 3 :row-start)
+     :row-end (positioner 3 :row-end)
     }
     {:location "Chicago Actors Casting Summit, Chicago, IL"
      :date "July 2008 &amp; July 2009"
@@ -420,14 +434,18 @@
      :media "16x9spacer.gif"
      :video false
      :image true
-     :row-start (positioner 3 :row-start)
-     :row-end (positioner 3 :row-end)
+     :row-start (positioner 1 :row-start)
+     :row-end (positioner 1 :row-end)
     }]
    :page-title "Talks"})
 
 (def exhibitions-db
   {:exhibitions
-   [{:title "Bushwick Film Festival"
+   [{:title "Measure, Model, Mix: Computer as Instrument"
+     :place "SIGCIS Conference, Philadelphia, 2017"
+     :piece "Jack and the Machine"
+     }
+    {:title "Bushwick Film Festival"
      :place "New York City, 2017"
      :piece "Distant Apologies"
      }
@@ -445,6 +463,10 @@
     }
     {:title "Holocenter: Center for the Holographic Arts"
      :place "Installation, New York City, 2017"
+     :piece "Borderless IV"
+     }
+    {:title "Average Art Magazine"
+     :place "Published August 2017"
      :piece "Borderless IV"
     }
     {:title "Hack && Tell"
