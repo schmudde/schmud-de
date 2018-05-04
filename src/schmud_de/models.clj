@@ -202,11 +202,25 @@
      }]
 })
 
-(defn positioner [position row-position]
+(defn generate-markup [position row-position]
   (case position
         1 ({:row-start "<div class='row'>" :row-end ""} row-position)
         2 ({:row-start "" :row-end ""} row-position)
         3 ({:row-start "" :row-end "</div><!-- /row -->"} row-position)))
+
+(defn set-column-number [talk talks row]
+  (conj talks (assoc talk :row-start (generate-markup row :row-start)
+                          :row-end (generate-markup row :row-end))))
+
+(defn create-rows [talks]
+  (loop [raw-talks talks
+         formatted-talks []
+         row 1]
+    (if (empty? raw-talks)
+      formatted-talks
+      (recur (rest raw-talks)
+             (set-column-number (first raw-talks) formatted-talks row)
+             (if (< row 3) (inc row) 1)))))
 
 (def talks-db
   {:talks
@@ -221,8 +235,6 @@
      :media "https://www.youtube.com/embed/loksl7ED0Hg"
      :video true
      :image false
-     :row-start (positioner 1 :row-start)
-     :row-end (positioner 1 :row-end)
      }
     {:location "Codes & Modes Symposium hosted by Hunter College"
      :date "March 2017"
@@ -235,22 +247,18 @@
      :media "hunter-sm.jpg"
      :video false
      :image true
-     :row-start (positioner 2 :row-start)
-     :row-end (positioner 2 :row-end)
      }
-    {:location "Clojure/conj, Austin, TX"
-     :date "December 2016"
-     :title "Aesthetics and Narrative"
-     :subtitle "Programming What Cannot Be Programmed"
-     :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
-     :link-status true
-     :link "http://2016.clojure-conj.org/aesthetics-and-narrative/"
-     :link-name "Clojure/conj"
-     :media "https://www.youtube.com/embed/UJ1pD-Z6PEY"
+    {:location "Creative Coding NYC"
+     :date "February 2018"
+     :title "Sound, Motion, Notation"
+     :subtitle "The Work of Channa Horwitz"
+     :synopsis "Channa Horwitz worked on her “Sonakinatography” series from 1968 until 2012. The pieces are a prescient expression of a hidden order that transcends artistic medium and forms the world around us. My presentation will investigate her algorithmic process by running code and placing the output in a broader historical context across the domains of art, gaming, and computation. I’ll also touch on the concepts of literate computing in computational notebooks using Nextjournal."
+     :link-status false
+     :link ""
+     :link-name ""
+     :media "https://www.youtube.com/embed/yvbKpaN1_7M"
      :video true
      :image false
-     :row-start (positioner 3 :row-start)
-     :row-end (positioner 3 :row-end)
      }
     {:location "RIXC Art Science Festival, Riga, Latvia"
      :date "October 2017"
@@ -263,8 +271,6 @@
      :media "rixc.jpg"
      :video false
      :image true
-     :row-start (positioner 1 :row-start)
-     :row-end (positioner 1 :row-end)
      }
     {:location "Society for the History of Technology, Philadelphia, PA"
      :date "October 2017"
@@ -277,8 +283,18 @@
      :media "shot-logo.png"
      :video false
      :image true
-     :row-start (positioner 2 :row-start)
-     :row-end (positioner 2 :row-end)
+     }
+    {:location "Clojure/conj, Austin, TX"
+     :date "December 2016"
+     :title "Aesthetics and Narrative"
+     :subtitle "Programming What Cannot Be Programmed"
+     :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
+     :link-status true
+     :link "http://2016.clojure-conj.org/aesthetics-and-narrative/"
+     :link-name "Clojure/conj"
+     :media "https://www.youtube.com/embed/UJ1pD-Z6PEY"
+     :video true
+     :image false
      }
     {:location "ClojureBridge New York City"
      :date "June 2017"
@@ -291,8 +307,6 @@
      :media "clojurebridge.png"
      :video false
      :image true
-     :row-start (positioner 3 :row-start)
-     :row-end (positioner 3 :row-end)
      }
     {:location "New York City Digital Humanities Festival"
      :date "February 2017"
@@ -305,8 +319,6 @@
      :media "nycdh.png"
      :video false
      :image true
-     :row-start (positioner 1 :row-start)
-     :row-end (positioner 1 :row-end)
      }
     {:location "College of Arts and Letters, Hoboken, NJ"
      :date "January 2017 - Present"
@@ -319,23 +331,7 @@
      :media "stevens.png"
      :video false
      :image true
-     :row-start (positioner 2 :row-start)
-     :row-end (positioner 2 :row-end)
      :desc ""
-    }
-    {:location "C-Base: Home of the Chaos Computer Club, Berlin, Germany"
-     :date "July 2015"
-     :title "Harvesting Human Intelligence"
-     :subtitle "Reframing the Surveillance Discourse"
-     :synopsis "The power of large government and corporate surveillance systems feel like an intractable part of our everyday digital lifestyle. However, the raw intelligence of centralized computer systems pale in comparison to decentralized personal computers, each augmented by a human actor. This talk examines how the PC threatens traditional power structures and how those systems have responded."
-     :link-status true
-     :link "https://digitalegesellschaft.de/2015/07/npa039/"
-     :link-name "Digitalegesellschaft: Netzpolitischen Abend #38"
-     :media "https://player.vimeo.com/video/132857801"
-     :video true
-     :image false
-     :row-start (positioner 3 :row-start)
-     :row-end (positioner 3 :row-end)
      }
     {:location "Vintage Computer Festival Midwest 11, Elk Grove, IL"
      :date "September 2016"
@@ -348,8 +344,18 @@
      :media "https://www.youtube.com/embed/1lBaqC6kKEo"
      :video true
      :image false
-     :row-start (positioner 1 :row-start)
-     :row-end (positioner 1 :row-end)
+     }
+    {:location "C-Base: Home of the Chaos Computer Club, Berlin, Germany"
+     :date "July 2015"
+     :title "Harvesting Human Intelligence"
+     :subtitle "Reframing the Surveillance Discourse"
+     :synopsis "The power of large government and corporate surveillance systems feel like an intractable part of our everyday digital lifestyle. However, the raw intelligence of centralized computer systems pale in comparison to decentralized personal computers, each augmented by a human actor. This talk examines how the PC threatens traditional power structures and how those systems have responded."
+     :link-status true
+     :link "https://digitalegesellschaft.de/2015/07/npa039/"
+     :link-name "Digitalegesellschaft: Netzpolitischen Abend #38"
+     :media "https://player.vimeo.com/video/132857801"
+     :video true
+     :image false
      }
     {:location "Pecha Kucha, Berlin, Germany"
      :date "July 2015"
@@ -362,8 +368,6 @@
      :media "intimacy.jpg"
      :video false
      :image true
-     :row-start (positioner 2 :row-start)
-     :row-end (positioner 2 :row-end)
     }
     {:location "Department of Digital Film and Video, Chicago, IL"
      :date "January 2006 - January 2012"
@@ -376,8 +380,6 @@
      :media "ai.png"
      :video false
      :image true
-     :row-start (positioner 3 :row-start)
-     :row-end (positioner 3 :row-end)
      :desc "Core curriculum design and development for the Bachelors in Audio Engineering; Faculty advisor for Audio Club; Portfolio review: regular seat on faculty committee for senior film portfolio defense;"
     }
     {:location "MFA: Music Composition for the Screen, Chicago, IL"
@@ -391,8 +393,6 @@
      :media "ccc.jpg"
      :video false
      :image true
-     :row-start (positioner 1 :row-start)
-     :row-end (positioner 1 :row-end)
     }
     {:location "Video and Animation Department, Chicago, IL"
      :date "January 2005 - June 2007"
@@ -405,8 +405,6 @@
      :media "iadt.png"
      :video false
      :image true
-     :row-start (positioner 2 :row-start)
-     :row-end (positioner 2 :row-end)
      :desc "Core curriculum design and development for the Interactive Multimedia Track; IADT kiosk: class developed and implemented public informational kiosk that aided visitors new to the campus;"
     }
     {:location "Midwest Independent Film Festival, Chicago, IL"
@@ -420,8 +418,6 @@
      :media "miff.png"
      :video false
      :image true
-     :row-start (positioner 3 :row-start)
-     :row-end (positioner 3 :row-end)
     }
     {:location "Chicago Actors Casting Summit, Chicago, IL"
      :date "July 2008 &amp; July 2009"
@@ -434,14 +430,16 @@
      :media "16x9spacer.gif"
      :video false
      :image true
-     :row-start (positioner 1 :row-start)
-     :row-end (positioner 1 :row-end)
     }]
    :page-title "Talks"})
 
 (def exhibitions-db
   {:exhibitions
-   [{:title "Measure, Model, Mix: Computer as Instrument"
+   [{:title "The Art of Brooklyn Film Festival"
+     :place "New York City, 2018"
+     :piece "The Rhythm of Time"
+     }
+    {:title "Measure, Model, Mix: Computer as Instrument"
      :place "SIGCIS Conference, Philadelphia, 2017"
      :piece "Jack and the Machine"
      }
@@ -752,7 +750,7 @@
    :page-title "Curriculum Vitae"})
 
 (def database
-  {:talks talks-db
+  {:talks {:talks (create-rows (second (first talks-db))) :page-title "Talks"} ;;talks-db
    :projects projects-db
    :exhibitions exhibitions-db
    :employment employment-db
