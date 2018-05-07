@@ -174,7 +174,7 @@
      :date "9/2017 - Present"
      :title "Developer"
      :technology "Clojure, ClojureScript, Datomic"
-     :desc "Developer for open science platform that emphasizes running code, reproducibility, and collaboration tools; Developed the user group management feature from database calls to front end design and layout; Tackled abstract problems such as new user onboarding flows."
+     :desc "Developer for open science platform that emphasizes running code, reproducibility, and collaboration tools; Developed the user group management feature from database calls to front end design and layout; Tackled abstract problems such as new user onboarding flows; Wrote documentation and example articles"
      }
     {:subtitle "Beyond the Frame"
      :date "1/2005 - Present"
