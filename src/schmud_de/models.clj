@@ -224,7 +224,19 @@
 
 (def talks-db
   {:talks
-   [{:location "I T.A.K.E Unconference (Keynote), Bucharest, Romania"
+   [{:location "Strange Loop, St. Louis, MO"
+     :date "September 2018"
+     :title "Misuser"
+     :subtitle "The Case For a Steady Diet of Creative Misuse in Computing"
+     :synopsis ""
+     :link-status false
+     :link "https://www.thestrangeloop.com/2018/misuer.html"
+     :link-name "Strange Loop profile"
+     :media ""
+     :video false
+     :image false
+     }
+    {:location "I T.A.K.E Unconference (Keynote), Bucharest, Romania"
      :date "May 2017"
      :title "Aesthetics and Narrative"
      :subtitle "Programming What Cannot Be Programmed"
@@ -435,7 +447,11 @@
 
 (def exhibitions-db
   {:exhibitions
-   [{:title "The Art of Brooklyn Film Festival"
+   [{:title "NewFilmmakers"
+     :place "New York City, 2018"
+     :piece "The Rhythm of Time"
+     }
+    {:title "The Art of Brooklyn Film Festival"
      :place "New York City, 2018"
      :piece "The Rhythm of Time"
      }
