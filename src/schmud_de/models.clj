@@ -1,5 +1,7 @@
 (ns schmud-de.models)
 
+;; IEEE Spectrum talk
+
 (def projects-db
   {:projects
    [{:title "Jack and the Machine"
@@ -228,12 +230,12 @@
      :date "September 2018"
      :title "Misuser"
      :subtitle "The Case For a Steady Diet of Creative Misuse in Computing"
-     :synopsis ""
-     :link-status false
-     :link "https://www.thestrangeloop.com/2018/misuer.html"
+     :synopsis "The software I feature in this talk operated at the edge of digital systems. Artists often behaved like hackers: working off hours, pushing a system beyond its specification, and inventing new possibilities for human interaction along the way. &quot;Misuser&quot; will illustrate the connection between art and engineering, building a framework to examine the value of conventions and what we can learn by working outside of them."
+     :link-status true
+     :link "https://thestrangeloop.com/2018/misuser.html"
      :link-name "Strange Loop profile"
-     :media ""
-     :video false
+     :media "https://www.youtube.com/embed/SU6NvkkF4Xk"
+     :video true
      :image false
      }
     {:location "I T.A.K.E Unconference (Keynote), Bucharest, Romania"
@@ -248,29 +250,89 @@
      :video true
      :image false
      }
-    {:location "Codes & Modes Symposium hosted by Hunter College"
-     :date "March 2017"
-     :title "The Grammar of the Internet"
-     :subtitle ""
-     :synopsis "Cinematic language is robust enough to clearly depict the flow of time through a collection of shots - whether they span centuries, seconds, or instant conceptual leaps. Early experiments in hypertext and interactive media often attempted to reconcile the new mediums by adopting the rules of cinema. This talk nods to the elegance of cinematic grammar and examines an idiosyncratic path forward for interconnected, interactive, nonfiction media."
-     :link-status true
-     :link "http://www.hunterintegratedmedia.org/reframe/speaker-lineup/dschmudde/"
-     :link-name "Codes & Modes profile"
-     :media "hunter-sm.jpg"
-     :video false
-     :image true
-     }
     {:location "Creative Coding NYC"
      :date "February 2018"
      :title "Sound, Motion, Notation"
      :subtitle "The Work of Channa Horwitz"
-     :synopsis "Channa Horwitz worked on her “Sonakinatography” series from 1968 until 2012. The pieces are a prescient expression of a hidden order that transcends artistic medium and forms the world around us. My presentation will investigate her algorithmic process by running code and placing the output in a broader historical context across the domains of art, gaming, and computation. I’ll also touch on the concepts of literate computing in computational notebooks using Nextjournal."
+     :synopsis "Channa Horwitz worked on her &quot;Sonakinatography&quot; series from 1968 until 2012. The pieces are a prescient expression of a hidden order that transcends artistic medium and forms the world around us. My presentation will investigate her algorithmic process by running code and placing the output in a broader historical context across the domains of art, gaming, and computation. I’ll also touch on the concepts of literate computing in computational notebooks using Nextjournal."
      :link-status false
      :link ""
      :link-name ""
      :media "https://www.youtube.com/embed/yvbKpaN1_7M"
      :video true
      :image false
+     }
+    {:location "Clojure/conj, Austin, TX"
+     :date "December 2016"
+     :title "Aesthetics and Narrative"
+     :subtitle "Programming What Cannot Be Programmed"
+     :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
+     :link-status true
+     :link "http://2016.clojure-conj.org/aesthetics-and-narrative/"
+     :link-name "Clojure/conj"
+     :media "https://www.youtube.com/embed/UJ1pD-Z6PEY"
+     :video true
+     :image false
+     }
+    {:location "Vintage Computer Festival Midwest 11, Elk Grove, IL"
+     :date "September 2016"
+     :title "Accidentally Arming a Hacker Revolution"
+     :subtitle "The Role of Commodore and Jack Tramiel"
+     :synopsis "The popularity of Commodore computers and modems hastened the spread and associated public fears of hacking. This is partially due to Jack Tramiel's ethos, which inadvertently aligned with hacker principles."
+     :link-status true
+     :link "https://www.youtube.com/watch?v=1lBaqC6kKEo"
+     :link-name "Vintage Computer Festival on YouTube"
+     :media "https://www.youtube.com/embed/1lBaqC6kKEo"
+     :video true
+     :image false
+     }
+    {:location "C-Base: Home of the Chaos Computer Club, Berlin, Germany"
+     :date "July 2015"
+     :title "Harvesting Human Intelligence"
+     :subtitle "Reframing the Surveillance Discourse"
+     :synopsis "The power of large government and corporate surveillance systems feel like an intractable part of our everyday digital lifestyle. However, the raw intelligence of centralized computer systems pale in comparison to decentralized personal computers, each augmented by a human actor. This talk examines how the PC threatens traditional power structures and how those systems have responded."
+     :link-status true
+     :link "https://digitalegesellschaft.de/2015/07/npa039/"
+     :link-name "Digitalegesellschaft: Netzpolitischen Abend #38"
+     :media "https://player.vimeo.com/video/132857801"
+     :video true
+     :image false
+     }
+    {:location "History of Digital Cultures at the University of Amsterdam"
+     :date "January 21, 2019"
+     :title "Enabling Digital Anthropology"
+     :subtitle "On Methods and Practices of Digital Archaeology"
+     :synopsis "A lecutre on preserving software and techniques of emulation."
+     :link-status false
+     :link ""
+     :link-name ""
+     :media "uva.png"
+     :video false
+     :image true
+     }
+    {:location "Vossius Seminar's History of Knowledge series at the University of Amsterdam"
+     :date "January 22, 2019"
+     :title "Intended Knowledge?"
+     :subtitle ""
+     :synopsis "The act of discovering and displaying digital art created for 20th century computing and telecommunication environments places the character of these systems in stark relief. Most exhibitions require an archeological undertaking and an enormous effort to execute a single artifact from forty years ago. &quot;Intended Knowledge?&quot; examines what computational art archeology can teach us about software engineering and its culture"
+     :link-status true
+     :link "http://vossius.uva.nl/"
+     :link-name "Vossius Center for the History of Humanities and Sciences"
+     :media "uva.png"
+     :video false
+     :image true
+     }
+    {:location "Stored In Memory: The 10th Annual SIGCIS Conference, St. Louis, MO"
+     :date "October 14, 2018"
+     :title "Misuser"
+     :subtitle "Artists Working at the Edge of Computing"
+     :synopsis "The software I feature in this talk operated at the edge of digital systems. Artists often behaved like hackers: working off hours, pushing a system beyond its specification, and inventing new possibilities for human interaction along the way. &quot;Misuser&quot; will illustrate the connection between art and engineering, building a framework to examine the value of conventions and what we can learn by working outside of them."
+     :link-status true
+     :link "http://meetings.sigcis.org/uploads/6/3/6/8/6368912/program_18_final.pdf"
+     :link-name "Stored In Memory Program"
+     :media "sigcis.png"
+     :video false
+     :image true
      }
     {:location "RIXC Art Science Festival, Riga, Latvia"
      :date "October 2017"
@@ -296,18 +358,6 @@
      :video false
      :image true
      }
-    {:location "Clojure/conj, Austin, TX"
-     :date "December 2016"
-     :title "Aesthetics and Narrative"
-     :subtitle "Programming What Cannot Be Programmed"
-     :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
-     :link-status true
-     :link "http://2016.clojure-conj.org/aesthetics-and-narrative/"
-     :link-name "Clojure/conj"
-     :media "https://www.youtube.com/embed/UJ1pD-Z6PEY"
-     :video true
-     :image false
-     }
     {:location "ClojureBridge New York City"
      :date "June 2017"
      :title "Workshop Instructor"
@@ -317,6 +367,18 @@
      :link " http://www.clojurebridge.org/events/2017-05-26-new-york-ny"
      :link-name "ClojureBridge Event Information"
      :media "clojurebridge.png"
+     :video false
+     :image true
+     }
+    {:location "Codes & Modes Symposium hosted by Hunter College"
+     :date "March 2017"
+     :title "The Grammar of the Internet"
+     :subtitle ""
+     :synopsis "Cinematic language is robust enough to clearly depict the flow of time through a collection of shots - whether they span centuries, seconds, or instant conceptual leaps. Early experiments in hypertext and interactive media often attempted to reconcile the new mediums by adopting the rules of cinema. This talk nods to the elegance of cinematic grammar and examines an idiosyncratic path forward for interconnected, interactive, nonfiction media."
+     :link-status true
+     :link "http://www.hunterintegratedmedia.org/reframe/speaker-lineup/dschmudde/"
+     :link-name "Codes & Modes profile"
+     :media "hunter-sm.jpg"
      :video false
      :image true
      }
@@ -344,30 +406,6 @@
      :video false
      :image true
      :desc ""
-     }
-    {:location "Vintage Computer Festival Midwest 11, Elk Grove, IL"
-     :date "September 2016"
-     :title "Accidentally Arming a Hacker Revolution"
-     :subtitle "The Role of Commodore and Jack Tramiel"
-     :synopsis "The popularity of Commodore computers and modems hastened the spread and associated public fears of hacking. This is partially due to Jack Tramiel's ethos, which inadvertently aligned with hacker principles."
-     :link-status true
-     :link "https://www.youtube.com/watch?v=1lBaqC6kKEo"
-     :link-name "Vintage Computer Festival on YouTube"
-     :media "https://www.youtube.com/embed/1lBaqC6kKEo"
-     :video true
-     :image false
-     }
-    {:location "C-Base: Home of the Chaos Computer Club, Berlin, Germany"
-     :date "July 2015"
-     :title "Harvesting Human Intelligence"
-     :subtitle "Reframing the Surveillance Discourse"
-     :synopsis "The power of large government and corporate surveillance systems feel like an intractable part of our everyday digital lifestyle. However, the raw intelligence of centralized computer systems pale in comparison to decentralized personal computers, each augmented by a human actor. This talk examines how the PC threatens traditional power structures and how those systems have responded."
-     :link-status true
-     :link "https://digitalegesellschaft.de/2015/07/npa039/"
-     :link-name "Digitalegesellschaft: Netzpolitischen Abend #38"
-     :media "https://player.vimeo.com/video/132857801"
-     :video true
-     :image false
      }
     {:location "Pecha Kucha, Berlin, Germany"
      :date "July 2015"
@@ -447,7 +485,11 @@
 
 (def exhibitions-db
   {:exhibitions
-   [{:title "NewFilmmakers"
+   [{:title "Sound And Vision International Film & Technology Festival"
+     :place "Elizabethport, NJ, 2018"
+     :piece "The Rhythm of Time"
+     }
+    {:title "NewFilmmakers"
      :place "New York City, 2018"
      :piece "The Rhythm of Time"
      }
@@ -637,12 +679,16 @@
      :piece "Lucid Dream Ensemble"
     }]
    :awards
-   [{:title "2017 Space:Light Artist Residency"
+   [{:title "2018 Researcher in Residence"
+     :type "Residency"
+     :org "Signal Culture"
+     }
+    {:title "2017 Space:Light Artist Residency"
       :type "Residency"
       :org "Holocenter: Center for the Holographic Arts"
       }
     {:title "Berlin/New York 2015 Media Residency Program"
-      :type "New Media Production Grant"
+      :type "New Media Production Grant & Residency"
       :org "Startup Germany, Medienboard"
       :highlight "strong"
       }
@@ -734,7 +780,12 @@
       :date "2005"
      }]
    :publications
-    [{:title "Our Lives, Encoded"
+   [{:title "How to Version Control Jupyter Notebooks"
+     :publication "Nextjournal"
+     :link "https://news.ycombinator.com/item?id=18740197"
+     :date "December 11, 2018"
+     }
+    {:title "Our Lives, Encoded"
       :publication "Broken Toilets and shared by <a href='http://epodharvard.tumblr.com/post/146951238165/five-favorites-7516' target='_blank'>Evidence for Policy Design at Harvard University</a>"
       :link "http://brokentoilets.org/article/year-twenty-megabytes/"
       :date "May 20, 2016"
