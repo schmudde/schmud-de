@@ -226,7 +226,43 @@
 
 (def talks-db
   {:talks
-   [{:location "Strange Loop, St. Louis, MO"
+   [{:location "Curry On, London, England"
+     :date "July 2019"
+     :title "Say What You Mean"
+     :subtitle "Exploring Declarative Computation in Art"
+     :synopsis "&quot;Say What You Mean&quot; parallels the production of art with approaches to exploratory programming. 20th century art practices were clearly influenced by the milieu of computational thought. Expressionist artists like Jackson Pollock declared intent with few implementation details in mind. Pollock’s paintings have since been proven fractal in nature. Conceptual artists like Sol LeWitt wrote imperative instructions where &quot;the idea becomes the machine that makes the work.&quot; The results of both artists are computational in nature, but very different in quality. This is partially due to approach. This talk examines creative approaches to exploring unknown or open-ended domains. It emphasizes declarative programming and the tried-and-true techniques of abstraction and composition. Rather than showing a sliver of a sprawling codebase, approaches are illustrated more immediately through computational art. Parallel code examples are written in Clojure."
+     :link-status true
+     :link "https://www.curry-on.org/2019/sessions/say-what-you-mean-exploring-declarative-computation-in-art.html"
+     :link-name "Curry On Profile"
+     :media "https://www.youtube.com/watch?v=HalZfFdWuP4"
+     :video true
+     :image false
+     }
+    {:location "PyCon/PyData, Berlin, Germany"
+     :date "October 2019"
+     :title "Dr. Schmood's Notebook of Python Calisthenics and Orthodontia"
+     :subtitle "Don't get bit by misaligned state and output, keep your notebooks running with these functional tips!"
+     :synopsis "This talk will explain functional programming using practical language and provide historical context. Some initial concepts will be demonstrated in Clojure or Julia, but ultimately translated to Python. Further consideration will be given to the impact of immutability, a core concept in the functional style, on creating reproducible notebooks."
+     :link-status true
+     :link "https://de.pycon.org/program/pyconde-f3tczn-dr-schmood-s-notebook-of-python-calisthenics-and-orthodontia-david-schmudde/"
+     :link-name "PyConDE & PyData Profile"
+     :media "https://www.youtube.com/watch?v=BAsL_cbkQDc"
+     :video true
+     :image false
+     }
+    {:location "Society for the History of Technology, Milan, Italy"
+     :date "October 2019"
+     :title "The Emergence of Computational Thinking in Art"
+     :subtitle ""
+     :synopsis "Early computational art provides insight into the nature of creativity and human discovery. Artists created these works before the computer's ubiquity. Many had never even seen a computer. The work exhibits pure computational thinking outside of the engineer or the machine. It suggests a new perspective that has broadly shaped our perception of the world."
+     :link-status true
+     :link "https://www.historyoftechnology.org/wp-content/uploads/2019/10/SHOT-2019-Program_FINAL.pdf"
+     :link-name "SHOT 2019 Program"
+     :media "shot-logo.png"
+     :video false
+     :image true
+     }
+    {:location "Strange Loop, St. Louis, MO"
      :date "September 2018"
      :title "Misuser"
      :subtitle "The Case For a Steady Diet of Creative Misuse in Computing"
@@ -249,6 +285,18 @@
      :media "https://www.youtube.com/embed/loksl7ED0Hg"
      :video true
      :image false
+     }
+    {:location "New York City"
+     :date "2017 - 2019"
+     :title "The Internet Lives Here"
+     :subtitle "A Telecom Tour"
+     :synopsis "&quot;The Internet Lives Here&quot; is a multi-site telecommunications tour of Lower Manhattan. Participants explore the relationship between global telecommunications and power. The walk starts at the old AT&T Long Lines building in Tribeca and concludes south of Wall St. at the original ITT Building - spanning the 19th, 20th, and 21st centuries."
+     :link-status false
+     :link ""
+     :link-name ""
+     :media "itt-m.jpg" ;; (cc) Christoph Anton Mitterer on Flickr
+     :video false
+     :image true
      }
     {:location "Creative Coding NYC"
      :date "February 2018"
@@ -774,13 +822,18 @@
       :technology "Artificial Intelligence, Creative Computing and the Visual Arts"
       :date "1997 - 2001"
      }
-     {:subtitle "DID Deutsch-Institut, Berlin, Germany"
-      :title "Language Intensive"
+     {:subtitle "DID Deutsch-Institut &amp; Sprachsalon, Berlin, Germany"
+      :title "Language Training"
       :technology "German"
-      :date "2005"
+      :date "2005, 2019"
      }]
    :publications
-   [{:title "How to Version Control Jupyter Notebooks"
+   [{:title "The Shape of Intuition"
+     :publication "Nextjournal"
+     :link "https://nextjournal.com/schmudde/the-shape-of-intuition"
+     :date "December 16, 2019"
+     }
+    {:title "How to Version Control Jupyter Notebooks"
      :publication "Nextjournal"
      :link "https://news.ycombinator.com/item?id=18740197"
      :date "December 11, 2018"
