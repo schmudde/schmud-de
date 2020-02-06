@@ -169,11 +169,10 @@
           {:tag "interactive"}
           {:tag "sound"}]
    })
-
 (def employment-db
   {:employers
    [{:subtitle "Nextjournal"
-     :date "9/2017 - 12/2019"
+     :date "9/2017 - 1/2020"
      :title "Developer"
      :technology "Clojure, ClojureScript, Datomic"
      :desc "Developer for open science platform that emphasizes running code, reproducibility, and collaboration tools; Developed the user group management feature from database calls to front end design and layout; Tackled abstract problems such as new user onboarding flows; Wrote documentation and example articles"
@@ -839,9 +838,10 @@
      :date "December 11, 2018"
      }
     {:title "Our Lives, Encoded"
-      :publication "Broken Toilets and shared by <a href='http://epodharvard.tumblr.com/post/146951238165/five-favorites-7516' target='_blank'>Evidence for Policy Design at Harvard University</a>"
-      :link "http://brokentoilets.org/article/year-twenty-megabytes/"
-      :date "May 20, 2016"
+     :publication "Broken Toilets"
+     ;; shared by <a href='http://epodharvard.tumblr.com/post/146951238165/five-favorites-7516' target='_blank'>Evidence for Policy Design at Harvard University</a>
+     :link "http://brokentoilets.org/article/year-twenty-megabytes/"
+     :date "May 20, 2016"
       }
      {:title "The Computer Revolution Has Yet to Happen"
       :publication "Endless Magazine/The Absurdist"
