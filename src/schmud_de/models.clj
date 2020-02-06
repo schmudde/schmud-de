@@ -173,13 +173,13 @@
 (def employment-db
   {:employers
    [{:subtitle "Nextjournal"
-     :date "9/2017 - Present"
+     :date "9/2017 - 12/2019"
      :title "Developer"
      :technology "Clojure, ClojureScript, Datomic"
      :desc "Developer for open science platform that emphasizes running code, reproducibility, and collaboration tools; Developed the user group management feature from database calls to front end design and layout; Tackled abstract problems such as new user onboarding flows; Wrote documentation and example articles"
      }
     {:subtitle "Beyond the Frame"
-     :date "1/2005 - Present"
+     :date "1/2005 - 8/2019"
      :title "Creative Technologist"
      :technology "Clojure, Apache, Tomcat, Digital and 35mm Cameras, Final Cut X, Logic X, Asana, GitHub"
      :desc "Responsibilities include creative development, client and vendor communication, programming, production, and post-production; Project awards include a three (3) month Medienboard-sponsored residency in Berlin, Germany and multiple 'Best of Festival' distinctions; Negotiated distribution and exhibition agreements for short films ('Refuge'), installations ('Borderless'), and interactive work ('Jack and the Machine'); Clients include Harper's Bazaar, Elks National Foundation, Bushwick Film Festival, Himalaya Project, University of California, Soul Pancake, and Throughline Films;"
@@ -443,7 +443,7 @@
      :image true
      }
     {:location "College of Arts and Letters, Hoboken, NJ"
-     :date "January 2017 - Present"
+     :date "January 2017 - May 2019"
      :title "Adjunct Professor"
      :subtitle "Stevens Institute of Technology"
      :synopsis "<em>Computers and Society</em> (HSS-371)<br /><br />An examination of the politics and culture embodied by powerful technology. This includes internet governance (multi-stakeholderism, online communities, decentralization vs. centralization), ethical issues in computing (hacking, artificial intelligence, participatory design), privacy, intellectual property, and the global digital divide."
