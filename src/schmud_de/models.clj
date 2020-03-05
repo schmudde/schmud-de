@@ -176,7 +176,7 @@
      :subtitle "Developer Advocate"
      :technology "Clojure, ClojureScript, Datomic, Python, R, Docker"
      :desc "An open science platform for reproducible research using automatically versioned polyglot notebooks."
-     :accomplishments "Developed the user group management feature from database calls to front end layout; Developed notebooks that analyzed user trends on the site; Worked cross-functionally to enhance user on-boarding; Increased reach in organic search through popular, runnable notebooks like &quot;How to Version Control Jupyter Notebooks&quot;; Presented topics in computer science using live code in Nextjournal at Curry On, PyCon, and Creative Coding NYC; Wrote deep dives into core product concepts like Computational Environments, Transclusions, and Branching/Version Control (Remixing); Helped structure and write Nextjournal's documentation;"
+     :synopsis "Developed the user group management feature from database calls to front end layout; Developed notebooks that analyzed user trends on the site; Worked cross-functionally to enhance user on-boarding; Increased reach in organic search through popular, runnable notebooks like &quot;How to Version Control Jupyter Notebooks&quot;; Presented topics in computer science using live code in Nextjournal at Curry On, PyCon, and Creative Coding NYC; Wrote deep dives into core product concepts like Computational Environments, Transclusions, and Branching/Version Control (Remixing); Helped structure and write Nextjournal's documentation;"
      :misc "I was the developer advocate at Nextjournal - tasked with a broad range of communication, planning, and implementation responsibilities across the organization. I helped scientists and engineers understand the unique benefits of our platform through direct interaction, conference talks, technical tutorials, and creative notebooks. These initiatives helped the company prioritize new features and commit to growth strategies that were both in line with our core mission and best served our users."
      }
     {:title "Beyond the Frame"
@@ -184,27 +184,27 @@
      :subtitle "Creative Technologist"
      :technology "Clojure, Apache, Tomcat, Digital and 35mm Cameras, Final Cut X, Logic X, Asana, GitHub"
      :desc "A new media company that produces interactive narrative experiences."
-     :accomplishments "Built University of California's interactive &quot;Pathways Online Tutorial&quot; for new students; Negotiated distribution and exhibition agreements for short films (&quot;Refuge&quot;), installations (&quot;Borderless&quot;), and interactive work (&quot;Jack and the Machine&quot;); Worked with the Elks National Foundation to establish a video presence online that indoctrinates new members and documents philanthropic efforts.; Awarded residencies for new media creative work at Signal Culture (New York), Holocenter: Center for the Holographic Arts (New York), and Startup Germany/Medienboard (Berlin); Established Bushwick Film Festival's &quot;New Media Day&quot; in 2013, reprised in 2014; Created documentary pilot, &quot;Souvenir Junk Drawer&quot; for Soulpancake, the &quot;world’s most recognized positive and inspiring media and entertainment company.&quot;; Developed and reviewed feature film scripts for Throughline Films.; Awarded multiple &quot;Best of Festival&quot; distinctions.;"
+     :synopsis "Built University of California's interactive &quot;Pathways Online Tutorial&quot; for new students; Negotiated distribution and exhibition agreements for short films (&quot;Refuge&quot;), installations (&quot;Borderless&quot;), and interactive work (&quot;Jack and the Machine&quot;); Worked with the Elks National Foundation to establish a video presence online that indoctrinates new members and documents philanthropic efforts.; Awarded residencies for new media creative work at Signal Culture (New York), Holocenter: Center for the Holographic Arts (New York), and Startup Germany/Medienboard (Berlin); Established Bushwick Film Festival's &quot;New Media Day&quot; in 2013, reprised in 2014; Created documentary pilot, &quot;Souvenir Junk Drawer&quot; for Soulpancake, the &quot;world’s most recognized positive and inspiring media and entertainment company.&quot;; Developed and reviewed feature film scripts for Throughline Films.; Awarded multiple &quot;Best of Festival&quot; distinctions.;"
      }
     {:title "Penguin Random House"
      :date "10/2015 - 4/2016"
      :subtitle "Freelance Developer"
      :technology "PHP, JavaScript, Wordpress"
-     :accomplishments "Developer for high-profile author sites like Arianna Huffington and Carol Burnett and imprints such as Hogarth Shakespeare for Crown Publishing Group; Created accurate bids for work with a structured client review and delivery process; Wrote custom code for Wordpress sites and conformed to corporate security standards;"
+     :synopsis "Developer for high-profile author sites like Arianna Huffington and Carol Burnett and imprints such as Hogarth Shakespeare for Crown Publishing Group; Created accurate bids for work with a structured client review and delivery process; Wrote custom code for Wordpress sites and conformed to corporate security standards;"
      }
     {:title "NetGalley"
      :date "12/2013 - 4/2015"
      :subtitle "Front End Developer"
      :technology "Symfony 2, Symfony 1, PHP, JavaScript, JQuery, Less, Doctrine, GitHub."
      :desc "A publishing web site with 40,000+ members and 100K+ uniques/month."
-     :accomplishments "Released code every two weeks, accurately hitting sprint targets while committing quality code; Moved to new templating technologies and stylesheet best practices to support faster development and extended support to Japanese, German, and French."
+     :synopsis "Released code every two weeks, accurately hitting sprint targets while committing quality code; Moved to new templating technologies and stylesheet best practices to support faster development and extended support to Japanese, German, and French."
      }
     {:title "F#"
      :date "9/2012 - 12/2012"
      :subtitle "Digital Project Manager/Digital Producer"
      :technology "Jira, Spotify API"
      :desc "A digital audio marketing firm."
-     :accomplishments "Managed the creation of interactive advertising campaigns; Led ideation process for wireframe design, development, content management solution, and launch; Led agile production process that included teams on three continents making culture awareness, language, and time zone management key; Clients included Universal Pictures, Chevrolet, Philips, Gap, and Spotify;"
+     :synopsis "Managed the creation of interactive advertising campaigns; Led ideation process for wireframe design, development, content management solution, and launch; Led agile production process that included teams on three continents making culture awareness, language, and time zone management key; Clients included Universal Pictures, Chevrolet, Philips, Gap, and Spotify;"
      }]
 })
 
