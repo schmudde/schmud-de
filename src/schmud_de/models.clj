@@ -451,7 +451,7 @@
      :title "Stevens Institute of Technology"
      :subtitle "Adjunct Professor"
      :desc ""
-     :synopsis "<small>HSS-371</small> <em><em>Computers and Society</em>: An examination of the politics and culture embodied by technology. This includes internet governance, ethical issues in computing, privacy, intellectual property, and the global digital divide.~ <small>HST-495</small> <em><em>Cyberspace and National Security</em>: This course explores the concept of power in the digital age. Topics include cyberwarfare, espionage, propaganda, surveillance, social media, cryptography, hacking, and perhaps most importantly, culture.~"
+     :synopsis "<small>HSS-371</small> <em>Computers and Society</em>: An examination of the politics and culture embodied by technology. This includes internet governance, ethical issues in computing, privacy, intellectual property, and the global digital divide.~ <small>HST-495</small> <em>Cyberspace and National Security</em>: This course explores the concept of power in the digital age. Topics include cyberwarfare, espionage, propaganda, surveillance, social media, cryptography, hacking, and perhaps most importantly, culture.~"
      :link-status true
      :link "http://beyondtheframe.digital/computersandsociety/"
      :link-name "<em>Computers and Society</em> class website"
