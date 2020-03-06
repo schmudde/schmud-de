@@ -448,8 +448,8 @@
      }
     {:location "College of Arts and Letters, Hoboken, NJ"
      :date "January 2017 - May 2019"
-     :title "Adjunct Professor"
-     :subtitle "Stevens Institute of Technology"
+     :title "Stevens Institute of Technology"
+     :subtitle "Adjunct Professor"
      :synopsis "<em>Computers and Society</em> (HSS-371)<br /><br />An examination of the politics and culture embodied by powerful technology. This includes internet governance (multi-stakeholderism, online communities, decentralization vs. centralization), ethical issues in computing (hacking, artificial intelligence, participatory design), privacy, intellectual property, and the global digital divide."
      :link-status true
      :link "http://beyondtheframe.digital/computersandsociety/"
@@ -473,8 +473,8 @@
     }
     {:location "Department of Digital Film and Video, Chicago, IL"
      :date "January 2006 - January 2012"
-     :title "Associate Professor"
-     :subtitle "Illinois Institute of Art"
+     :title "Illinois Institute of Art"
+     :subtitle "Associate Professor"
      :synopsis "Courses: Sound Design for Film <span class='small'>(DFV 365)</span>, Survey of Film <span class='small'>(DFV 100)</span>, Digital Filmmaking Portfolio Preparation I <span class='small'>(DFV 330)</span>, Digital Filmmaking Portfolio Preparation II <span class='small'>(DFV 430)</span>, Fundamentals of Audio <span class='small'>(DFV 120)</span>, Survey of the Music Industry <span class='small'>(AUD 100)</span>, Music Theory <span class='small'>(AUD 201)</span>"
      :link-status false
      :link ""
@@ -486,8 +486,8 @@
     }
     {:location "MFA: Music Composition for the Screen, Chicago, IL"
      :date "October 2009"
-     :title "Visiting Lecturer"
-     :subtitle "Columbia College Chicago"
+     :title "Columbia College Chicago"
+     :subtitle "Visiting Lecturer"
      :synopsis "<em>Hybrid Scores and Atonality</em><blockquote><p>It may be that in order to make the cinematic image sound authentically, in its full diapason, music has to be abandoned.</p><footer>Andrei Tarkovsky</footer></blockquote>A master class that examines the intersection between sound design and traditional notions of composing music for the screen."
      :link-status true
      :link "http://beyondthefra-me.tumblr.com/post/5545059622"
@@ -498,8 +498,8 @@
     }
     {:location "Video and Animation Department, Chicago, IL"
      :date "January 2005 - June 2007"
-     :title "Adjunct Faculty"
-     :subtitle "International Academy of Design and Technology"
+     :title "International Academy of Design and Technology"
+     :subtitle "Adjunct Faculty"
      :synopsis "Courses: Directing and Producing, Application Design, Digital Production I, Advanced Post Production, Digital Video Editing, Audio Production, Digital Audio Editing, Senior Project for Visual Communications, Career Portfolio Development for Visual Communications, Independent Study"
      :link-status false
      :link ""
