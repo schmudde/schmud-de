@@ -450,14 +450,14 @@
      :date "January 2017 - May 2019"
      :title "Stevens Institute of Technology"
      :subtitle "Adjunct Professor"
-     :synopsis "<em>Computers and Society</em> (HSS-371)<br /><br />An examination of the politics and culture embodied by powerful technology. This includes internet governance (multi-stakeholderism, online communities, decentralization vs. centralization), ethical issues in computing (hacking, artificial intelligence, participatory design), privacy, intellectual property, and the global digital divide."
+     :desc ""
+     :synopsis "<em>Computers and Society</em> <small>(HSS-371)</small> An examination of the politics and culture embodied by technology. This includes internet governance, ethical issues in computing, privacy, intellectual property, and the global digital divide.~ HST 495: Cyberspace and National Security: This course explores the concept of power in the digital age. Topics include cyberwarfare, espionage, propaganda, surveillance, social media, cryptography, hacking, and perhaps most importantly, culture.~"
      :link-status true
      :link "http://beyondtheframe.digital/computersandsociety/"
      :link-name "<em>Computers and Society</em> class website"
      :media "stevens.png"
      :video false
      :image true
-     :desc ""
      }
     {:location "Pecha Kucha, Berlin, Germany"
      :date "July 2015"
@@ -475,6 +475,7 @@
      :date "January 2006 - January 2012"
      :title "Illinois Institute of Art"
      :subtitle "Associate Professor"
+     :desc "Core curriculum design and development for the Bachelors in Audio Engineering; Faculty advisor for Audio Club; Portfolio review: regular seat on faculty committee for senior film portfolio defense;"
      :synopsis "Courses: Sound Design for Film <span class='small'>(DFV 365)</span>, Survey of Film <span class='small'>(DFV 100)</span>, Digital Filmmaking Portfolio Preparation I <span class='small'>(DFV 330)</span>, Digital Filmmaking Portfolio Preparation II <span class='small'>(DFV 430)</span>, Fundamentals of Audio <span class='small'>(DFV 120)</span>, Survey of the Music Industry <span class='small'>(AUD 100)</span>, Music Theory <span class='small'>(AUD 201)</span>"
      :link-status false
      :link ""
@@ -482,7 +483,6 @@
      :media "ai.png"
      :video false
      :image true
-     :desc "Core curriculum design and development for the Bachelors in Audio Engineering; Faculty advisor for Audio Club; Portfolio review: regular seat on faculty committee for senior film portfolio defense;"
     }
     {:location "MFA: Music Composition for the Screen, Chicago, IL"
      :date "October 2009"
