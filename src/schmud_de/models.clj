@@ -451,7 +451,7 @@
      :title "Stevens Institute of Technology"
      :subtitle "Adjunct Professor"
      :desc ""
-     :synopsis "<em>Computers and Society</em> <small>(HSS-371)</small> An examination of the politics and culture embodied by technology. This includes internet governance, ethical issues in computing, privacy, intellectual property, and the global digital divide.~ HST 495: Cyberspace and National Security: This course explores the concept of power in the digital age. Topics include cyberwarfare, espionage, propaganda, surveillance, social media, cryptography, hacking, and perhaps most importantly, culture.~"
+     :synopsis "<small>HSS-371</small> <em><em>Computers and Society</em>: An examination of the politics and culture embodied by technology. This includes internet governance, ethical issues in computing, privacy, intellectual property, and the global digital divide.~ <small>HST-495</small> <em><em>Cyberspace and National Security</em>: This course explores the concept of power in the digital age. Topics include cyberwarfare, espionage, propaganda, surveillance, social media, cryptography, hacking, and perhaps most importantly, culture.~"
      :link-status true
      :link "http://beyondtheframe.digital/computersandsociety/"
      :link-name "<em>Computers and Society</em> class website"
@@ -475,8 +475,8 @@
      :date "January 2006 - January 2012"
      :title "Illinois Institute of Art"
      :subtitle "Associate Professor"
-     :desc "Core curriculum design and development for the Bachelors in Audio Engineering; Faculty advisor for Audio Club; Portfolio review: regular seat on faculty committee for senior film portfolio defense;"
-     :synopsis "Courses: Sound Design for Film <span class='small'>(DFV 365)</span>, Survey of Film <span class='small'>(DFV 100)</span>, Digital Filmmaking Portfolio Preparation I <span class='small'>(DFV 330)</span>, Digital Filmmaking Portfolio Preparation II <span class='small'>(DFV 430)</span>, Fundamentals of Audio <span class='small'>(DFV 120)</span>, Survey of the Music Industry <span class='small'>(AUD 100)</span>, Music Theory <span class='small'>(AUD 201)</span>"
+     :desc ""
+     :synopsis "Designed the curriculum for the Bachelor of Audio Engineering~ Core member of faculty committee for senior film portfolio defense~ Courses: <small>DFV-365</small> <em>Sound Design for Film</em>, <small>DFV-100</small> <em>Survey of Film</em>, <small>DFV-330</small> <em>Digital Filmmaking Portfolio Preparation I</em>, <small>DFV-430</small> <em>Digital Filmmaking Portfolio Preparation II</em>, <small>DFV-120</small> <em>Fundamentals of Audio</em>, <small>AUD-100</small> <em>Survey of the Music Industry</em>, <small>AUD-201</small> <em>Music Theory</em>~"
      :link-status false
      :link ""
      :link-name ""
@@ -488,7 +488,7 @@
      :date "October 2009"
      :title "Columbia College Chicago"
      :subtitle "Visiting Lecturer"
-     :synopsis "<em>Hybrid Scores and Atonality</em><blockquote><p>It may be that in order to make the cinematic image sound authentically, in its full diapason, music has to be abandoned.</p><footer>Andrei Tarkovsky</footer></blockquote>A master class that examines the intersection between sound design and traditional notions of composing music for the screen."
+     :desc "<em>Hybrid Scores and Atonality</em>: A master class on the intersection between sound design and traditional notions of composing music for the screen."
      :link-status true
      :link "http://beyondthefra-me.tumblr.com/post/5545059622"
      :link-name "D. Schm&uuml;dde: &quot;Composing for <em>The Assassination of Chicago&#39;s Mayor</em>&quot;"
@@ -500,14 +500,14 @@
      :date "January 2005 - June 2007"
      :title "International Academy of Design and Technology"
      :subtitle "Adjunct Faculty"
-     :synopsis "Courses: Directing and Producing, Application Design, Digital Production I, Advanced Post Production, Digital Video Editing, Audio Production, Digital Audio Editing, Senior Project for Visual Communications, Career Portfolio Development for Visual Communications, Independent Study"
+     :desc ""
+     :synopsis "Designed the curriculum for the Interactive Multimedia Track~ IADT kiosk: class developed and implemented public informational kiosk~ Courses: Directing and Producing, Application Design, Digital Production I, Advanced Post Production, Digital Video Editing, Audio Production, Digital Audio Editing, Senior Project for Visual Communications, Career Portfolio Development for Visual Communications, Independent Study~"
      :link-status false
      :link ""
      :link-name ""
      :media "iadt.png"
      :video false
      :image true
-     :desc "Core curriculum design and development for the Interactive Multimedia Track; IADT kiosk: class developed and implemented public informational kiosk that aided visitors new to the campus;"
     }
     {:location "Midwest Independent Film Festival, Chicago, IL"
      :date "September 2009"
