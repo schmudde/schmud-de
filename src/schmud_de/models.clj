@@ -476,7 +476,7 @@
      :title "Illinois Institute of Art"
      :subtitle "Associate Professor"
      :desc ""
-     :synopsis "Designed the curriculum for the Bachelor of Audio Engineering~ Core member of faculty committee for senior film portfolio defense~ Courses: <small>DFV-365</small> <em>Sound Design for Film</em>, <small>DFV-100</small> <em>Survey of Film</em>, <small>DFV-330</small> <em>Digital Filmmaking Portfolio Preparation I</em>, <small>DFV-430</small> <em>Digital Filmmaking Portfolio Preparation II</em>, <small>DFV-120</small> <em>Fundamentals of Audio</em>, <small>AUD-100</small> <em>Survey of the Music Industry</em>, <small>AUD-201</small> <em>Music Theory</em>~"
+     :synopsis "Designed the curriculum for the Bachelor of Audio Engineering~ Core member of faculty committee for senior film portfolio defence~ Courses: <small>DFV-365</small> <em>Sound Design for Film</em>, <small>DFV-100</small> <em>Survey of Film</em>, <small>DFV-330</small> <em>Digital Filmmaking Portfolio Preparation I</em>, <small>DFV-430</small> <em>Digital Filmmaking Portfolio Preparation II</em>, <small>DFV-120</small> <em>Fundamentals of Audio</em>, <small>AUD-100</small> <em>Survey of the Music Industry</em>, <small>AUD-201</small> <em>Music Theory</em>~"
      :link-status false
      :link ""
      :link-name ""
