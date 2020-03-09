@@ -231,7 +231,7 @@
 (def talks-db
   {:talks
    [{:location "Curry On, London, England"
-     :date "July 2019"
+     :date "July 15, 2019"
      :title "Say What You Mean"
      :subtitle "Exploring Declarative Computation in Art"
      :synopsis "&quot;Say What You Mean&quot; parallels the production of art with approaches to exploratory programming. 20th century art practices were clearly influenced by the milieu of computational thought. Expressionist artists like Jackson Pollock declared intent with few implementation details in mind. Pollock’s paintings have since been proven fractal in nature. Conceptual artists like Sol LeWitt wrote imperative instructions where &quot;the idea becomes the machine that makes the work.&quot; The results of both artists are computational in nature, but very different in quality. This is partially due to approach. This talk examines creative approaches to exploring unknown or open-ended domains. It emphasizes declarative programming and the tried-and-true techniques of abstraction and composition. Rather than showing a sliver of a sprawling codebase, approaches are illustrated more immediately through computational art. Parallel code examples are written in Clojure."
@@ -243,7 +243,7 @@
      :image false
      }
     {:location "PyCon/PyData, Berlin, Germany"
-     :date "October 2019"
+     :date "October 10, 2019"
      :title "Dr. Schmood's Notebook of Python Calisthenics and Orthodontia"
      :subtitle "Don't get bit by misaligned state and output, keep your notebooks running with these functional tips!"
      :synopsis "This talk will explain functional programming using practical language and provide historical context. Some initial concepts will be demonstrated in Clojure or Julia, but ultimately translated to Python. Further consideration will be given to the impact of immutability, a core concept in the functional style, on creating reproducible notebooks."
@@ -255,7 +255,7 @@
      :image false
      }
     {:location "Society for the History of Technology, Milan, Italy"
-     :date "October 2019"
+     :date "October 26, 2019"
      :title "The Emergence of Computational Thinking in Art"
      :subtitle ""
      :synopsis "Early computational art provides insight into the nature of creativity and human discovery. Artists created these works before the computer's ubiquity. Many had never even seen a computer. The work exhibits pure computational thinking outside of the engineer or the machine. It suggests a new perspective that has broadly shaped our perception of the world."
@@ -267,7 +267,7 @@
      :image true
      }
     {:location "Strange Loop, St. Louis, MO"
-     :date "September 2018"
+     :date "September 27, 2018"
      :title "Misuser"
      :subtitle "The Case For a Steady Diet of Creative Misuse in Computing"
      :synopsis "The software I feature in this talk operated at the edge of digital systems. Artists often behaved like hackers: working off hours, pushing a system beyond its specification, and inventing new possibilities for human interaction along the way. &quot;Misuser&quot; will illustrate the connection between art and engineering, building a framework to examine the value of conventions and what we can learn by working outside of them."
@@ -279,7 +279,7 @@
      :image false
      }
     {:location "I T.A.K.E Unconference (Keynote), Bucharest, Romania"
-     :date "May 2017"
+     :date "May 11, 2017"
      :title "Aesthetics and Narrative"
      :subtitle "Programming What Cannot Be Programmed"
      :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
@@ -303,7 +303,7 @@
      :image true
      }
     {:location "Creative Coding NYC"
-     :date "February 2018"
+     :date "February 28, 2018"
      :title "Sound, Motion, Notation"
      :subtitle "The Work of Channa Horwitz"
      :synopsis "Channa Horwitz worked on her &quot;Sonakinatography&quot; series from 1968 until 2012. The pieces are a prescient expression of a hidden order that transcends artistic medium and forms the world around us. My presentation will investigate her algorithmic process by running code and placing the output in a broader historical context across the domains of art, gaming, and computation. I’ll also touch on the concepts of literate computing in computational notebooks using Nextjournal."
@@ -315,7 +315,7 @@
      :image false
      }
     {:location "Clojure/conj, Austin, TX"
-     :date "December 2016"
+     :date "December 1, 2016"
      :title "Aesthetics and Narrative"
      :subtitle "Programming What Cannot Be Programmed"
      :synopsis "Declarative programming has been the style of choice for implementing countless creative applications, from &quot;Zork&quot; to Harold Cohen's &quot;AARON.&quot; We'll explore why it helps to reason about machine creativity in this way and use Clojure's Overtone toolkit and clojure.spec to illustrate abstract concerns and domain intelligence."
@@ -327,7 +327,7 @@
      :image false
      }
     {:location "Vintage Computer Festival Midwest 11, Elk Grove, IL"
-     :date "September 2016"
+     :date "September 10, 2016"
      :title "Accidentally Arming a Hacker Revolution"
      :subtitle "The Role of Commodore and Jack Tramiel"
      :synopsis "The popularity of Commodore computers and modems hastened the spread and associated public fears of hacking. This is partially due to Jack Tramiel's ethos, which inadvertently aligned with hacker principles."
@@ -339,7 +339,7 @@
      :image false
      }
     {:location "C-Base: Home of the Chaos Computer Club, Berlin, Germany"
-     :date "July 2015"
+     :date "July 7, 2015"
      :title "Harvesting Human Intelligence"
      :subtitle "Reframing the Surveillance Discourse"
      :synopsis "The power of large government and corporate surveillance systems feel like an intractable part of our everyday digital lifestyle. However, the raw intelligence of centralized computer systems pale in comparison to decentralized personal computers, each augmented by a human actor. This talk examines how the PC threatens traditional power structures and how those systems have responded."
@@ -387,7 +387,7 @@
      :image true
      }
     {:location "RIXC Art Science Festival, Riga, Latvia"
-     :date "October 2017"
+     :date "October 20, 2017"
      :title "Manifesting Human Relationships in Art and Technology"
      :subtitle ""
      :synopsis "The internet has produced a tangibly interconnected world. In hindsight, its grammar of nodes, edges, and protocols is as organic as natural language. This presentation examines the discovery of packet-switched networks from a mid-century context and reveals the metaphors for human interaction and consciousness baked within; concepts that provide a foundation for discussing post-digital contemporary art."
@@ -399,7 +399,7 @@
      :image true
      }
     {:location "Society for the History of Technology, Philadelphia, PA"
-     :date "October 2017"
+     :date "October 28, 2017"
      :title "Unlikely Harbingers"
      :subtitle "Office Machinery in the Mainframe Era"
      :synopsis "This paper focuses on the significance of common mid-century desktop tools through the lens of Commodore Business Machines, a small company with a penchant for international deal-making. Commodore competed with very little capital against much larger players, and in doing so utilized emerging business practices that would come to define today's entrepreneurial climate. Part of a series on &quot;Computers and Futures.&quot;"
@@ -411,7 +411,7 @@
      :image true
      }
     {:location "ClojureBridge New York City"
-     :date "June 2017"
+     :date "June 3-4, 2017"
      :title "Workshop Instructor"
      :subtitle "The Fundamentals of Functional Programming and Clojure: A Workshop for Programmers"
      :synopsis "ClojureBridge is an all-volunteer organization dedicated to increasing diversity in the Clojure community. I lectured and provided hands-on support for experienced engineers looking to learn functional programming based on a collaboratively prepared curriculum."
@@ -423,7 +423,7 @@
      :image true
      }
     {:location "Codes & Modes Symposium hosted by Hunter College"
-     :date "March 2017"
+     :date "March 18, 2017"
      :title "The Grammar of the Internet"
      :subtitle ""
      :synopsis "Cinematic language is robust enough to clearly depict the flow of time through a collection of shots - whether they span centuries, seconds, or instant conceptual leaps. Early experiments in hypertext and interactive media often attempted to reconcile the new mediums by adopting the rules of cinema. This talk nods to the elegance of cinematic grammar and examines an idiosyncratic path forward for interconnected, interactive, nonfiction media."
@@ -435,7 +435,7 @@
      :image true
      }
     {:location "New York City Digital Humanities Festival"
-     :date "February 2017"
+     :date "February 8, 2017"
      :title "Workshop Instructor"
      :subtitle "Strategies for Interactive and Immersive Dance"
      :synopsis "This workshop focuses on strategies for creating cross-domain experiences. We dive deep into visual projection, software, sound, and dance while respecting each medium's idiosyncratic strengths."
@@ -460,7 +460,7 @@
      :image true
      }
     {:location "Pecha Kucha, Berlin, Germany"
-     :date "July 2015"
+     :date "July 8, 2015"
      :title "Computers & Intimacy"
      :subtitle "The Story of the Largest Machines and the Smallest Details"
      :synopsis "Our thoughts are the material of the Internet. In the midst of ever-evolving man/machine integration, I’ll use declassified documents to show how politicians have used computers to monitor these thoughts in the past, and suggest new ways of thinking about intimacy and computers in the future."
@@ -501,7 +501,7 @@
      :title "International Academy of Design and Technology"
      :subtitle "Adjunct Faculty"
      :desc ""
-     :synopsis "Designed the curriculum for the Interactive Multimedia Track~ IADT kiosk: class developed and implemented public informational kiosk~ Courses: Directing and Producing, Application Design, Digital Production I, Advanced Post Production, Digital Video Editing, Audio Production, Digital Audio Editing, Senior Project for Visual Communications, Career Portfolio Development for Visual Communications, Independent Study~"
+     :synopsis "Designed the curriculum for the Interactive Multimedia Track~ IADT kiosk: class developed and implemented public informational kiosk~ Courses: <em>Directing and Producing, Application Design, Digital Production I, Advanced Post Production, Digital Video Editing, Audio Production, Digital Audio Editing, Senior Project for Visual Communications, Career Portfolio Development for Visual Communications, Independent Study</em>~"
      :link-status false
      :link ""
      :link-name ""
