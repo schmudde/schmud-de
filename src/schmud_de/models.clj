@@ -182,7 +182,7 @@
     {:title "Beyond the Frame"
      :date "1/2005 - 8/2019"
      :subtitle "Creative Technologist"
-     :technology "Clojure, Apache, Tomcat, Digital and 35mm Cameras, Final Cut X, Logic X, Asana, GitHub"
+     :technology "Clojure, Apache, Tomcat, Digital and 35mm Cameras, Final Cut X, Logic X"
      :desc "A new media company that produces interactive narrative experiences."
      :synopsis "Built University of California's interactive &quot;Pathways Online Tutorial&quot; for new students~ Negotiated distribution and exhibition agreements for interactive installations, online experiences, and short films~ Worked with the Elks National Foundation to establish a video presence online that indoctrinates new members and documents philanthropic efforts~ Granted residencies for new media creative work at Signal Culture (New York), Holocenter: Center for the Holographic Arts (New York), and Startup Germany/Medienboard (Berlin)~ Established Bushwick Film Festival's &quot;New Media Day&quot; in 2013, reprised in 2014~ Produced documentary pilot, &quot;Souvenir Junk Drawer,&quot; for Soulpancake~ Developed and reviewed feature film scripts for Throughline Films~ Awarded multiple &quot;Best of Festival&quot; distinctions~"
      }
@@ -195,7 +195,7 @@
     {:title "NetGalley"
      :date "12/2013 - 4/2015"
      :subtitle "Front End Developer"
-     :technology "Symfony 2, Symfony 1, PHP, JavaScript, JQuery, Less, Doctrine, GitHub."
+     :technology "Symfony 2, Symfony 1, PHP, JavaScript, JQuery, Less, Doctrine, GitHub"
      :desc "A publishing web site with 40,000+ members and 100K+ uniques/month."
      :synopsis "Released every two weeks, accurately hitting sprint targets while committing quality code~ Moved to new templating technologies and stylesheet best practices to support faster development and extended support for Japanese, German, and French~"
      }
@@ -744,7 +744,7 @@
       :org "Startup Germany, Medienboard"
       :highlight "strong"
       }
-     {:title "Interactive Co/Lab, Detroit, MI"
+     {:title "Interactive Co/Lab 2016, Detroit, MI"
       :type "Competitive Selection"
       :org "Tribeca Film Institute"
      }
@@ -790,7 +790,7 @@
      }
      {:title "Program for the Study of the Imagination 2003"
       :type "Composition Grant"
-      :org "The Program in the Study of Imagination at Northwestern University"
+      :org "Northwestern University"
      }
      {:title "Interactive Award - The One Show 1998"
       :type "Competitive Showcase (Bronze Placement)"
