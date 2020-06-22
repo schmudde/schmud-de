@@ -750,12 +750,12 @@
      }
      {:title "POV Hackathon 9, Chicago, IL"
       :type "Competitive Selection"
-      :org "PBS"
+      :org "Public Broadcasting Service (PBS)"
       :highlight "strong"
      }
      {:title "POV Hackathon 7, New York, NY"
       :type "Competitive Selection"
-      :org "PBS"
+      :org "Public Broadcasting Service (PBS)"
      }
      {:title "Audience Choice Award, Best Director: &ldquo;The Assassination of Chicago&#39;s Mayor&rdquo;"
       :type "Film Festival Award"
